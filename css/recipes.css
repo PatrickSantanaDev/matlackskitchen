@@ -59,62 +59,11 @@ body {
     margin:0px;
     border: thick double #181617;
     background-color: #948470;
-    
 }
 
 a[href] {
     text-decoration: none;
 }
 
-form{
-    color: #181617;
-    font-family: 'Cinzel', serif;
-    font-size: 15px;
-    text-align: left;
-    margin: 2% 20% 0% 20%;
-    border-radius: 30px;
-    color: #181617;
-}
 
-.legend {
-    font-size: 35px;
-}
 
-.fieldset {
-    border: thick double #d0a16d;
-    border-radius: 30px;
-}
-
-/* Creating a custom checkbox */
-input[type=checkbox] {
-    background-color: #d0a16d;
-    accent-color: #d0a16d;
-    width: 30px;
-    height: 30px;
-}
-
-/* Creating a custom submit button*/
-.submit button {
-    margin:0% 0% 0% 30%;
-    border: 1mm outset #d29e6f;
-    background-color: #181617;
-    box-shadow: 0 7px #2b2b2b;
-    
-    color:#d29e6f;
-    font-size: 150%;
-    text-align: center;
-    text-shadow: 1px 1px 2px #917863;
-    font-family: 'Cinzel', serif;
-}
-
-.submit button:hover {
-    background-color:#948470;
-    transition: 0.5s;
-    color:#181617;
-}
-
-.submit button:active {
-    background-color: #2b2b2b;
-    box-shadow: 0 5px #181617;
-    transform: translateY(5px);
-  }
