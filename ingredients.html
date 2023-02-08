@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/ingredients.css">
+    <link rel="shortcut icon" type="image/ico" href="Images/knife.png">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+    </style>
+    <title>Ingredients</title>
+  </head>
+  <body>
+    
+    <!-- Logo -->
+    <div id="logo">
+        <img src="Images/klogo.png"/>
+    </div>
+
+    <!-- Page Title -->
+    <div id="title">
+        <img src="Images/ingredientstitle.png"/>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="menu">
+        <a class="active" href="index.html">Home</a>
+        <a href="https://www.matlacksboise.com/">Website</a>
+        <a href="menu.html">Menu</a>
+        <a href="#">Recipes</a>
+        <a href="#">Builds</a>
+        <a href="#">Tasks</a>
+        <a href="#">Ingredients</a>
+        <a href="#">Schedule</a>
+        <a href="#">Photos</a>    
+    </div>
+
+    <form>
+        <fieldset class="fieldset">
+            <legend class="legend">Select Ingredients Needed:</legend>
+                <div>
+                    <input type="checkbox" id="tritip" name="ingredients" value="tritip" />
+                    <label for="tritip">Tri-Tip</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="porkloin" name="ingredients" value="porkloin" />
+                    <label for="porkloin">Pork Loin</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="chicken" name="ingredients" value="chicken" />
+                    <label for="chicken">Chicken</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="chxdrums" name="ingredients" value="chxdrums" />
+                    <label for="chxdrums">Chicken Drumsticks</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="chxlollis" name="ingredients" value="chxlollis" />
+                    <label for="chxlollis">Chicken Lollipops</label>
+                </div>
+                <div>
+                    <button type="submit">Submit form</button>
+                </div>
+        </fieldset>
+      </form>
+  </body>
+</html>
