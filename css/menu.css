@@ -36,7 +36,7 @@
 }
 
 .menu a {
-
+    float:left;
     color:#948470;
     text-align: center;
     padding: 14px 16px;
