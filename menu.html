@@ -45,21 +45,35 @@
       <iframe src="https://docs.google.com/document/d/e/2PACX-1vRYlnuJR3WYMhqkLm9g0nxbLvY2GWi6RPfcFBa3OsxMW1p6VH5aDers3ngQOID0RmK5hvgzyqIIEWcx/pub?embedded=true" height="505px" width="99%"></iframe>
     </div>-->
     
+    <!-- When unable to load an item, <object> tag has a feature that 
+      loads the content inside itself i.e tag. Since object tag cannot 
+      load on mobile view, embed tag will become active on mobile devices-->
     <div id="menupdfviewer">
-    <object data="Images/menu.pdf" type="application/pdf" height="505px" width="99%">
-      <embed src="https://drive.google.com/file/d/1Zh-8mkVBEfXxiNrfCh_dHYWDfRglVfIK/preview?usp=sharing" height="505px" width="99%"/> 
-    </object>
+      <object data="Images/menu.pdf" type="application/pdf" height="505px" width="99%">
+        <embed src="https://drive.google.com/file/d/1Zh-8mkVBEfXxiNrfCh_dHYWDfRglVfIK/preview?usp=sharing" height="505px" width="99%"/> 
+      </object>
     </div>
 
     <!-- Upload Menu -->
-    <form method="post" enctype="multipart/form-data">
-      <div id = "uploadmenu">
-        <label for="uploadmenu">Select Menu File and Upload (.pdf):</label><br>
-        <input type="file" id="uploadmenu" name="uploadmenu" accept=".pdf" multiple/><br>
-        <button>Upload</button>
-        <button>Delete</button>
-      </div>
+    <form id = "uploadmenu" method="post" enctype="multipart/form-data">
+      <label for="uploadmenu">Select Menu File and Upload (.pdf):</label><br>
+      <input type="file" id="uploadmenu" name="uploadmenu" accept=".pdf" multiple/><br>
+      <button>Upload</button>
+      <button>Delete</button>
     </form>
+
+    <!--Items out of Stock-->
+    <div id="oositems" class="oosheader">
+      <h2>Out of Stock Menu Items</h2>
+      <input type="text" id="items" placeholder="Enter Out of Stock Item...">
+      <button onclick="newElement()" class="oosaddbutton">Add</button>
+    </div>
+    
+    <ul id="oositemslist">
+      <li>Chicken Corn Chowder</li>
+      <li>Chicken Drums</li>
+      <li>Brookie Dessert</li>
+    </ul>
 
   </body>
 </html>
