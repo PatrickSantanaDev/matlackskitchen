@@ -102,8 +102,7 @@
 
  #oositemslist {
     list-style: none;
-    cursor: pointer;
-    margin: 0% 5% 5% 5%;
+    margin: 0% 30% 5% 30%;
     padding: 0% 0% 0% 0%;
     border: 4mm ridge #d29e6f; 
      background: #d29e6f;
@@ -111,7 +110,7 @@
 
      font-family: 'Cinzel', serif;
      transition: 0.2s;
-    text-align: center;
+
 
      /* make the list items unselectable */
      -webkit-user-select: none;
@@ -128,10 +127,30 @@
      background: #ddd;
  }
 
+ ul li{
+    padding: 2% 0% 2% 2%;
+}
+
+ .close {
+    cursor: pointer;
+    padding: 0% 2% 0% 2%;
+    transform: translate(0%, -50%);
+    border: solid 4px;
+  }
+
+  .close:hover {
+    background: rgb(255, 0, 0);
+}
+
+  .item {
+    padding: 0% 0% 0% 4%;
+
+  }
+
  .oosheader {
     border: 4mm ridge #d29e6f; 
     background-color: #d29e6f;
-    margin: 5% 5% 0% 5%;
+    margin: 2% 30% 0% 30%;
 
     color: #181617;
     text-align: center;
