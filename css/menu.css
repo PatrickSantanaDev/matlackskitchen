@@ -55,6 +55,48 @@
     background-color: #181617;
   }
 
+/*********************/   
+/*  Menu PDF Viewer  */
+/*********************/
+ 
+#menupdfviewer{
+    text-align: center;
+    padding-right: 3px;
+    margin:2% 5% 2% 5%;
+    border: 4mm ridge #d29e6f;
+}  
+
+/*********************/   
+/*  Upload Menu PDF  */
+/*********************/
+#uploadmenu {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Cinzel', serif;    
+}
+
+#uploadmenu input {
+    margin: 0 auto;
+    cursor:pointer;
+    border:1mm solid #181617;
+}
+
+#uploadmenu button {
+    border-radius:20px;
+
+    margin:5px 0px 20px 0px;
+    width: 200px;
+ 
+    border: 1mm outset #d29e6f;
+    background-color: #181617;
+    box-shadow: 0 7px #2b2b2b;
+    
+    color:#d29e6f;
+
+    text-shadow: 1px 1px 2px #917863;
+    font-family: 'Cinzel', serif;
+}
+
 body {
     margin:0px;
     border: thick double #181617;
@@ -64,6 +106,10 @@ body {
 a[href] {
     text-decoration: none;
 }
+
+
+
+
 
 
 

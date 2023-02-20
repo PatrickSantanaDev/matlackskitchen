@@ -32,5 +32,21 @@
         <a href="schedule.html">Schedule</a>
         <a href="photos.html">Photos</a>    
     </div>
+    
+    <!-- PDF Viewer -->
+    <div id="menupdfviewer">
+    <iframe src="images/menu.pdf" height="505px" width="99%"></iframe>
+    </div>
+
+    <!-- Upload Menu -->
+    <form method="post" enctype="multipart/form-data">
+      <div id = "uploadmenu">
+        <label for="uploadmenu">Select Menu File and Upload (.pdf):</label><br>
+        <input type="file" id="uploadmenu" name="uploadmenu" accept=".pdf" multiple/><br>
+        <button>Upload</button>
+        <button>Delete</button>
+      </div>
+    </form>
+
   </body>
 </html>
