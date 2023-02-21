@@ -78,11 +78,12 @@
      margin: 0 auto;
      cursor: pointer;
      border: 1mm solid #181617;
+     background-color: white;
  }
 
  #uploadmenu button {
      border-radius: 20px;
-
+     cursor: pointer;
      margin: 5px 0px 20px 0px;
      width: 200px;
 
@@ -99,6 +100,12 @@
  /*********************/
  /*  OOS Menu Items   */
  /*********************/
+
+#enteritems {
+    border: double 1mm #181617;
+    color: #181617;
+    width:40%;
+}
 
  #oositemslist {
     list-style: none;
@@ -124,7 +131,7 @@
  }
 
  ul li:hover {
-     background: #ddd;
+     background: rgb(255, 255, 255);
  }
 
  ul li{
@@ -140,6 +147,7 @@
 
   .close:hover {
     background: rgb(255, 0, 0);
+    cursor: pointer;
 }
 
   .item {
@@ -147,7 +155,7 @@
 
   }
 
- .oosheader {
+ #oositems {
     border: 4mm ridge #d29e6f; 
     background-color: #d29e6f;
     margin: 2% 30% 0% 30%;
@@ -167,7 +175,7 @@
      font-size: 16px;
  }
 
- .oosheader button {
+ #oosaddbutton {
      border-radius: 20px;
 
      margin: 5px 0px 20px 0px;
@@ -183,10 +191,11 @@
      font-family: 'Cinzel', serif;
  }
 
- .oosheader button:hover {
+ #oosaddbutton:hover {
     background-color:#2b2b2b;
     transition: 0.5s;
     color:#d29e6f;
+    cursor: pointer;
  }
 
 

@@ -32,5 +32,71 @@
         <a href="schedule.html">Schedule</a>
         <a href="photos.html">Photos</a>  
     </div>
+
+    <!-- Dropdown Builds Search-->
+    <!-- Category Search -->
+    <form id="catSearch" action="" method="get">
+      <label for="searchbyCategory">Search for Builds by Category:</label>
+      <select id="searchByCategory" name="searchbyCategory">
+        <option value="">Select a category</option>
+        <option value="sandwiches">Sandwiches</option>
+        <option value="Salads">Salads</option>
+        <option value="rubs">Rubs</option>
+      </select>
+      <button id="catSearchButton" type="submit">Search</button>
+    </form>
+
+    <!-- Name Search -->
+    <form id="nameSearch" action="" method="get">
+      <label for="searchByName">Search for Build by Name:</label>
+      <select id="searchByName" name="searchByName">
+        <option value="">Select a Build Name</option>
+        <option value="bossHog">Boss Hog</option>
+        <option value="triTip">Tri-Tip</option>
+        <option value="banhMi">Banh Mi</option>
+      </select>
+      <button id="nameSearchButton" type="submit">Search</button>
+    </form>
+
+    <!-- Builds Viewer -->
+    <div id="recipeViewer">
+    <table>
+      <tr>
+      <th>Build Name:</th>
+      <td>Ranch</td>
+      </tr>
+      <tr>
+      <th>Ingredients:</th>
+      <td>2 cups Mayonaise</td>
+      </tr>
+      <tr>
+      <th>Instructions:</th>
+      <td>Mix Ingredients</td>
+      </tr>
+      <tr>
+      <th>Build Photos:</th>
+      <td>[insert image]</td>
+      </tr>
+      </table>
+    </div>
+
+    <!-- Delete Recipe -->
+    <div id="deleteRecipe">
+    <form action="" method="POST">
+      <input type="hidden" name="recipe_id" value="">
+      <button id="deleteRecipeButton" type="submit">Delete Build</button>
+    </form>
+    </div>
+
+    <!-- Upload Recipe -->
+    <form class="uploadRecipeForm" action="" method="post" enctype="multipart/form-data">
+      <input id="recipeName" type="text" name="name" placeholder="Enter Build name..."><br>
+      <textarea id="ingredients" name="ingredients" placeholder="Enter Ingredients..."></textarea><br>
+      <textarea id="instructions" name="instructions" placeholder="Enter Instructions..."></textarea><br>
+      <input type="file" id="uploadBuildPhotos" name="uploadBuildPhotos" accept=".jpg"/>
+      <button type="submit">Upload</button><br> <!--create id and customize-->
+      <button id="uploadRecipeButton" type="submit">Upload Build</button>
+    </form>
+
   </body>
 </html>

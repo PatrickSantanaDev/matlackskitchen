@@ -33,6 +33,19 @@
         <a href="photos.html">Photos</a>    
     </div>
     
+        <!--Items out of Stock-->
+        <form id="oositems">
+          <h2>Out of Stock</h2>
+          <input type="text" id="enteritems" placeholder="Enter Out of Stock Item...">
+          <button id ="oosaddbutton">Add</button>
+        </form>
+        
+        <ul id="oositemslist">
+          <li><span class="close">x</span><span class="item">Chicken Corn Chowder</span></li>
+          <li><span class="close">x</span><span class="item">Chicken Drums</span></li>
+          <li><span class="close">x</span><span class="item">Brookie Dessert</span></li>
+        </ul>
+
     <!-- Menu Viewer -->
     
     <!-- PDF viewer - DOESNT WORK ON MOBILE!
@@ -57,23 +70,10 @@
     <!-- Upload Menu -->
     <form id = "uploadmenu" method="post" enctype="multipart/form-data">
       <label for="uploadmenu">Select Menu File and Upload (.pdf):</label><br>
-      <input type="file" id="uploadmenu" name="uploadmenu" accept=".pdf" multiple/><br>
-      <button>Upload</button>
+      <input type="file" id="uploadmenu" name="uploadmenu" accept=".pdf"/><br>
+      <button type="submit">Upload</button>
       <button>Delete</button>
     </form>
-
-    <!--Items out of Stock-->
-    <div id="oositems" class="oosheader">
-      <h2>Out of Stock Menu Items</h2>
-      <input type="text" id="items" placeholder="Enter Out of Stock Item...">
-      <button class="oosaddbutton">Add</button>
-    </div>
-    
-    <ul id="oositemslist">
-      <li><span class="close">x</span><span class="item">Chicken Corn Chowder</span></li>
-      <li><span class="close">x</span><span class="item">Chicken Drums</span></li>
-      <li><span class="close">x</span><span class="item">Brookie Dessert</span></li>
-    </ul>
 
   </body>
 </html>

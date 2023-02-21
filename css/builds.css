@@ -55,6 +55,171 @@
   background-color: #181617;
 }
 
+/***************************/
+/*    Recipe Search        */
+/***************************/
+
+#catSearch {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  margin: 5% 0% 2% 0%;
+}
+
+#nameSearch {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  margin: 0% 0% 0% 0%;
+}
+
+#searchByCategory {
+  text-align: center;
+  border: double #181617;
+}
+
+#searchByName {
+  text-align: center;
+  border: double #181617;
+}
+
+#catSearchButton {
+  border-radius: 20px;
+   cursor: pointer;
+   margin: 0% 0% 0% 0%;
+   width: 10%;
+
+   border: 1mm outset #d29e6f;
+   background-color: #181617;
+   box-shadow: 0 7px #2b2b2b;
+
+   color: #d29e6f;
+
+   text-shadow: 1px 1px 2px #917863;
+   font-family: 'Cinzel', serif;
+}
+
+#nameSearchButton {
+  border-radius: 20px;
+   cursor: pointer;
+   margin: 0% 0% 0% 0%;
+   width: 10%;
+
+   border: 1mm outset #d29e6f;
+   background-color: #181617;
+   box-shadow: 0 7px #2b2b2b;
+
+   color: #d29e6f;
+
+   text-shadow: 1px 1px 2px #917863;
+   font-family: 'Cinzel', serif;
+}
+
+/***************************/
+/*    Recipe Viewer        */
+/***************************/
+
+#recipeViewer{
+  text-align: left;
+  border: 4mm ridge #d29e6f;
+  margin: 2% 10% 0% 10%;
+  font-family: 'Cinzel', serif;
+}
+th{
+  border: 1px solid #d29e6f ;
+  width: 10%;
+  font-size: larger;
+}
+
+td{
+  border: 1px solid #d29e6f ;
+  width: 90%;
+}
+
+#deleteRecipe {
+  text-align: center;
+}
+
+#deleteRecipeButton {
+  border-radius: 20px;
+   cursor: pointer;
+   margin: 5px 0px 20px 0px;
+   width: 20%;
+
+   border: 1mm outset #d29e6f;
+   background-color: #181617;
+   box-shadow: 0 7px #2b2b2b;
+
+   color: #d29e6f;
+
+   text-shadow: 1px 1px 2px #917863;
+   font-family: 'Cinzel', serif;
+}
+
+/***************************/
+/*    Upload Build        */
+/***************************/
+
+.uploadRecipeForm {
+  text-align: center;
+  margin: 5% 10% 5% 10%;
+  border: 4mm ridge #d29e6f;
+}
+
+#recipeName {
+  width: 25%;
+  margin: 5% 0% 1% 0%;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  border: double #181617;
+}
+
+#ingredients {
+  width: 55%;
+  margin: 1% 0% 1% 0%;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  border: double #181617;
+}
+
+#instructions {
+  width: 55%;
+  margin: 1% 0% 1% 0%;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  border: double #181617;
+}
+
+#uploadRecipeButton {
+  border-radius: 20px;
+   cursor: pointer;
+   margin: 5px 0px 20px 0px;
+   width: 25%;
+
+   border: 1mm outset #d29e6f;
+   background-color: #181617;
+   box-shadow: 0 7px #2b2b2b;
+
+   color: #d29e6f;
+
+   text-shadow: 1px 1px 2px #917863;
+   font-family: 'Cinzel', serif;
+}
+
+ /*********************/
+ /*  Upload Menu PDF  */
+ /*********************/
+ #uploadBuildPhotos {
+  text-align: center;
+  font-size: 16px;
+  border: double #181617;
+  font-family: 'Cinzel', serif;
+  background-color: white;
+}
+
+#uploadBuildPhotos input {
+  margin: 0 auto;
+  cursor: pointer;
+}
+
 body {
   margin:0px;
   border: thick double #181617;
