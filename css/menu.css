@@ -123,22 +123,16 @@
      background: #cfad8f;
  }
 
- ul li:hover {
-     background: rgb(255, 255, 255);
- }
-
  ul li {
      padding: 2% 0% 2% 2%;
  }
 
- .close {
+ .deleteItemButton {
      cursor: pointer;
-     padding: 0% 2% 0% 2%;
-     transform: translate(0%, -50%);
-     border: solid 4px;
+
  }
 
- .close:hover {
+ .deleteItemButton:hover {
      background: rgb(255, 0, 0);
      cursor: pointer;
  }
@@ -152,7 +146,7 @@
      border: 4mm ridge #d29e6f;
 
      margin: 2% 25% 5% 25%;
-    width: 50%;
+     width: 50%;
      color: #181617;
      text-align: center;
      font-size: 13px;
@@ -190,7 +184,7 @@
      color: #d29e6f;
      cursor: pointer;
  }
- 
+
  /*********************/
  /*       Misc.       */
  /*********************/
