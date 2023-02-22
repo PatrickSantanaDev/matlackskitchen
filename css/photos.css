@@ -1,70 +1,127 @@
+ /****************/
+ /*    Logo      */
+ /****************/
+ #logo {
+   width: 15%;
+   margin: 1% 80% 1% 1%;
+   position: absolute;
+ }
+
+ #logo img {
+   width: 100%;
+ }
+
+ /****************/
+ /*  Page Title  */
+ /****************/
+
+ #title {
+   text-align: center;
+   margin: 6% 25% 2% 25%;
+   padding: 1% 1% 1% 1%;
+   width: 50%;
+ }
+
+ /***************************/
+ /*    Navigation Menu      */
+ /***************************/
+
+ .menu {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   overflow: hidden;
+   background-color: #181617;
+ }
+
+ .menu a {
+
+   color: #948470;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 13px;
+   font-family: 'Cinzel', serif;
+ }
+
+ .menu a:hover {
+   background-color: #2b2b2b;
+   transition: 0.5s;
+   color: #948470;
+ }
+
+ .menu a:active {
+   background-color: #181617;
+ }
+
+ /***************************/
+ /*    Photos Viewer        */
+ /***************************/
+
+ #photosViewer {
+  text-align: left;
+   padding-right: 3px;
+   margin: 2% 14% 2% 14%;
+   border: 4mm ridge #d29e6f;
+   background-color: #ffffff;
+ }
+
+ .photo {
+    width: 200px;
+    border-style: outset;
+ }
+
+  /***************************/
+ /*      Upload Photos       */
+ /****************************/
  
-/****************/   
-/*    Logo      */
-/****************/
-#logo {
-    width: 15%;
-    margin:1% 80% 1% 1%;
-    position:absolute;
-  } 
+ #uploadPhotoForm {
+  text-align: center;
+  margin: 5% 30% 5% 30%;
+  width: 40%;
+  border: 4mm ridge #d29e6f;
+}
+
+#uploadPhotoFormHeading{
+  font-family: 'Cinzel', serif;
+}
+
+#selectPhotos {
+  text-align: center;
+  font-size: 16px;
+  margin: 0% 0% 0% 0%;
+  width:65%;
+  border: double #181617;
+  font-family: 'Cinzel', serif;
+  background-color: white;
+}
+
+#selectPhotos input {
+  cursor: pointer;
+}
+
+#uploadPhotoButton {
+  border-radius: 20px;
+   cursor: pointer;
+   margin: 4% 35% 4% 35%;
+   width: 30%;
   
-  #logo img {
-    width: 100%;
-  }   
-  
-  /****************/   
-  /*  Page Title  */
-  /****************/
-  
-  #title{
-    text-align: center;
-    margin:6% 25% 2% 25%;
-    padding:1% 1% 1% 1%;
-    width: 50%;
-  }   
-  
-  /***************************/
-  /*    Navigation Menu      */
-  /***************************/
-  
-  .menu {
-    width: 100%;
-    display:flex;
-    justify-content: center;
-    overflow: hidden;
-    background-color: #181617;
-  }
-  
-  .menu a {
-  
-    color:#948470;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 13px;
-    font-family: 'Cinzel', serif;
-  }
-  
-  .menu a:hover {
-    background-color:#2b2b2b;
-    transition: 0.5s;
-    color:#948470;
-  }
-  
-  .menu a:active {
-    background-color: #181617;
-  }
-  
-  body {
-    margin:0px;
-    border: thick double #181617;
-    background-color: #948470;
-  }
-  
-  a[href] {
-    text-decoration: none;
-  }
-  
-  
-  
-  
+   border: 1mm outset #d29e6f;
+   background-color: #181617;
+   box-shadow: 0 7px #2b2b2b;
+
+   color: #d29e6f;
+
+   text-shadow: 1px 1px 2px #917863;
+   font-family: 'Cinzel', serif;
+}
+
+ body {
+   margin: 0px;
+   border: thick double #181617;
+   background-color: #948470;
+ }
+
+ a[href] {
+   text-decoration: none;
+ }
