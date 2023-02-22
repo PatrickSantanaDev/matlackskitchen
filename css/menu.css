@@ -101,25 +101,22 @@
  /*  OOS Menu Items   */
  /*********************/
 
-#enteritems {
-    border: double 1mm #181617;
-    color: #181617;
-    width:40%;
-}
+ #enteritems {
+     border: double 1mm #181617;
+     color: #181617;
+     width: 40%;
+ }
 
  #oositemslist {
-    list-style: none;
-    margin: 0% 10% 5% 10%;
-    padding: 0% 0% 0% 0%;
-    border: 4mm ridge #d29e6f; 
+     list-style: none;
+     margin: 0% 5% 2% 5%;
+     padding: 0% 0% 0% 0%;
+     border: 4mm ridge #d29e6f;
      background: #d29e6f;
-     font-size: 18px;
-    text-align: left;
+     font-size: 16px;
+     text-align: left;
      font-family: 'Cinzel', serif;
      transition: 0.2s;
-
-
-
  }
 
  ul li:nth-child(odd) {
@@ -130,35 +127,35 @@
      background: rgb(255, 255, 255);
  }
 
- ul li{
-    padding: 2% 0% 2% 2%;
-}
+ ul li {
+     padding: 2% 0% 2% 2%;
+ }
 
  .close {
-    cursor: pointer;
-    padding: 0% 2% 0% 2%;
-    transform: translate(0%, -50%);
-    border: solid 4px;
-  }
+     cursor: pointer;
+     padding: 0% 2% 0% 2%;
+     transform: translate(0%, -50%);
+     border: solid 4px;
+ }
 
-  .close:hover {
-    background: rgb(255, 0, 0);
-    cursor: pointer;
-}
+ .close:hover {
+     background: rgb(255, 0, 0);
+     cursor: pointer;
+ }
 
-  .item {
-    padding: 0% 0% 0% 4%;
+ .item {
+     padding: 0% 0% 0% 4%;
 
-  }
+ }
 
  #oositems {
-    border: 4mm ridge #d29e6f; 
-    background-color: #d29e6f;
-    margin: 2% 20% 0% 20%;
+     border: 4mm ridge #d29e6f;
 
-    color: #181617;
-    text-align: center;
-    font-size: 13px;
+     margin: 2% 25% 5% 25%;
+    width: 50%;
+     color: #181617;
+     text-align: center;
+     font-size: 13px;
      font-family: 'Cinzel', serif;
  }
 
@@ -188,12 +185,15 @@
  }
 
  #oosaddbutton:hover {
-    background-color:#2b2b2b;
-    transition: 0.5s;
-    color:#d29e6f;
-    cursor: pointer;
+     background-color: #2b2b2b;
+     transition: 0.5s;
+     color: #d29e6f;
+     cursor: pointer;
  }
-
+ 
+ /*********************/
+ /*       Misc.       */
+ /*********************/
 
  body {
      margin: 0px;

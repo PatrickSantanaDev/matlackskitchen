@@ -1,70 +1,203 @@
- 
-/****************/   
-/*    Logo      */
-/****************/
-#logo {
-    width: 15%;
-    margin:1% 80% 1% 1%;
-    position:absolute;
-  } 
-  
-  #logo img {
-    width: 100%;
-  }   
-  
-  /****************/   
-  /*  Page Title  */
-  /****************/
-  
-  #title{
-    text-align: center;
-    margin:6% 25% 2% 25%;
-    padding:1% 1% 1% 1%;
-    width: 50%;
-  }   
-  
-  /***************************/
-  /*    Navigation Menu      */
-  /***************************/
-  
-  .menu {
-    width: 100%;
-    display:flex;
-    justify-content: center;
-    overflow: hidden;
-    background-color: #181617;
-  }
-  
-  .menu a {
-  
-    color:#948470;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 13px;
-    font-family: 'Cinzel', serif;
-  }
-  
-  .menu a:hover {
-    background-color:#2b2b2b;
-    transition: 0.5s;
-    color:#948470;
-  }
-  
-  .menu a:active {
-    background-color: #181617;
-  }
-  
-  body {
-    margin:0px;
-    border: thick double #181617;
-    background-color: #948470;
-  }
-  
-  a[href] {
-    text-decoration: none;
-  }
-  
-  
-  
-  
+ /****************/
+ /*    Logo      */
+ /****************/
+ #logo {
+   width: 15%;
+   margin: 1% 80% 1% 1%;
+   position: absolute;
+ }
+
+ #logo img {
+   width: 100%;
+ }
+
+ /****************/
+ /*  Page Title  */
+ /****************/
+
+ #title {
+   text-align: center;
+   margin: 6% 25% 2% 25%;
+   padding: 1% 1% 1% 1%;
+   width: 50%;
+ }
+
+ /***************************/
+ /*    Navigation Menu      */
+ /***************************/
+
+ .menu {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   overflow: hidden;
+   background-color: #181617;
+ }
+
+ .menu a {
+
+   color: #948470;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 13px;
+   font-family: 'Cinzel', serif;
+ }
+
+ .menu a:hover {
+   background-color: #2b2b2b;
+   transition: 0.5s;
+   color: #948470;
+ }
+
+ .menu a:active {
+   background-color: #181617;
+ }
+
+ /***************************/
+ /*    AM Duties Viewer     */
+ /***************************/
+
+ /* put am and pm tables in same container */
+ .amPMTablesContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  margin: 2% 10% 2% 10%;
+}
+
+ #amDutiesViewer {
+   text-align: center;
+   border: 4mm ridge #d29e6f;
+   margin: 2% 1% 2% 0%;
+   font-family: 'Cinzel', serif;
+   width:50%;
+ }
+
+ th {
+   border: 1px solid #d29e6f;
+   width: 100%;
+   font-size: larger;
+ }
+
+ td {
+   text-align: left;
+   border: 1px solid #d29e6f;
+   width: 100%;
+ }
+
+ /* Creating a custom checkbox */
+ input[type=checkbox] {
+   background-color: #d0a16d;
+   accent-color: #d0a16d;
+   width: 100%;
+   height: 20px;
+ }
+
+ #submitAMDutiesButton {
+   border-radius: 20px;
+   cursor: pointer;
+   margin: 5% 0% 5% 0%;
+   width: 30%;
+
+   border: 1mm outset #d29e6f;
+   background-color: #181617;
+   box-shadow: 0 7px #2b2b2b;
+
+   color: #d29e6f;
+
+   text-shadow: 1px 1px 2px #917863;
+   font-family: 'Cinzel', serif;
+ }
+
+
+ /***************************/
+ /*    PM Duties Viewer     */
+ /***************************/
+
+ #pmDutiesViewer {
+  text-align: center;
+  border: 4mm ridge #d29e6f;
+  margin: 2% 0% 2% 1%;
+  font-family: 'Cinzel', serif;
+  width:50%;
+}
+
+th {
+  border: 1px solid #d29e6f;
+  width: 100%;
+  font-size: larger;
+}
+
+td {
+  text-align: left;
+  border: 1px solid #d29e6f;
+  width: 100%;
+}
+
+#submitPMDutiesButton {
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 5% 0% 5% 0%;
+  width: 30%;
+
+  border: 1mm outset #d29e6f;
+  background-color: #181617;
+  box-shadow: 0 7px #2b2b2b;
+
+  color: #d29e6f;
+
+  text-shadow: 1px 1px 2px #917863;
+  font-family: 'Cinzel', serif;
+}
+
+ /***************************/
+ /*  Weekly Duties Viewer   */
+ /***************************/
+
+ #weeklyDutiesViewer {
+  text-align: center;
+  border: 4mm ridge #d29e6f;
+  margin: 2% 20% 2% 20%;
+  font-family: 'Cinzel', serif;
+}
+
+th {
+  border: 1px solid #d29e6f;
+  width: 100%;
+  font-size: larger;
+}
+
+td {
+  text-align: left;
+  border: 1px solid #d29e6f;
+  width: 100%;
+}
+
+#submitWeeklyDutiesButton {
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 5% 0% 5% 0%;
+  width: 30%;
+
+  border: 1mm outset #d29e6f;
+  background-color: #181617;
+  box-shadow: 0 7px #2b2b2b;
+
+  color: #d29e6f;
+
+  text-shadow: 1px 1px 2px #917863;
+  font-family: 'Cinzel', serif;
+}
+
+
+
+ body {
+   margin: 0px;
+   border: thick double #181617;
+   background-color: #948470;
+ }
+
+ a[href] {
+   text-decoration: none;
+ }

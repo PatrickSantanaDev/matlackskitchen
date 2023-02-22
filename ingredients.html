@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <link rel="stylesheet" type="text/css" href="css/ingredients.css">
     <link rel="shortcut icon" type="image/png" href="Images/knife.png?">
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
     </style>
     <title>Ingredients</title>
-  </head>
-  <body>
-    
+</head>
+
+<body>
+
     <!-- Logo -->
     <div id="logo">
-        <img src="Images/klogo.png"/>
+        <img src="Images/klogo.png" />
     </div>
 
     <!-- Page Title -->
     <div id="title">
-        <img src="Images/ingredientstitle.png"/>
+        <img src="Images/ingredientstitle.png" />
     </div>
 
     <!-- Navigation Bar -->
@@ -30,51 +32,74 @@
         <a href="tasks.html">Tasks</a>
         <a href="ingredients.html">Ingredients</a>
         <a href="schedule.html">Schedule</a>
-        <a href="photos.html">Photos</a>    
+        <a href="photos.html">Photos</a>
     </div>
 
-    <form>
-        <fieldset class="fieldset">
-            <legend class="legend">Select Ingredients Needed:</legend>
+    <form id="ingredientsList">
+        <fieldset class="ingredientsList">
+            <legend class="legend">Select Ingredients Needed</legend>
+            <!--Proteins-->
+            <fieldset class="proteins">
+                <legend class="legend">Proteins</legend>
                 <div>
-                    <input type="checkbox" id="tritip" name="ingredients" value="tritip" />
+                    <input type="checkbox" id="tritip" name="tritip" value="tritip" />
                     <label for="tritip">Tri-Tip</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="porkloin" name="ingredients" value="porkloin" />
+                    <input type="checkbox" id="porkloin" name="porkloin" value="porkloin" />
                     <label for="porkloin">Pork Loin</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="chicken" name="ingredients" value="chicken" />
+                    <input type="checkbox" id="chicken" name="chicken" value="chicken" />
                     <label for="chicken">Chicken</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="chxdrums" name="ingredients" value="chxdrums" />
+                    <input type="checkbox" id="chxdrums" name="chxdrums" value="chxdrums" />
                     <label for="chxdrums">Chicken Drumsticks</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="chxlollis" name="ingredients" value="chxlollis" />
+                    <input type="checkbox" id="chxlollis" name="chxlollis" value="chxlollis" />
                     <label for="chxlollis">Chicken Lollipops</label>
                 </div>
-                <div class = "submit">
-                    <br>
-                    <button type="submit">Submit form</button>
+                <div id="addProtein">
+                    <input type="text" id="addProteinText" placeholder="Enter New Protein Item...">
+                    <button id="addProteinButton" type="submit">Add</button>
                 </div>
+            </fieldset>
+
+            <!--Dairy-->
+            <fieldset class="dairy">
+                <legend class="legend">Dairy</legend>
+                <div>
+                    <input type="checkbox" id="tritip" name="tritip" value="tritip" />
+                    <label for="tritip">Tri-Tip</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="porkloin" name="porkloin" value="porkloin" />
+                    <label for="porkloin">Pork Loin</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="chicken" name="chicken" value="chicken" />
+                    <label for="chicken">Chicken</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="chxdrums" name="chxdrums" value="chxdrums" />
+                    <label for="chxdrums">Chicken Drumsticks</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="chxlollis" name="chxlollis" value="chxlollis" />
+                    <label for="chxlollis">Chicken Lollipops</label>
+                </div>
+                <div id="addDairy">
+                    <input type="text" id="addDairyText" placeholder="Enter New Dairy Item...">
+                    <button id="addDairyButton" type="submit">Add</button>
+                </div>
+            </fieldset>
+            <div class="submit">
+                <button id="submitIngredientsButton" type="submit">Submit Ingredients List</button>
+            </div>
         </fieldset>
-      </form>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-  </body>
+    </form>
+</body>
+
 </html>

@@ -114,15 +114,16 @@
 }
 
 /***************************/
-/*    Recipe Viewer        */
+/*    Builds Viewer        */
 /***************************/
 
 #recipeViewer{
-  text-align: left;
+  text-align: center;
   border: 4mm ridge #d29e6f;
-  margin: 2% 10% 0% 10%;
+  margin: 2% 20% 0% 20%;
   font-family: 'Cinzel', serif;
 }
+
 th{
   border: 1px solid #d29e6f ;
   width: 10%;
@@ -130,8 +131,14 @@ th{
 }
 
 td{
+  text-align: left;
   border: 1px solid #d29e6f ;
-  width: 90%;
+  width: 100%;
+}
+
+#buildPhotos {
+  margin: 2% 2% 2% 2%;
+  width:35%;
 }
 
 #deleteRecipe {
@@ -141,7 +148,7 @@ td{
 #deleteRecipeButton {
   border-radius: 20px;
    cursor: pointer;
-   margin: 5px 0px 20px 0px;
+   margin: 5px 0px 0px 0px;
    width: 20%;
 
    border: 1mm outset #d29e6f;
@@ -160,7 +167,7 @@ td{
 
 .uploadRecipeForm {
   text-align: center;
-  margin: 5% 10% 5% 10%;
+  margin: 5% 15% 5% 15%;
   border: 4mm ridge #d29e6f;
 }
 
@@ -191,7 +198,7 @@ td{
 #uploadRecipeButton {
   border-radius: 20px;
    cursor: pointer;
-   margin: 5px 0px 20px 0px;
+   margin: 4% 0% 4% 0%;
    width: 25%;
 
    border: 1mm outset #d29e6f;
@@ -204,19 +211,16 @@ td{
    font-family: 'Cinzel', serif;
 }
 
- /*********************/
- /*  Upload Menu PDF  */
- /*********************/
- #uploadBuildPhotos {
+ #selectBuildPhotos {
   text-align: center;
   font-size: 16px;
+  width:45%;
   border: double #181617;
   font-family: 'Cinzel', serif;
   background-color: white;
 }
 
-#uploadBuildPhotos input {
-  margin: 0 auto;
+#selectBuildPhotos input {
   cursor: pointer;
 }
 
