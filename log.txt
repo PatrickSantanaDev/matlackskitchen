@@ -7221,3 +7221,13 @@
 1680068889 - INFO  --> Checking if username and password match to the one present in the database. 
 1680068889 - DEBUG --> getting a connection 
 1680068889 - WARN  --> User [JohnSmith] successfully logged in. 
+1680462128 - INFO  --> Checking if username and password match to the one present in the database. 
+1680462128 - DEBUG --> getting a connection 
+1680462128 - WARN  --> User [JohnSmith] invalid username or password 
+1680462164 - INFO  --> Creating user Account! 
+1680462164 - INFO  --> Checking if user exists 
+1680462164 - DEBUG --> getting a connection 
+1680462164 - DEBUG --> getting a connection 
+1680462407 - INFO  --> Checking if username and password match to the one present in the database. 
+1680462407 - DEBUG --> getting a connection 
+1680462407 - WARN  --> User [JohnSmith] successfully logged in. 

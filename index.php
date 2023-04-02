@@ -1,8 +1,6 @@
-<?php
-session_start();
-?>
+<?php session_start(); ?>
 
-<?php include_once 'authorized.php';?>
+<?php include_once 'authorized.php'; ?>
 
 <!DOCTYPE html>
 <html>
@@ -19,6 +17,7 @@ session_start();
 </head>
 
 <body>
+  <!-- Logout Button -->
   <div class="logout">
     <a href="logout.php"><button>Logout</button></a>
   </div>
@@ -32,21 +31,18 @@ session_start();
   <nav>
     <div class="menu">
       <a href="https://www.matlacksboise.com/"><button>Website</button></a>
-      <a href="menu.php"><button>Menu</button></a>
-      <a href="recipes.php"><button>Recipes</button></a>
-      <a href="builds.php"><button>Builds</button></a>
-      <a href="tasks.php"><button>Tasks</button></a>
-      <a href="ingredients.php"><button>Ingredients</button></a>
-      <a href="schedule.php"><button>Schedule</button></a>
-      <a href="photos.php"><button>Photos</button></a>
+      <a href="Menu/menu.php"><button>Menu</button></a>
+      <a href="Recipes/recipes.php"><button>Recipes</button></a>
+      <a href="Builds/builds.php"><button>Builds</button></a>
+      <a href="Tasks/tasks.php"><button>Tasks</button></a>
+      <a href="Ingredients/ingredients.php"><button>Ingredients</button></a>
+      <a href="Schedule/schedule.php"><button>Schedule</button></a>
+      <a href="Photos/photos.php"><button>Photos</button></a>
     </div>
   </nav>
 
   <!--Footer-->
-  <footer class="footer">
-    <p>&copy MATLACK'S PUBLIC HOUSE 1100 WEST FRONT STREET, BOISE, ID, 83702, UNITED STATES 208-336-2561  
-      <a href="mailto:matlackskitchen@gmail.com">matlackskitchen@gmail.com</a></p>
-  </footer>
+  <?php include_once 'footer.php'; ?>
 
 </body>
 

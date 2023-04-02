@@ -1,10 +1,15 @@
+<?php session_start(); ?>
+
+<?php include_once '../authorized.php'; ?>
+
 <!DOCTYPE html>
 <html>
 
 <head>
-  <link rel="stylesheet" type="text/css" href="css/builds.css">
-  <link rel="stylesheet" type="text/css" href="css/footer.css">
-  <link rel="shortcut icon" type="image/png" href="Images/knife.png?">
+  <link rel="stylesheet" type="text/css" href="../css/builds.css">
+  <link rel="stylesheet" type="text/css" href="../css/footer.css">
+  <link rel="stylesheet" type="text/css" href="../css/logout_button.css">
+  <link rel="shortcut icon" type="image/png" href="../Images/knife.png?">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
   </style>
@@ -15,26 +20,22 @@
 
   <!-- Logo -->
   <div id="logo">
-    <img src="Images/klogo.png" />
+    <img src="../Images/klogo.png" />
+  </div>
+
+  <!-- Logout Button -->
+  <div class="logout">
+    <a href="../logout.php"><button>Logout</button></a>
   </div>
 
   <!-- Page Title -->
   <div id="title">
-    <img src="Images/buildstitle.png" />
+    <img src="../Images/buildstitle.png" />
   </div>
 
+
   <!-- Navigation Bar -->
-  <div class="menu">
-    <a class="active" href="index.html">Home</a>
-    <a href="https://www.matlacksboise.com/">Website</a>
-    <a href="menu.html">Menu</a>
-    <a href="recipes.html">Recipes</a>
-    <a href="builds.html">Builds</a>
-    <a href="tasks.html">Tasks</a>
-    <a href="ingredients.html">Ingredients</a>
-    <a href="schedule.html">Schedule</a>
-    <a href="photos.html">Photos</a>
-  </div>
+  <?php include_once '../navigation_bar.php'; ?>
 
   <!-- Dropdown Builds Search-->
   <!-- Category Search -->
@@ -86,7 +87,7 @@
     </tr>
     <tr>
       <th>Build Photos:</th>
-      <td><img id="buildPhotos" src="Images/bosshog.jpg"></td>
+      <td><img id="buildPhotos" src="../Images/bosshog.jpg"></td>
     </tr>
   </table>
   </div>
@@ -109,11 +110,7 @@
   </form>
 
   <!--Footer-->
-  <footer class="footer">
-    <p>&copy MATLACK'S PUBLIC HOUSE 1100 WEST FRONT STREET, BOISE, ID, 83702, UNITED STATES 208-336-2561
-      <a href="mailto:matlackskitchen@gmail.com">matlackskitchen@gmail.com</a>
-    </p>
-  </footer>
+  <?php include_once '../footer.php'; ?>
 
 </body>
 

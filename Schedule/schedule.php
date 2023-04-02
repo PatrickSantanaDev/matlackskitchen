@@ -1,10 +1,15 @@
+<?php session_start(); ?>
+
+<?php include_once '../authorized.php'; ?>
+
 <!DOCTYPE html>
 <html>
 
 <head>
-  <link rel="stylesheet" type="text/css" href="css/schedule.css">
-  <link rel="stylesheet" type="text/css" href="css/footer.css">
-  <link rel="shortcut icon" type="image/png" href="Images/knife.png?">
+  <link rel="stylesheet" type="text/css" href="../css/schedule.css">
+  <link rel="stylesheet" type="text/css" href="../css/footer.css">
+  <link rel="stylesheet" type="text/css" href="../css/logout_button.css">
+  <link rel="shortcut icon" type="image/png" href="../Images/knife.png?">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
   </style>
@@ -15,26 +20,21 @@
 
   <!-- Logo -->
   <div id="logo">
-    <img src="Images/klogo.png" />
+    <img src="../Images/klogo.png" />
+  </div>
+
+  <!-- Logout Button -->
+  <div class="logout">
+    <a href="../logout.php"><button>Logout</button></a>
   </div>
 
   <!-- Page Title -->
   <div id="title">
-    <img src="Images/scheduletitle.png" />
+    <img src="../Images/scheduletitle.png" />
   </div>
 
   <!-- Navigation Bar -->
-  <div class="menu">
-    <a class="active" href="index.html">Home</a>
-    <a href="https://www.matlacksboise.com/">Website</a>
-    <a href="menu.html">Menu</a>
-    <a href="recipes.html">Recipes</a>
-    <a href="builds.html">Builds</a>
-    <a href="tasks.html">Tasks</a>
-    <a href="ingredients.html">Ingredients</a>
-    <a href="schedule.html">Schedule</a>
-    <a href="photos.html">Photos</a>
-  </div>
+  <?php include_once '../navigation_bar.php'; ?>
 
   <!-- Schedule Viewer -->
 
@@ -43,8 +43,7 @@
       load on mobile view, embed tag will become active on mobile devices-->
   <div id="schedulePdfViewer">
     <object data="Images/schedule.pdf" type="application/pdf" height="505px" width="99%">
-      <embed src="https://drive.google.com/file/d/1y6n2yliYlKsB5_5jz8bA8Wev1A1O68DN/preview?usp=share_link"
-        height="505px" width="99%" />
+      <embed src="https://drive.google.com/file/d/1y6n2yliYlKsB5_5jz8bA8Wev1A1O68DN/preview?usp=share_link" height="505px" width="99%" />
     </object>
   </div>
 
@@ -57,11 +56,7 @@
   </form>
 
   <!--Footer-->
-  <footer class="footer">
-    <p>&copy MATLACK'S PUBLIC HOUSE 1100 WEST FRONT STREET, BOISE, ID, 83702, UNITED STATES 208-336-2561
-      <a href="mailto:matlackskitchen@gmail.com">matlackskitchen@gmail.com</a>
-    </p>
-  </footer>
+  <?php include_once '../footer.php'; ?>
 
 </body>
 
