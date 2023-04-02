@@ -55,19 +55,38 @@
  }
 
  /*********************/
- /*  Menu PDF Viewer  */
+ /*  Menu Viewer  */
  /*********************/
+ #menu_viewer_header {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Cinzel', serif;
+  }
 
- #menupdfviewer {
-     text-align: center;
-     padding-right: 3px;
-     margin: 2% 5% 2% 5%;
-     border: 4mm ridge #d29e6f;
- }
+ #menuviewer {
+    text-align: center;
+    padding-right: 3px;
+    margin: 0% 5% 2% 5%;
+    border: thick double #d0a16d;
+    border-radius: 30px;
+    border-width: 15px;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+  }
+  
+  #menuviewer img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
 
  /*********************/
  /*  Upload Menu PDF  */
  /*********************/
+  
+
+  
  #uploadmenu {
      text-align: center;
      font-size: 16px;
@@ -77,7 +96,7 @@
  #uploadmenu input {
      margin: 0 auto;
      cursor: pointer;
-     border: 1mm solid #181617;
+     border: thick double #d0a16d;
      background-color: white;
  }
 
@@ -96,25 +115,50 @@
      text-shadow: 1px 1px 2px #917863;
      font-family: 'Cinzel', serif;
  }
+ 
+ #deletemenu {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Cinzel', serif;
+}
+
+ #deletemenu button {
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 5px 0px 20px 0px;
+    width: 200px;
+
+    border: 1mm outset #d29e6f;
+    background-color: #181617;
+    box-shadow: 0 7px #2b2b2b;
+
+    color: #d29e6f;
+
+    text-shadow: 1px 1px 2px #917863;
+    font-family: 'Cinzel', serif;
+}
 
  /*********************/
  /*  OOS Menu Items   */
  /*********************/
 
  #enteritems {
-     border: double 1mm #181617;
+    border: thick double #d0a16d;
      color: #181617;
      width: 40%;
  }
 
  #oositemslist {
      list-style: none;
-     margin: 0% 5% 2% 5%;
+     margin: 0% 25% 20% 25%;
+     width:50%;
      padding: 0% 0% 0% 0%;
-     border: 4mm ridge #d29e6f;
+     border: thick double #d0a16d;
+     border-bottom-right-radius: 30px;
+     border-bottom-left-radius: 30px;
+    border-width: 15px;
      background: #d29e6f;
      font-size: 16px;
-     text-align: left;
      font-family: 'Cinzel', serif;
      transition: 0.2s;
  }
@@ -123,29 +167,38 @@
      background: #cfad8f;
  }
 
- ul li {
+ li {
      padding: 2% 0% 2% 2%;
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
  }
 
- .deleteItemButton {
+ #delete_item_button {
      cursor: pointer;
+     border-radius: 20px;     
+     width: 100%;
+     border: 1mm outset #d29e6f;
+     background-color: #181617;
+     color: #d29e6f;
+     text-shadow: 1px 1px 2px #917863;
+     font-family: 'Cinzel', serif;
+     margin-left: -2px;
 
  }
 
- .deleteItemButton:hover {
+ #delete_item_button:hover {
      background: rgb(255, 0, 0);
      cursor: pointer;
  }
 
- .item {
-     padding: 0% 0% 0% 4%;
-
- }
 
  #oositems {
-     border: 4mm ridge #d29e6f;
-
-     margin: 2% 25% 5% 25%;
+    border: thick double #d0a16d;
+    border-top-right-radius: 30px;
+     border-top-left-radius: 30px;
+    border-width: 15px;
+     margin: 10% 25% 0% 25%;
      width: 50%;
      color: #181617;
      text-align: center;

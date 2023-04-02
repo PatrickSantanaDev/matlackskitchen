@@ -67,7 +67,15 @@
 
 #recipeName {
     width: 25%;
-    margin: 5% 0% 1% 0%;
+    margin: 5% 0% 0% 0%;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    border: double #181617;
+}
+
+#category {
+    width: 25%;
+    margin: 1% 0% 1% 0%;
     font-family: 'Cinzel', serif;
     text-align: center;
     border: double #181617;
@@ -115,27 +123,30 @@
     margin: 5% 0% 2% 0%;
 }
 
-#nameSearch {
-    text-align: center;
-    font-family: 'Cinzel', serif;
-    margin: 0% 0% 0% 0%;
-}
-
 #searchByCategory {
     text-align: center;
     border: double #181617;
 }
 
-#searchByName {
+#searchbyRecipeName 
+{
     text-align: center;
     border: double #181617;
 }
+
+#searchByRecipeName 
+{
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    margin: 1% 0% 2% 0%;
+}
+
 
 #catSearchButton {
     border-radius: 20px;
      cursor: pointer;
      margin: 0% 0% 0% 0%;
-     width: 10%;
+     width: 110px;
 
      border: 1mm outset #d29e6f;
      background-color: #181617;
@@ -151,7 +162,7 @@
     border-radius: 20px;
      cursor: pointer;
      margin: 0% 0% 0% 0%;
-     width: 10%;
+     width: 110px;
 
      border: 1mm outset #d29e6f;
      background-color: #181617;
@@ -161,6 +172,10 @@
 
      text-shadow: 1px 1px 2px #917863;
      font-family: 'Cinzel', serif;
+}
+
+p {
+    text-align: center;
 }
 
 /***************************/

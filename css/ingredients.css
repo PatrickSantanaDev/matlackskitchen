@@ -56,7 +56,40 @@
   }
 
 /*****************************/
-/*Ingredients Selection Table*/
+/*      Add Ingredient       */
+/*****************************/
+
+#addIngredientViewer {
+    text-align: center;
+}
+
+#addIngredient {
+    color: #181617;
+    font-family: 'Cinzel', serif;
+    margin: 2% 10% 0% 10%;
+    color: #181617;
+    border: thick double #d0a16d;
+    border-radius: 30px;
+}
+
+#addIngredientButton {
+    border-radius: 20px;
+
+    margin: 5px 0px 20px 0px;
+    width: 100px;
+
+    border: 1mm outset #d29e6f;
+    background-color: #181617;
+    box-shadow: 0 7px #2b2b2b;
+
+    color: #d29e6f;
+
+    text-shadow: 1px 1px 2px #917863;
+    font-family: 'Cinzel', serif;
+}
+
+/*****************************/
+/*   Ingredients Selection   */
 /*****************************/
 
 #ingredientsList{
@@ -67,6 +100,22 @@
     margin: 2% 10% 0% 10%;
     border-radius: 30px;
     color: #181617;
+}
+
+#refreshIngredientsButton {
+    border-radius: 20px;
+     cursor: pointer;
+     margin: 3% 30% 3% 30%;
+     width: 40%;
+  
+     border: 1mm outset #d29e6f;
+     background-color: #181617;
+     box-shadow: 0 7px #2b2b2b;
+  
+     color: #d29e6f;
+  
+     text-shadow: 1px 1px 2px #917863;
+     font-family: 'Cinzel', serif;
 }
 
 .ingredientsList {
@@ -87,27 +136,7 @@
     border-radius: 30px;
 }
 
-#addProtein {
-    margin: 2% 0% 0% 0%;
-    text-align: center;
 
-}
-
-#addProteinButton {
-    border-radius: 20px;
-
-    margin: 5px 0px 20px 0px;
-    width: 100px;
-
-    border: 1mm outset #d29e6f;
-    background-color: #181617;
-    box-shadow: 0 7px #2b2b2b;
-
-    color: #d29e6f;
-
-    text-shadow: 1px 1px 2px #917863;
-    font-family: 'Cinzel', serif;
-}
 
 /* Dairy */
 .dairy {
@@ -116,29 +145,7 @@
     border-radius: 30px;
 }
 
-#addDairy {
-    margin: 2% 0% 0% 0%;
-    text-align: center;
 
-}
-
-#addDairyButton {
-    border-radius: 20px;
-
-    margin: 5px 0px 20px 0px;
-    width: 100px;
-
-    border: 1mm outset #d29e6f;
-    background-color: #181617;
-    box-shadow: 0 7px #2b2b2b;
-
-    color: #d29e6f;
-
-    text-shadow: 1px 1px 2px #917863;
-    font-family: 'Cinzel', serif;
-}
-
-/* Creating a custom checkbox */
 input[type=checkbox] {
     background-color: #d0a16d;
     accent-color: #d0a16d;
@@ -149,7 +156,7 @@ input[type=checkbox] {
 #submitIngredientsButton {
     border-radius: 20px;
      cursor: pointer;
-     margin: 0% 30% 0% 30%;
+     margin: 3% 30% 3% 30%;
      width: 40%;
   
      border: 1mm outset #d29e6f;

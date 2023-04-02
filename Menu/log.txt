@@ -1,0 +1,35 @@
+1680070232 - INFO  --> Displaying uploaded menu 
+1680070232 - DEBUG --> getting a connection 
+1680070232 - INFO  --> Getting out of stock items 
+1680070232 - DEBUG --> getting a connection 
+1680070274 - INFO  --> Displaying uploaded menu 
+1680070274 - DEBUG --> getting a connection 
+1680070274 - INFO  --> Deleting uploaded menu 
+1680070274 - DEBUG --> getting a connection 
+1680070274 - INFO  --> Displaying uploaded menu 
+1680070274 - DEBUG --> getting a connection 
+1680070274 - ERROR --> No menu found in the database. 
+1680070274 - INFO  --> Getting out of stock items 
+1680070274 - DEBUG --> getting a connection 
+1680070320 - INFO  --> Storing uploaded menu file 6423d6b000bd0.png 
+1680070320 - DEBUG --> getting a connection 
+1680070320 - INFO  --> Displaying uploaded menu 
+1680070320 - DEBUG --> getting a connection 
+1680070320 - INFO  --> Getting out of stock items 
+1680070320 - DEBUG --> getting a connection 
+1680070327 - INFO  --> Adding out of stock item lollis for user JohnSmith 
+1680070327 - DEBUG --> getting a connection 
+1680070327 - INFO  --> Displaying uploaded menu 
+1680070327 - DEBUG --> getting a connection 
+1680070327 - INFO  --> Getting out of stock items 
+1680070327 - DEBUG --> getting a connection 
+1680070329 - INFO  --> Deleting out of stock item lollis for user JohnSmith 
+1680070329 - DEBUG --> getting a connection 
+1680070329 - INFO  --> Displaying uploaded menu 
+1680070329 - DEBUG --> getting a connection 
+1680070329 - INFO  --> Getting out of stock items 
+1680070329 - DEBUG --> getting a connection 
+1680070596 - INFO  --> Displaying uploaded menu 
+1680070596 - DEBUG --> getting a connection 
+1680070596 - INFO  --> Getting out of stock items 
+1680070596 - DEBUG --> getting a connection 
