@@ -14,6 +14,9 @@
     @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
   </style>
   <title>Ingredients</title>
+
+  <!-- Javascript -->
+  <script src="../Ingredients/ingredients.js"></script>
 </head>
 
 <body>
@@ -54,42 +57,14 @@
   </div>
 
   <!-- Ingredients List -->
-  <form id="ingredientsList">
+  <form id="ingredientsList" method="POST" action="submit_ingredients_needed_handler.php">
     <fieldset class="ingredientsList">
       <legend class="legend">Select Ingredients Needed:</legend>
 
-      <div class="submit">
-        <button id="refreshIngredientsButton" method="GET" formaction="get_ingredients_handler.php" name="refreshIngredients" type="submit">Show Ingredients</button>
-      </div>
-
-      <!-- Proteins -->
-      <?php if (isset($proteinIngredients)) { ?>
-        <fieldset class="proteins">
-          <legend class="legend">Proteins</legend>
-          <?php foreach ($proteinIngredients as $ingredient) { ?>
-            <div>
-              <input type="checkbox" id="<?= $ingredient['id'] ?>" name="ingredient_name[]" value="<?= $ingredient['ingredient_name'] ?>" />
-              <label for="<?= $ingredient['id'] ?>"><?= $ingredient['ingredient_name'] ?></label>
-            </div>
-          <?php } ?>
-        </fieldset>
-      <?php } ?>
-
-      <!-- Dairy -->
-      <?php if (isset($dairyIngredients)) { ?>
-        <fieldset class="dairy">
-          <legend class="legend">Dairy</legend>
-          <?php foreach ($dairyIngredients as $ingredient) { ?>
-            <div>
-              <input type="checkbox" id="<?= $ingredient['id'] ?>" name="ingredient_name[]" value="<?= $ingredient['ingredient_name'] ?>" />
-              <label for="<?= $ingredient['id'] ?>"><?= $ingredient['ingredient_name'] ?></label>
-            </div>
-          <?php } ?>
-        </fieldset>
-      <?php } ?>
+      <div id="ingredientsDiv"></div>
 
       <div class="submit">
-        <button id="submitIngredientsButton" method="POST" formaction="submit_ingredients_needed_handler.php" name="submitIngredients" type="submit">Submit Ingredients List</button>
+        <button id="submitIngredientsButton" name="submitIngredients" type="submit">Submit Ingredients List</button>
       </div>
     </fieldset>
   </form>

@@ -1,0 +1,82 @@
+1680486031 - INFO  --> Displaying uploaded schedule 
+1680486031 - DEBUG --> getting a connection 
+1680486031 - ERROR --> No menu found in the database. 
+1680490921 - INFO  --> Displaying uploaded schedule 
+1680490921 - DEBUG --> getting a connection 
+1680490921 - ERROR --> No menu found in the database. 
+1680491033 - INFO  --> Displaying uploaded schedule 
+1680491033 - DEBUG --> getting a connection 
+1680491033 - ERROR --> No menu found in the database. 
+1680491044 - INFO  --> Storing uploaded schedule file 642a42249c841.png 
+1680491044 - DEBUG --> getting a connection 
+1680491044 - INFO  --> Displaying uploaded schedule 
+1680491044 - DEBUG --> getting a connection 
+1680491049 - INFO  --> Displaying uploaded schedule 
+1680491049 - DEBUG --> getting a connection 
+1680491165 - INFO  --> Displaying uploaded schedule 
+1680491165 - DEBUG --> getting a connection 
+1680491167 - INFO  --> Displaying uploaded schedule 
+1680491167 - DEBUG --> getting a connection 
+1680491167 - INFO  --> Deleting uploaded schedule 
+1680491167 - DEBUG --> getting a connection 
+1680491167 - INFO  --> Displaying uploaded schedule 
+1680491167 - DEBUG --> getting a connection 
+1680491167 - ERROR --> No menu found in the database. 
+1680491299 - INFO  --> Displaying uploaded schedule 
+1680491299 - DEBUG --> getting a connection 
+1680491299 - ERROR --> No menu found in the database. 
+1680491361 - INFO  --> Displaying uploaded schedule 
+1680491361 - DEBUG --> getting a connection 
+1680491361 - ERROR --> No menu found in the database. 
+1680491370 - INFO  --> Storing uploaded schedule file 642a436ab2e70.png 
+1680491370 - DEBUG --> getting a connection 
+1680491370 - INFO  --> Displaying uploaded schedule 
+1680491370 - DEBUG --> getting a connection 
+1680491396 - INFO  --> Displaying uploaded schedule 
+1680491396 - DEBUG --> getting a connection 
+1680491399 - INFO  --> Displaying uploaded schedule 
+1680491399 - DEBUG --> getting a connection 
+1680491399 - INFO  --> Deleting uploaded schedule 
+1680491399 - DEBUG --> getting a connection 
+1680491399 - INFO  --> Displaying uploaded schedule 
+1680491399 - DEBUG --> getting a connection 
+1680491399 - ERROR --> No menu found in the database. 
+1680491405 - INFO  --> Storing uploaded schedule file 642a438d7959f.png 
+1680491405 - DEBUG --> getting a connection 
+1680491405 - INFO  --> Displaying uploaded schedule 
+1680491405 - DEBUG --> getting a connection 
+1680491462 - INFO  --> Displaying uploaded schedule 
+1680491462 - DEBUG --> getting a connection 
+1680491462 - INFO  --> Deleting uploaded schedule 
+1680491462 - DEBUG --> getting a connection 
+1680491462 - INFO  --> Displaying uploaded schedule 
+1680491462 - DEBUG --> getting a connection 
+1680491462 - ERROR --> No menu found in the database. 
+1680491477 - INFO  --> Storing uploaded schedule file 642a43d5eb1c4.png 
+1680491477 - DEBUG --> getting a connection 
+1680491477 - INFO  --> Displaying uploaded schedule 
+1680491477 - DEBUG --> getting a connection 
+1680491527 - INFO  --> Displaying uploaded schedule 
+1680491527 - DEBUG --> getting a connection 
+1680491561 - INFO  --> Displaying uploaded schedule 
+1680491561 - DEBUG --> getting a connection 
+1680491570 - INFO  --> Displaying uploaded schedule 
+1680491570 - DEBUG --> getting a connection 
+1680491631 - INFO  --> Displaying uploaded schedule 
+1680491631 - DEBUG --> getting a connection 
+1680491649 - INFO  --> Displaying uploaded schedule 
+1680491649 - DEBUG --> getting a connection 
+1680491723 - INFO  --> Displaying uploaded schedule 
+1680491723 - DEBUG --> getting a connection 
+1680491772 - INFO  --> Displaying uploaded schedule 
+1680491772 - DEBUG --> getting a connection 
+1680492124 - INFO  --> Displaying uploaded schedule 
+1680492124 - DEBUG --> getting a connection 
+1680492129 - INFO  --> Displaying uploaded schedule 
+1680492129 - DEBUG --> getting a connection 
+1680493086 - INFO  --> Displaying uploaded schedule 
+1680493086 - DEBUG --> getting a connection 
+1680494128 - INFO  --> Displaying uploaded schedule 
+1680494128 - DEBUG --> getting a connection 
+1680498067 - INFO  --> Displaying uploaded schedule 
+1680498067 - DEBUG --> getting a connection 

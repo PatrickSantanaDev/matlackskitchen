@@ -1,240 +1,386 @@
-1680070232 - INFO  --> Displaying uploaded menu 
-1680070232 - DEBUG --> getting a connection 
-1680070232 - INFO  --> Getting out of stock items 
-1680070232 - DEBUG --> getting a connection 
-1680070274 - INFO  --> Displaying uploaded menu 
-1680070274 - DEBUG --> getting a connection 
-1680070274 - INFO  --> Deleting uploaded menu 
-1680070274 - DEBUG --> getting a connection 
-1680070274 - INFO  --> Displaying uploaded menu 
-1680070274 - DEBUG --> getting a connection 
-1680070274 - ERROR --> No menu found in the database. 
-1680070274 - INFO  --> Getting out of stock items 
-1680070274 - DEBUG --> getting a connection 
-1680070320 - INFO  --> Storing uploaded menu file 6423d6b000bd0.png 
-1680070320 - DEBUG --> getting a connection 
-1680070320 - INFO  --> Displaying uploaded menu 
-1680070320 - DEBUG --> getting a connection 
-1680070320 - INFO  --> Getting out of stock items 
-1680070320 - DEBUG --> getting a connection 
-1680070327 - INFO  --> Adding out of stock item lollis for user JohnSmith 
-1680070327 - DEBUG --> getting a connection 
-1680070327 - INFO  --> Displaying uploaded menu 
-1680070327 - DEBUG --> getting a connection 
-1680070327 - INFO  --> Getting out of stock items 
-1680070327 - DEBUG --> getting a connection 
-1680070329 - INFO  --> Deleting out of stock item lollis for user JohnSmith 
-1680070329 - DEBUG --> getting a connection 
-1680070329 - INFO  --> Displaying uploaded menu 
-1680070329 - DEBUG --> getting a connection 
-1680070329 - INFO  --> Getting out of stock items 
-1680070329 - DEBUG --> getting a connection 
-1680070596 - INFO  --> Displaying uploaded menu 
-1680070596 - DEBUG --> getting a connection 
-1680070596 - INFO  --> Getting out of stock items 
-1680070596 - DEBUG --> getting a connection 
-1680461887 - INFO  --> Displaying uploaded menu 
-1680461887 - DEBUG --> getting a connection 
-1680461887 - ERROR --> No menu found in the database. 
-1680461887 - INFO  --> Getting out of stock items 
-1680461887 - DEBUG --> getting a connection 
-1680462095 - INFO  --> Storing uploaded menu file 6429d10f749f1.png 
-1680462095 - DEBUG --> getting a connection 
-1680462095 - INFO  --> Displaying uploaded menu 
-1680462095 - DEBUG --> getting a connection 
-1680462095 - INFO  --> Getting out of stock items 
-1680462095 - DEBUG --> getting a connection 
-1680462114 - INFO  --> Displaying uploaded menu 
-1680462114 - DEBUG --> getting a connection 
-1680462114 - INFO  --> Getting out of stock items 
-1680462114 - DEBUG --> getting a connection 
-1680462415 - INFO  --> Displaying uploaded menu 
-1680462415 - DEBUG --> getting a connection 
-1680462415 - INFO  --> Getting out of stock items 
-1680462415 - DEBUG --> getting a connection 
-1680462461 - INFO  --> Displaying uploaded menu 
-1680462461 - DEBUG --> getting a connection 
-1680462461 - INFO  --> Deleting uploaded menu 
-1680462461 - DEBUG --> getting a connection 
-1680462461 - INFO  --> Displaying uploaded menu 
-1680462461 - DEBUG --> getting a connection 
-1680462461 - ERROR --> No menu found in the database. 
-1680462461 - INFO  --> Getting out of stock items 
-1680462461 - DEBUG --> getting a connection 
-1680462463 - INFO  --> Displaying uploaded menu 
-1680462463 - DEBUG --> getting a connection 
-1680462463 - ERROR --> No menu found in the database. 
-1680462465 - INFO  --> Displaying uploaded menu 
-1680462465 - DEBUG --> getting a connection 
-1680462465 - ERROR --> No menu found in the database. 
-1680462465 - INFO  --> Getting out of stock items 
-1680462465 - DEBUG --> getting a connection 
-1680465253 - INFO  --> Displaying uploaded menu 
-1680465253 - DEBUG --> getting a connection 
-1680465253 - ERROR --> No menu found in the database. 
-1680465253 - INFO  --> Getting out of stock items 
-1680465253 - DEBUG --> getting a connection 
-1680465290 - INFO  --> Displaying uploaded menu 
-1680465290 - DEBUG --> getting a connection 
-1680465290 - ERROR --> No menu found in the database. 
-1680465290 - INFO  --> Getting out of stock items 
-1680465290 - DEBUG --> getting a connection 
-1680465301 - INFO  --> Adding out of stock item sss for user JohnSmith 
-1680465301 - DEBUG --> getting a connection 
-1680465301 - INFO  --> Displaying uploaded menu 
-1680465301 - DEBUG --> getting a connection 
-1680465301 - ERROR --> No menu found in the database. 
-1680465301 - INFO  --> Getting out of stock items 
-1680465301 - DEBUG --> getting a connection 
-1680465306 - INFO  --> Deleting out of stock item sss for user JohnSmith 
-1680465306 - DEBUG --> getting a connection 
-1680465306 - INFO  --> Displaying uploaded menu 
-1680465306 - DEBUG --> getting a connection 
-1680465306 - ERROR --> No menu found in the database. 
-1680465306 - INFO  --> Getting out of stock items 
-1680465306 - DEBUG --> getting a connection 
-1680465338 - INFO  --> Displaying uploaded menu 
-1680465338 - DEBUG --> getting a connection 
-1680465338 - ERROR --> No menu found in the database. 
-1680465338 - INFO  --> Getting out of stock items 
-1680465338 - DEBUG --> getting a connection 
-1680465343 - INFO  --> Displaying uploaded menu 
-1680465343 - DEBUG --> getting a connection 
-1680465343 - ERROR --> No menu found in the database. 
-1680465343 - INFO  --> Getting out of stock items 
-1680465343 - DEBUG --> getting a connection 
-1680465695 - INFO  --> Displaying uploaded menu 
-1680465695 - DEBUG --> getting a connection 
-1680465695 - ERROR --> No menu found in the database. 
-1680465695 - INFO  --> Getting out of stock items 
-1680465695 - DEBUG --> getting a connection 
-1680465700 - INFO  --> Displaying uploaded menu 
-1680465700 - DEBUG --> getting a connection 
-1680465700 - ERROR --> No menu found in the database. 
-1680465700 - INFO  --> Getting out of stock items 
-1680465700 - DEBUG --> getting a connection 
-1680465706 - INFO  --> Displaying uploaded menu 
-1680465706 - DEBUG --> getting a connection 
-1680465706 - ERROR --> No menu found in the database. 
-1680465706 - INFO  --> Getting out of stock items 
-1680465706 - DEBUG --> getting a connection 
-1680465712 - INFO  --> Displaying uploaded menu 
-1680465712 - DEBUG --> getting a connection 
-1680465712 - ERROR --> No menu found in the database. 
-1680465712 - INFO  --> Getting out of stock items 
-1680465712 - DEBUG --> getting a connection 
-1680465761 - INFO  --> Displaying uploaded menu 
-1680465761 - DEBUG --> getting a connection 
-1680465761 - ERROR --> No menu found in the database. 
-1680465761 - INFO  --> Getting out of stock items 
-1680465761 - DEBUG --> getting a connection 
-1680465771 - INFO  --> Displaying uploaded menu 
-1680465771 - DEBUG --> getting a connection 
-1680465771 - ERROR --> No menu found in the database. 
-1680465771 - INFO  --> Getting out of stock items 
-1680465771 - DEBUG --> getting a connection 
-1680465787 - INFO  --> Displaying uploaded menu 
-1680465787 - DEBUG --> getting a connection 
-1680465787 - ERROR --> No menu found in the database. 
-1680465787 - INFO  --> Getting out of stock items 
-1680465787 - DEBUG --> getting a connection 
-1680465790 - INFO  --> Displaying uploaded menu 
-1680465790 - DEBUG --> getting a connection 
-1680465790 - ERROR --> No menu found in the database. 
-1680465790 - INFO  --> Getting out of stock items 
-1680465790 - DEBUG --> getting a connection 
-1680465791 - INFO  --> Displaying uploaded menu 
-1680465791 - DEBUG --> getting a connection 
-1680465791 - ERROR --> No menu found in the database. 
-1680465791 - INFO  --> Getting out of stock items 
-1680465791 - DEBUG --> getting a connection 
-1680465793 - INFO  --> Displaying uploaded menu 
-1680465793 - DEBUG --> getting a connection 
-1680465793 - ERROR --> No menu found in the database. 
-1680465793 - INFO  --> Getting out of stock items 
-1680465793 - DEBUG --> getting a connection 
-1680465813 - INFO  --> Displaying uploaded menu 
-1680465813 - DEBUG --> getting a connection 
-1680465813 - ERROR --> No menu found in the database. 
-1680465813 - INFO  --> Getting out of stock items 
-1680465813 - DEBUG --> getting a connection 
-1680465816 - INFO  --> Displaying uploaded menu 
-1680465816 - DEBUG --> getting a connection 
-1680465816 - ERROR --> No menu found in the database. 
-1680465816 - INFO  --> Getting out of stock items 
-1680465816 - DEBUG --> getting a connection 
-1680465854 - INFO  --> Displaying uploaded menu 
-1680465854 - DEBUG --> getting a connection 
-1680465854 - ERROR --> No menu found in the database. 
-1680465854 - INFO  --> Getting out of stock items 
-1680465854 - DEBUG --> getting a connection 
-1680465855 - INFO  --> Displaying uploaded menu 
-1680465855 - DEBUG --> getting a connection 
-1680465855 - ERROR --> No menu found in the database. 
-1680465855 - INFO  --> Getting out of stock items 
-1680465855 - DEBUG --> getting a connection 
-1680465856 - INFO  --> Displaying uploaded menu 
-1680465856 - DEBUG --> getting a connection 
-1680465856 - ERROR --> No menu found in the database. 
-1680465856 - INFO  --> Getting out of stock items 
-1680465856 - DEBUG --> getting a connection 
-1680465877 - INFO  --> Displaying uploaded menu 
-1680465877 - DEBUG --> getting a connection 
-1680465877 - ERROR --> No menu found in the database. 
-1680465877 - INFO  --> Getting out of stock items 
-1680465877 - DEBUG --> getting a connection 
-1680465878 - INFO  --> Displaying uploaded menu 
-1680465878 - DEBUG --> getting a connection 
-1680465878 - ERROR --> No menu found in the database. 
-1680465878 - INFO  --> Getting out of stock items 
-1680465878 - DEBUG --> getting a connection 
-1680466048 - INFO  --> Displaying uploaded menu 
-1680466048 - DEBUG --> getting a connection 
-1680466048 - ERROR --> No menu found in the database. 
-1680466048 - INFO  --> Getting out of stock items 
-1680466048 - DEBUG --> getting a connection 
-1680466049 - INFO  --> Displaying uploaded menu 
-1680466049 - DEBUG --> getting a connection 
-1680466049 - ERROR --> No menu found in the database. 
-1680466049 - INFO  --> Getting out of stock items 
-1680466049 - DEBUG --> getting a connection 
-1680466049 - INFO  --> Displaying uploaded menu 
-1680466049 - DEBUG --> getting a connection 
-1680466049 - ERROR --> No menu found in the database. 
-1680466049 - INFO  --> Getting out of stock items 
-1680466049 - DEBUG --> getting a connection 
-1680466282 - INFO  --> Displaying uploaded menu 
-1680466282 - DEBUG --> getting a connection 
-1680466282 - ERROR --> No menu found in the database. 
-1680466282 - INFO  --> Getting out of stock items 
-1680466282 - DEBUG --> getting a connection 
-1680466290 - INFO  --> Displaying uploaded menu 
-1680466290 - DEBUG --> getting a connection 
-1680466290 - ERROR --> No menu found in the database. 
-1680466290 - INFO  --> Getting out of stock items 
-1680466290 - DEBUG --> getting a connection 
-1680468488 - INFO  --> Displaying uploaded menu 
-1680468488 - DEBUG --> getting a connection 
-1680468488 - ERROR --> No menu found in the database. 
-1680468488 - INFO  --> Getting out of stock items 
-1680468488 - DEBUG --> getting a connection 
-1680468629 - INFO  --> Displaying uploaded menu 
-1680468629 - DEBUG --> getting a connection 
-1680468629 - ERROR --> No menu found in the database. 
-1680468629 - INFO  --> Getting out of stock items 
-1680468629 - DEBUG --> getting a connection 
-1680468646 - INFO  --> Displaying uploaded menu 
-1680468646 - DEBUG --> getting a connection 
-1680468646 - ERROR --> No menu found in the database. 
-1680468646 - INFO  --> Getting out of stock items 
-1680468646 - DEBUG --> getting a connection 
-1680468707 - INFO  --> Displaying uploaded menu 
-1680468707 - DEBUG --> getting a connection 
-1680468707 - ERROR --> No menu found in the database. 
-1680468707 - INFO  --> Getting out of stock items 
-1680468707 - DEBUG --> getting a connection 
-1680468710 - INFO  --> Displaying uploaded menu 
-1680468710 - DEBUG --> getting a connection 
-1680468710 - ERROR --> No menu found in the database. 
-1680468710 - INFO  --> Getting out of stock items 
-1680468710 - DEBUG --> getting a connection 
+1680492422 - INFO  --> Displaying uploaded menu 
+1680492422 - DEBUG --> getting a connection 
+1680492422 - INFO  --> Getting out of stock items 
+1680492422 - DEBUG --> getting a connection 
+1680492426 - INFO  --> Displaying uploaded menu 
+1680492426 - DEBUG --> getting a connection 
+1680492426 - INFO  --> Deleting uploaded menu 
+1680492426 - DEBUG --> getting a connection 
+1680492426 - INFO  --> Displaying uploaded menu 
+1680492426 - DEBUG --> getting a connection 
+1680492426 - ERROR --> No menu found in the database. 
+1680492426 - INFO  --> Getting out of stock items 
+1680492426 - DEBUG --> getting a connection 
+1680492446 - INFO  --> Storing uploaded menu file 642a479e5c223.png 
+1680492446 - DEBUG --> getting a connection 
+1680492446 - INFO  --> Displaying uploaded menu 
+1680492446 - DEBUG --> getting a connection 
+1680492446 - INFO  --> Getting out of stock items 
+1680492446 - DEBUG --> getting a connection 
+1680492492 - INFO  --> Displaying uploaded menu 
+1680492492 - DEBUG --> getting a connection 
+1680492492 - INFO  --> Getting out of stock items 
+1680492492 - DEBUG --> getting a connection 
+1680492495 - INFO  --> Displaying uploaded menu 
+1680492495 - DEBUG --> getting a connection 
+1680492495 - INFO  --> Deleting uploaded menu 
+1680492495 - DEBUG --> getting a connection 
+1680492495 - INFO  --> Displaying uploaded menu 
+1680492495 - DEBUG --> getting a connection 
+1680492495 - ERROR --> No menu found in the database. 
+1680492495 - INFO  --> Getting out of stock items 
+1680492495 - DEBUG --> getting a connection 
+1680492502 - INFO  --> Storing uploaded menu file 642a47d6392a9.png 
+1680492502 - DEBUG --> getting a connection 
+1680492502 - INFO  --> Displaying uploaded menu 
+1680492502 - DEBUG --> getting a connection 
+1680492502 - INFO  --> Getting out of stock items 
+1680492502 - DEBUG --> getting a connection 
+1680492517 - INFO  --> Displaying uploaded menu 
+1680492517 - DEBUG --> getting a connection 
+1680492517 - INFO  --> Deleting uploaded menu 
+1680492517 - DEBUG --> getting a connection 
+1680492517 - INFO  --> Displaying uploaded menu 
+1680492517 - DEBUG --> getting a connection 
+1680492517 - ERROR --> No menu found in the database. 
+1680492517 - INFO  --> Getting out of stock items 
+1680492517 - DEBUG --> getting a connection 
+1680492873 - INFO  --> Displaying uploaded menu 
+1680492873 - DEBUG --> getting a connection 
+1680492873 - ERROR --> No menu found in the database. 
+1680492879 - INFO  --> Displaying uploaded menu 
+1680492879 - DEBUG --> getting a connection 
+1680492879 - ERROR --> No menu found in the database. 
+1680492879 - INFO  --> Getting out of stock items 
+1680492879 - DEBUG --> getting a connection 
+1680492903 - INFO  --> Displaying uploaded menu 
+1680492903 - DEBUG --> getting a connection 
+1680492903 - ERROR --> No menu found in the database. 
+1680492903 - INFO  --> Getting out of stock items 
+1680492903 - DEBUG --> getting a connection 
+1680492904 - INFO  --> Displaying uploaded menu 
+1680492904 - DEBUG --> getting a connection 
+1680492904 - ERROR --> No menu found in the database. 
+1680492904 - INFO  --> Displaying uploaded menu 
+1680492904 - DEBUG --> getting a connection 
+1680492904 - ERROR --> No menu found in the database. 
+1680492904 - INFO  --> Getting out of stock items 
+1680492904 - DEBUG --> getting a connection 
+1680492905 - INFO  --> Displaying uploaded menu 
+1680492905 - DEBUG --> getting a connection 
+1680492905 - ERROR --> No menu found in the database. 
+1680492905 - INFO  --> Displaying uploaded menu 
+1680492905 - DEBUG --> getting a connection 
+1680492905 - ERROR --> No menu found in the database. 
+1680492905 - INFO  --> Getting out of stock items 
+1680492905 - DEBUG --> getting a connection 
+1680493065 - INFO  --> Displaying uploaded menu 
+1680493065 - DEBUG --> getting a connection 
+1680493065 - ERROR --> No menu found in the database. 
+1680493065 - INFO  --> Getting out of stock items 
+1680493065 - DEBUG --> getting a connection 
+1680493067 - INFO  --> Displaying uploaded menu 
+1680493067 - DEBUG --> getting a connection 
+1680493067 - ERROR --> No menu found in the database. 
+1680493067 - INFO  --> Getting out of stock items 
+1680493067 - DEBUG --> getting a connection 
+1680493087 - INFO  --> Displaying uploaded menu 
+1680493087 - DEBUG --> getting a connection 
+1680493087 - ERROR --> No menu found in the database. 
+1680493087 - INFO  --> Getting out of stock items 
+1680493087 - DEBUG --> getting a connection 
+1680493092 - INFO  --> Storing uploaded menu file 642a4a24a5b84.png 
+1680493092 - DEBUG --> getting a connection 
+1680493092 - INFO  --> Displaying uploaded menu 
+1680493092 - DEBUG --> getting a connection 
+1680493092 - INFO  --> Getting out of stock items 
+1680493092 - DEBUG --> getting a connection 
+1680493094 - INFO  --> Displaying uploaded menu 
+1680493094 - DEBUG --> getting a connection 
+1680493094 - INFO  --> Getting out of stock items 
+1680493094 - DEBUG --> getting a connection 
+1680493096 - INFO  --> Displaying uploaded menu 
+1680493096 - DEBUG --> getting a connection 
+1680493096 - INFO  --> Getting out of stock items 
+1680493096 - DEBUG --> getting a connection 
+1680493097 - INFO  --> Displaying uploaded menu 
+1680493097 - DEBUG --> getting a connection 
+1680493097 - INFO  --> Getting out of stock items 
+1680493097 - DEBUG --> getting a connection 
+1680493106 - INFO  --> Displaying uploaded menu 
+1680493106 - DEBUG --> getting a connection 
+1680493106 - INFO  --> Deleting uploaded menu 
+1680493106 - DEBUG --> getting a connection 
+1680493106 - INFO  --> Displaying uploaded menu 
+1680493106 - DEBUG --> getting a connection 
+1680493106 - ERROR --> No menu found in the database. 
+1680493106 - INFO  --> Getting out of stock items 
+1680493106 - DEBUG --> getting a connection 
+1680493187 - INFO  --> Adding out of stock item candy for user KyleSmith 
+1680493187 - DEBUG --> getting a connection 
+1680493187 - INFO  --> Displaying uploaded menu 
+1680493187 - DEBUG --> getting a connection 
+1680493187 - ERROR --> No menu found in the database. 
+1680493187 - INFO  --> Getting out of stock items 
+1680493187 - DEBUG --> getting a connection 
+1680493208 - INFO  --> Deleting out of stock item candy for user KyleSmith 
+1680493208 - DEBUG --> getting a connection 
+1680493209 - INFO  --> Displaying uploaded menu 
+1680493209 - DEBUG --> getting a connection 
+1680493209 - ERROR --> No menu found in the database. 
+1680493209 - INFO  --> Getting out of stock items 
+1680493209 - DEBUG --> getting a connection 
+1680493231 - INFO  --> Displaying uploaded menu 
+1680493231 - DEBUG --> getting a connection 
+1680493231 - ERROR --> No menu found in the database. 
+1680493231 - INFO  --> Getting out of stock items 
+1680493231 - DEBUG --> getting a connection 
+1680493532 - INFO  --> Displaying uploaded menu 
+1680493532 - DEBUG --> getting a connection 
+1680493532 - ERROR --> No menu found in the database. 
+1680493532 - INFO  --> Getting out of stock items 
+1680493532 - DEBUG --> getting a connection 
+1680493556 - INFO  --> Displaying uploaded menu 
+1680493556 - DEBUG --> getting a connection 
+1680493556 - ERROR --> No menu found in the database. 
+1680493556 - INFO  --> Getting out of stock items 
+1680493556 - DEBUG --> getting a connection 
+1680493899 - INFO  --> Displaying uploaded menu 
+1680493899 - DEBUG --> getting a connection 
+1680493899 - ERROR --> No menu found in the database. 
+1680493899 - INFO  --> Getting out of stock items 
+1680493899 - DEBUG --> getting a connection 
+1680493907 - INFO  --> Storing uploaded menu file 642a4d53b55d2_pngtransparenttwocheckedflagsracingflagsautoracingracingflagmiscellaneousgameflagpngfreedownloadpng 
+1680493907 - DEBUG --> getting a connection 
+1680493907 - INFO  --> Displaying uploaded menu 
+1680493907 - DEBUG --> getting a connection 
+1680493907 - INFO  --> Getting out of stock items 
+1680493907 - DEBUG --> getting a connection 
+1680493992 - INFO  --> Displaying uploaded menu 
+1680493992 - DEBUG --> getting a connection 
+1680493992 - INFO  --> Getting out of stock items 
+1680493992 - DEBUG --> getting a connection 
+1680494129 - INFO  --> Displaying uploaded menu 
+1680494129 - DEBUG --> getting a connection 
+1680494129 - INFO  --> Getting out of stock items 
+1680494129 - DEBUG --> getting a connection 
+1680494131 - INFO  --> Displaying uploaded menu 
+1680494131 - DEBUG --> getting a connection 
+1680494131 - INFO  --> Deleting uploaded menu 
+1680494131 - DEBUG --> getting a connection 
+1680494131 - INFO  --> Displaying uploaded menu 
+1680494131 - DEBUG --> getting a connection 
+1680494131 - ERROR --> No menu found in the database. 
+1680494131 - INFO  --> Getting out of stock items 
+1680494131 - DEBUG --> getting a connection 
+1680496370 - INFO  --> Displaying uploaded menu 
+1680496370 - DEBUG --> getting a connection 
+1680496370 - ERROR --> No menu found in the database. 
+1680496370 - INFO  --> Getting out of stock items 
+1680496370 - DEBUG --> getting a connection 
+1680496390 - INFO  --> Displaying uploaded menu 
+1680496390 - DEBUG --> getting a connection 
+1680496390 - ERROR --> No menu found in the database. 
+1680496390 - INFO  --> Getting out of stock items 
+1680496390 - DEBUG --> getting a connection 
+1680496391 - INFO  --> Displaying uploaded menu 
+1680496391 - DEBUG --> getting a connection 
+1680496391 - ERROR --> No menu found in the database. 
+1680496391 - INFO  --> Getting out of stock items 
+1680496391 - DEBUG --> getting a connection 
+1680496529 - INFO  --> Displaying uploaded menu 
+1680496529 - DEBUG --> getting a connection 
+1680496529 - ERROR --> No menu found in the database. 
+1680496529 - INFO  --> Getting out of stock items 
+1680496529 - DEBUG --> getting a connection 
+1680496532 - INFO  --> Adding out of stock item candy for user KyleSmith 
+1680496532 - DEBUG --> getting a connection 
+1680496532 - INFO  --> Displaying uploaded menu 
+1680496532 - DEBUG --> getting a connection 
+1680496532 - ERROR --> No menu found in the database. 
+1680496532 - INFO  --> Getting out of stock items 
+1680496532 - DEBUG --> getting a connection 
+1680496537 - INFO  --> Deleting out of stock item candy for user KyleSmith 
+1680496537 - DEBUG --> getting a connection 
+1680496537 - INFO  --> Displaying uploaded menu 
+1680496537 - DEBUG --> getting a connection 
+1680496537 - ERROR --> No menu found in the database. 
+1680496537 - INFO  --> Getting out of stock items 
+1680496537 - DEBUG --> getting a connection 
+1680496787 - INFO  --> Displaying uploaded menu 
+1680496787 - DEBUG --> getting a connection 
+1680496787 - ERROR --> No menu found in the database. 
+1680496787 - INFO  --> Getting out of stock items 
+1680496787 - DEBUG --> getting a connection 
+1680496830 - INFO  --> Displaying uploaded menu 
+1680496830 - DEBUG --> getting a connection 
+1680496830 - ERROR --> No menu found in the database. 
+1680496830 - INFO  --> Getting out of stock items 
+1680496830 - DEBUG --> getting a connection 
+1680496832 - INFO  --> Displaying uploaded menu 
+1680496832 - DEBUG --> getting a connection 
+1680496832 - ERROR --> No menu found in the database. 
+1680496832 - INFO  --> Getting out of stock items 
+1680496832 - DEBUG --> getting a connection 
+1680496858 - INFO  --> Displaying uploaded menu 
+1680496858 - DEBUG --> getting a connection 
+1680496858 - ERROR --> No menu found in the database. 
+1680496858 - INFO  --> Getting out of stock items 
+1680496858 - DEBUG --> getting a connection 
+1680496860 - INFO  --> Displaying uploaded menu 
+1680496860 - DEBUG --> getting a connection 
+1680496860 - ERROR --> No menu found in the database. 
+1680496860 - INFO  --> Getting out of stock items 
+1680496860 - DEBUG --> getting a connection 
+1680496862 - INFO  --> Displaying uploaded menu 
+1680496862 - DEBUG --> getting a connection 
+1680496862 - ERROR --> No menu found in the database. 
+1680496862 - INFO  --> Getting out of stock items 
+1680496862 - DEBUG --> getting a connection 
+1680496949 - INFO  --> Displaying uploaded menu 
+1680496949 - DEBUG --> getting a connection 
+1680496949 - ERROR --> No menu found in the database. 
+1680496949 - INFO  --> Getting out of stock items 
+1680496949 - DEBUG --> getting a connection 
+1680496950 - INFO  --> Displaying uploaded menu 
+1680496950 - DEBUG --> getting a connection 
+1680496950 - ERROR --> No menu found in the database. 
+1680496950 - INFO  --> Getting out of stock items 
+1680496950 - DEBUG --> getting a connection 
+1680497024 - INFO  --> Displaying uploaded menu 
+1680497024 - DEBUG --> getting a connection 
+1680497024 - ERROR --> No menu found in the database. 
+1680497024 - INFO  --> Getting out of stock items 
+1680497024 - DEBUG --> getting a connection 
+1680497027 - INFO  --> Displaying uploaded menu 
+1680497027 - DEBUG --> getting a connection 
+1680497027 - ERROR --> No menu found in the database. 
+1680497027 - INFO  --> Getting out of stock items 
+1680497027 - DEBUG --> getting a connection 
+1680497066 - INFO  --> Displaying uploaded menu 
+1680497066 - DEBUG --> getting a connection 
+1680497066 - ERROR --> No menu found in the database. 
+1680497066 - INFO  --> Getting out of stock items 
+1680497066 - DEBUG --> getting a connection 
+1680497068 - INFO  --> Displaying uploaded menu 
+1680497068 - DEBUG --> getting a connection 
+1680497068 - ERROR --> No menu found in the database. 
+1680497068 - INFO  --> Getting out of stock items 
+1680497068 - DEBUG --> getting a connection 
+1680497073 - INFO  --> Displaying uploaded menu 
+1680497073 - DEBUG --> getting a connection 
+1680497073 - ERROR --> No menu found in the database. 
+1680497073 - INFO  --> Getting out of stock items 
+1680497073 - DEBUG --> getting a connection 
+1680497099 - INFO  --> Displaying uploaded menu 
+1680497099 - DEBUG --> getting a connection 
+1680497099 - ERROR --> No menu found in the database. 
+1680497099 - INFO  --> Getting out of stock items 
+1680497099 - DEBUG --> getting a connection 
+1680497102 - INFO  --> Adding out of stock item candy for user KyleSmith 
+1680497102 - DEBUG --> getting a connection 
+1680497102 - INFO  --> Displaying uploaded menu 
+1680497102 - DEBUG --> getting a connection 
+1680497102 - ERROR --> No menu found in the database. 
+1680497102 - INFO  --> Getting out of stock items 
+1680497102 - DEBUG --> getting a connection 
+1680497103 - INFO  --> Deleting out of stock item candy for user KyleSmith 
+1680497103 - DEBUG --> getting a connection 
+1680497103 - INFO  --> Displaying uploaded menu 
+1680497103 - DEBUG --> getting a connection 
+1680497103 - ERROR --> No menu found in the database. 
+1680497103 - INFO  --> Getting out of stock items 
+1680497103 - DEBUG --> getting a connection 
+1680497105 - INFO  --> Displaying uploaded menu 
+1680497105 - DEBUG --> getting a connection 
+1680497105 - ERROR --> No menu found in the database. 
+1680497105 - INFO  --> Getting out of stock items 
+1680497105 - DEBUG --> getting a connection 
+1680497339 - INFO  --> Displaying uploaded menu 
+1680497339 - DEBUG --> getting a connection 
+1680497339 - ERROR --> No menu found in the database. 
+1680497339 - INFO  --> Getting out of stock items 
+1680497339 - DEBUG --> getting a connection 
+1680497401 - INFO  --> Displaying uploaded menu 
+1680497401 - DEBUG --> getting a connection 
+1680497401 - ERROR --> No menu found in the database. 
+1680497401 - INFO  --> Getting out of stock items 
+1680497401 - DEBUG --> getting a connection 
+1680497590 - INFO  --> Displaying uploaded menu 
+1680497590 - DEBUG --> getting a connection 
+1680497590 - ERROR --> No menu found in the database. 
+1680497590 - INFO  --> Getting out of stock items 
+1680497590 - DEBUG --> getting a connection 
+1680497663 - INFO  --> Displaying uploaded menu 
+1680497663 - DEBUG --> getting a connection 
+1680497663 - ERROR --> No menu found in the database. 
+1680497663 - INFO  --> Getting out of stock items 
+1680497663 - DEBUG --> getting a connection 
+1680497664 - INFO  --> Displaying uploaded menu 
+1680497664 - DEBUG --> getting a connection 
+1680497664 - ERROR --> No menu found in the database. 
+1680497664 - INFO  --> Getting out of stock items 
+1680497664 - DEBUG --> getting a connection 
+1680497665 - INFO  --> Displaying uploaded menu 
+1680497665 - DEBUG --> getting a connection 
+1680497665 - ERROR --> No menu found in the database. 
+1680497665 - INFO  --> Getting out of stock items 
+1680497665 - DEBUG --> getting a connection 
+1680497775 - INFO  --> Displaying uploaded menu 
+1680497775 - DEBUG --> getting a connection 
+1680497775 - ERROR --> No menu found in the database. 
+1680497775 - INFO  --> Getting out of stock items 
+1680497775 - DEBUG --> getting a connection 
+1680497778 - INFO  --> Adding out of stock item candy for user KyleSmith 
+1680497778 - DEBUG --> getting a connection 
+1680497778 - INFO  --> Displaying uploaded menu 
+1680497778 - DEBUG --> getting a connection 
+1680497778 - ERROR --> No menu found in the database. 
+1680497778 - INFO  --> Getting out of stock items 
+1680497778 - DEBUG --> getting a connection 
+1680497779 - INFO  --> Deleting out of stock item candy for user KyleSmith 
+1680497779 - DEBUG --> getting a connection 
+1680497779 - INFO  --> Displaying uploaded menu 
+1680497779 - DEBUG --> getting a connection 
+1680497779 - ERROR --> No menu found in the database. 
+1680497779 - INFO  --> Getting out of stock items 
+1680497779 - DEBUG --> getting a connection 
+1680498074 - INFO  --> Displaying uploaded menu 
+1680498074 - DEBUG --> getting a connection 
+1680498074 - ERROR --> No menu found in the database. 
+1680498074 - INFO  --> Getting out of stock items 
+1680498074 - DEBUG --> getting a connection 
+1680498076 - INFO  --> Displaying uploaded menu 
+1680498076 - DEBUG --> getting a connection 
+1680498076 - ERROR --> No menu found in the database. 
+1680498076 - INFO  --> Getting out of stock items 
+1680498076 - DEBUG --> getting a connection 
+1680498236 - INFO  --> Displaying uploaded menu 
+1680498236 - DEBUG --> getting a connection 
+1680498236 - ERROR --> No menu found in the database. 
+1680498236 - INFO  --> Getting out of stock items 
+1680498236 - DEBUG --> getting a connection 
+1680498281 - INFO  --> Displaying uploaded menu 
+1680498281 - DEBUG --> getting a connection 
+1680498281 - ERROR --> No menu found in the database. 
+1680498281 - INFO  --> Getting out of stock items 
+1680498281 - DEBUG --> getting a connection 
+1680498282 - INFO  --> Displaying uploaded menu 
+1680498282 - DEBUG --> getting a connection 
+1680498282 - ERROR --> No menu found in the database. 
+1680498282 - INFO  --> Getting out of stock items 
+1680498282 - DEBUG --> getting a connection 
+1680498285 - INFO  --> Adding out of stock item candy for user KyleSmith 
+1680498285 - DEBUG --> getting a connection 
+1680498285 - INFO  --> Displaying uploaded menu 
+1680498285 - DEBUG --> getting a connection 
+1680498285 - ERROR --> No menu found in the database. 
+1680498285 - INFO  --> Getting out of stock items 
+1680498285 - DEBUG --> getting a connection 
+1680498286 - INFO  --> Deleting out of stock item candy for user KyleSmith 
+1680498286 - DEBUG --> getting a connection 
+1680498286 - INFO  --> Displaying uploaded menu 
+1680498286 - DEBUG --> getting a connection 
+1680498286 - ERROR --> No menu found in the database. 
+1680498286 - INFO  --> Getting out of stock items 
+1680498286 - DEBUG --> getting a connection 

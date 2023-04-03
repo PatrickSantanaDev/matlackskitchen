@@ -1,16 +1,29 @@
 CREATE DATABASE IF NOT EXISTS matlacks;
+
 USE matlacks;
+
 DROP TABLE IF EXISTS users;
+
 DROP TABLE IF EXISTS uploaded_menu;
+
 DROP TABLE IF EXISTS out_of_stock_items;
+
 DROP TABLE IF EXISTS recipes;
+
 DROP TABLE IF EXISTS builds;
+
 DROP TABLE IF EXISTS am_duties;
+
 DROP TABLE IF EXISTS pm_duties;
+
 DROP TABLE IF EXISTS weekly_duties;
+
 DROP TABLE IF EXISTS ingredients;
+
 DROP TABLE IF EXISTS ingredients_needed;
+
 DROP TABLE IF EXISTS uploaded_schedule;
+
 DROP TABLE IF EXISTS photos;
 
 CREATE TABLE users (
@@ -25,10 +38,9 @@ CREATE TABLE uploaded_menu (
     id INT NOT NULL AUTO_INCREMENT,
     file_name varchar(255) COLLATE utf8_unicode_ci NOT NULL,
     uploaded_on datetime NOT NULL,
-    status enum('1','0') COLLATE utf8_unicode_ci NOT NULL DEFAULT '1',
+    status enum('1', '0') COLLATE utf8_unicode_ci NOT NULL DEFAULT '1',
     PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
+) ENGINE = InnoDB DEFAULT CHARSET = utf8 COLLATE = utf8_unicode_ci;
 
 CREATE TABLE out_of_stock_items (
     id INT AUTO_INCREMENT,
@@ -58,7 +70,7 @@ CREATE TABLE builds (
     ingredients VARCHAR(500) NOT NULL,
     instructions VARCHAR(1000) NOT NULL,
     file_name varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-    image_status enum('1','0') COLLATE utf8_unicode_ci NOT NULL DEFAULT '1',
+    image_status enum('1', '0') COLLATE utf8_unicode_ci NOT NULL DEFAULT '1',
     image_type VARCHAR(10) NOT NULL,
     user_id INT NOT NULL,
     date_added DATE,
@@ -118,18 +130,17 @@ CREATE TABLE ingredients_needed (
 );
 
 CREATE TABLE uploaded_schedule (
-    id INT AUTO_INCREMENT,
-    user_id INT NOT NULL,
-    schedule_location VARCHAR(200) NOT NULL,
-    date_added DATE,
-    PRIMARY KEY (id),
-    FOREIGN KEY (user_id) REFERENCES users(user_id)
-);
+    id INT NOT NULL AUTO_INCREMENT,
+    file_name varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+    uploaded_on datetime NOT NULL,
+    status enum('1', '0') COLLATE utf8_unicode_ci NOT NULL DEFAULT '1',
+    PRIMARY KEY (`id`)
+) ENGINE = InnoDB DEFAULT CHARSET = utf8 COLLATE = utf8_unicode_ci;
 
 CREATE TABLE photos (
     id INT NOT NULL AUTO_INCREMENT,
     file_name varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-    image_status enum('1','0') COLLATE utf8_unicode_ci NOT NULL DEFAULT '1',
+    image_status enum('1', '0') COLLATE utf8_unicode_ci NOT NULL DEFAULT '1',
     image_type VARCHAR(10) NOT NULL,
     date_added DATE NOT NULL,
     PRIMARY KEY (id)

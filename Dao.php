@@ -4,14 +4,14 @@ require_once 'KLogger.php';
 class Dao
 {
 
-  // private $host = "127.0.0.1"; //"localhost:8889";
-  // private $db = "matlacks";
-  // private $user = "root";
-  // private $pass = "";
-  private $host = "us-cdbr-east-06.cleardb.net";
-  private $db = "heroku_0e393ccaa1b4923";
-  private $user = "ba3621c4a28738";
-  private $pass = "12f186c3";
+  private $host = "127.0.0.1"; //"localhost:8889";
+  private $db = "matlacks";
+  private $user = "root";
+  private $pass = "";
+  // private $host = "us-cdbr-east-06.cleardb.net";
+  // private $db = "heroku_0e393ccaa1b4923";
+  // private $user = "ba3621c4a28738";
+  // private $pass = "12f186c3";
 
 
   private $logger;
@@ -192,7 +192,7 @@ class Dao
       $stmt->execute();
     } catch (Exception $e) {
       //echo print_r($e,1);
-      $this->logger->LogFatal("Connection failed: " . print_r($e, 1));
+      $this->logger->LogFatal("postRecipeInfo failed: " . print_r($e, 1));
       exit;
     }
   }
@@ -207,7 +207,7 @@ class Dao
       return $stmt->fetchAll(PDO::FETCH_ASSOC);
     } catch (Exception $e) {
       //echo print_r($e,1);
-      $this->logger->LogFatal("Connection failed: " . print_r($e, 1));
+      $this->logger->LogFatal("getCategories failed: " . print_r($e, 1));
       exit;
     }
   }
@@ -223,7 +223,7 @@ class Dao
       return $stmt->fetchAll(PDO::FETCH_ASSOC);
     } catch (Exception $e) {
       //echo print_r($e,1);
-      $this->logger->LogFatal("Connection failed: " . print_r($e, 1));
+      $this->logger->LogFatal("getRecipesByCategory failed: " . print_r($e, 1));
       exit;
     }
   }
@@ -239,7 +239,7 @@ class Dao
       return $stmt->fetch(PDO::FETCH_ASSOC);
     } catch (Exception $e) {
       //echo print_r($e,1);
-      $this->logger->LogFatal("Connection failed: " . print_r($e, 1));
+      $this->logger->LogFatal("getRecipeByName failed: " . print_r($e, 1));
       exit;
     }
   }
@@ -255,7 +255,7 @@ class Dao
       return true;
     } catch (Exception $e) {
       //echo print_r($e,1);
-      $this->logger->LogFatal("Connection failed: " . print_r($e, 1));
+      $this->logger->LogFatal("deleteRecipeByName failed: " . print_r($e, 1));
       exit;
     }
   }
@@ -357,36 +357,81 @@ class Dao
       return $stmt->fetchAll(PDO::FETCH_ASSOC);
     } catch (Exception $e) {
       //echo print_r($e,1);
-      $this->logger->LogFatal("Connection failed: " . print_r($e, 1));
+      $this->logger->LogFatal("getIngredientsByCategory failed: " . print_r($e, 1));
       exit;
     }
   }
 
-  public function submitIngredientsNeeded($ingredient_name, $is_needed)
-  {
+  public function submitIngredientsNeeded($ingredientNames, $addedByUsername) {
+    // Connect to the database
     $conn = $this->getConnection();
-    $query = "INSERT INTO ingredients_needed (ingredient_name, is_needed, added_by_username, date_added) VALUES (:ingredient_name, :is_needed, :added_by_username, :date_added)";
-    $stmt = $conn->prepare($query);
-    $stmt->bindParam(":ingredient_name", $ingredient_name);
-    $is_needed_bool = ($is_needed == "on") ? true : false;
-    $stmt->bindParam(":is_needed", $is_needed_bool, PDO::PARAM_BOOL);
-
-    session_start();
-    $username = $_SESSION["username"];
-    $stmt->bindParam(":added_by_username", $username);
-    $date = date("Y-m-d H:i:s");
-    $stmt->bindParam(":date_added", $date);
-    $stmt->execute();
+  
+    // Prepare the SQL statement to insert the ingredients
+    $stmt = $conn->prepare('INSERT INTO ingredients_needed (ingredient_name, is_needed, added_by_username, date_added) VALUES (:ingredient_name, :is_needed, :added_by_username, :date_added)');
+  
+    // Set the date_added to the current date
+    $dateAdded = date('Y-m-d');
+  
+    // Loop through each ingredient and insert it into the table
+    foreach ($ingredientNames as $ingredientName) {
+      // Bind the values to the prepared statement
+      $stmt->bindValue(':ingredient_name', $ingredientName);
+      $stmt->bindValue(':is_needed', true, PDO::PARAM_BOOL);
+      $stmt->bindValue(':added_by_username', $addedByUsername);
+      $stmt->bindValue(':date_added', $dateAdded);
+  
+      // Execute the prepared statement
+      $stmt->execute();
+    }
   }
 
-  public function getIngredientNameById($id)
+  public function storeUploadedSchedule($fileName)
   {
+    $this->logger->LogInfo("Storing uploaded schedule file $fileName");
+
     $conn = $this->getConnection();
-    $query = "SELECT ingredient_name FROM ingredients WHERE id = :id";
-    $stmt = $conn->prepare($query);
-    $stmt->bindParam(":id", $id);
-    $stmt->execute();
-    $result = $stmt->fetch();
-    return $result["ingredient_name"];
+    $saveQuery = "INSERT INTO uploaded_schedule (file_name, uploaded_on) VALUES (:file_name, :uploaded_on)";
+    $q = $conn->prepare($saveQuery);
+    $q->bindParam(":file_name", $fileName);
+    $uploadedOn = date("Y-m-d H:i:s");
+    $q->bindParam(":uploaded_on", $uploadedOn);
+    $q->execute();
   }
+
+  public function displaySchedule()
+  {
+    $this->logger->LogInfo("Displaying uploaded schedule");
+
+    $conn = $this->getConnection();
+    $query = "SELECT file_name FROM uploaded_schedule ORDER BY uploaded_on DESC LIMIT 1";
+    $stmt = $conn->prepare($query);
+    $stmt->execute();
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    if ($result) {
+      $file_path = "../uploads/" . $result['file_name'];
+      if (file_exists($file_path)) {
+        return $file_path;
+      } else {
+        $this->logger->LogError("File not found: $file_path");
+        return false;
+      }
+    } else {
+      $this->logger->LogError("No menu found in the database.");
+      return false;
+    }
+  }
+  
+  public function deleteSchedule()
+  {
+    $this->logger->LogInfo("Deleting uploaded schedule");
+
+    $conn = $this->getConnection();
+    $query = "DELETE FROM uploaded_schedule ORDER BY uploaded_on DESC LIMIT 1";
+    $stmt = $conn->prepare($query);
+    $stmt->execute();
+  }
+  
+
+ 
 }

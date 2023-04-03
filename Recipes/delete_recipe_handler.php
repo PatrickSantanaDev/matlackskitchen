@@ -5,7 +5,7 @@ $dao = new Dao();
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $recipe_name = $_POST['recipe_name'];
     $dao->deleteRecipeByName($recipe_name);
-    header('Location: ../recipes.php');
+    header('Location: ../Recipes/recipes.php');
     exit();
   }
   

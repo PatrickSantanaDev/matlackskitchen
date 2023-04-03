@@ -2,9 +2,7 @@
 session_start();
 
 require_once '../Dao.php';
-require_once '../KLogger.php';
 
-$logger = new KLogger ("../log.txt" , KLogger::WARN);
 $dao = new Dao();
 
 // check if the user is authenticated
@@ -19,13 +17,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $error = $_FILES['uploadmenu']['error'];
   $size = $_FILES['uploadmenu']['size'];
   
-  $allowed_extensions = array('png', 'jpg', 'jpeg');
-  $extension = pathinfo($name, PATHINFO_EXTENSION);
-
-  // check if the file extension is allowed
-  if (!in_array($extension, $allowed_extensions)) {
-    $errors[] = "File extension not allowed. Allowed extensions are .png, .jpg, .jpeg";
+  // validate the file type using the fileinfo extension
+  $finfo = finfo_open(FILEINFO_MIME_TYPE);
+  $mime_type = finfo_file($finfo, $tmp_name);
+  if (!in_array($mime_type, ['image/png', 'image/jpeg', 'image/jpg'])) {
+    $errors[] = "Invalid file type. Only PNG, JPEG, and JPG files are allowed.";
   }
+  finfo_close($finfo);
 
   // check if the file size is greater than 1MB
   if ($size > 1048576) {
@@ -39,8 +37,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     exit();
   }
 
-  // generate unique file name
-  $file_name = uniqid() . "." . $extension;
+  // sanitize the file name
+  $file_name = preg_replace('/[^a-zA-Z0-9]+/', '', $name);
+  $file_name = uniqid() . "_" . $file_name;
 
   // upload the file to the server
   $upload_dir = "../uploads/";
