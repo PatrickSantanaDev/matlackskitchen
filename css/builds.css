@@ -1,90 +1,89 @@
- 
-/****************/   
-/*    Logo      */
-/****************/
-#logo {
-  width: 15%;
-  margin:1% 80% 1% 1%;
-  position:absolute;
-} 
+ /****************/
+ /*    Logo      */
+ /****************/
+ #logo {
+   width: 15%;
+   margin: 1% 80% 1% 1%;
+   position: absolute;
+ }
 
-#logo img {
-  width: 100%;
-}   
+ #logo img {
+   width: 100%;
+ }
 
-/****************/   
-/*  Page Title  */
-/****************/
+ /****************/
+ /*  Page Title  */
+ /****************/
 
-#title{
-  text-align: center;
-  margin:6% 25% 2% 25%;
-  padding:1% 1% 1% 1%;
-  width: 50%;
-}   
+ #title {
+   text-align: center;
+   margin: 6% 25% 2% 25%;
+   padding: 1% 1% 1% 1%;
+   width: 50%;
+ }
 
-/***************************/
-/*    Navigation Menu      */
-/***************************/
+ /***************************/
+ /*    Navigation Menu      */
+ /***************************/
 
-.menu {
-  width: 100%;
-  display:flex;
-  justify-content: center;
-  overflow: hidden;
-  background-color: #181617;
-}
+ .menu {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   overflow: hidden;
+   background-color: #181617;
+ }
 
-.menu a {
+ .menu a {
 
-  color:#948470;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 13px;
-  font-family: 'Cinzel', serif;
-}
+   color: #948470;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 13px;
+   font-family: 'Cinzel', serif;
+ }
 
-.menu a:hover {
-  background-color:#2b2b2b;
-  transition: 0.5s;
-  color:#948470;
-}
+ .menu a:hover {
+   background-color: #2b2b2b;
+   transition: 0.5s;
+   color: #948470;
+ }
 
-.menu a:active {
-  background-color: #181617;
-}
+ .menu a:active {
+   background-color: #181617;
+ }
 
-/***************************/
-/*    Builds Search        */
-/***************************/
+ /***************************/
+ /*    Builds Search        */
+ /***************************/
 
-#catSearch {
-  text-align: center;
-  font-family: 'Cinzel', serif;
-  margin: 5% 0% 2% 0%;
-}
+ #catSearch {
+   text-align: center;
+   font-family: 'Cinzel', serif;
+   margin: 5% 0% 2% 0%;
+ }
 
-#searchByCategory {
-  text-align: center;
-     border: double #181617;
-     font-family: 'Cinzel', serif;
-}
+ #searchByCategory {
+   text-align: center;
+   border: double #181617;
+   font-family: 'Cinzel', serif;
+ }
 
-#buildSearch {
-  text-align: center;
-  font-family: 'Cinzel', serif;
-  margin: 1% 0% 2% 0%;
-}
+ #buildSearch {
+   text-align: center;
+   font-family: 'Cinzel', serif;
+   margin: 1% 0% 2% 0%;
+ }
 
-#searchbyBuildName {
-  text-align: center;
-     border: double #181617;
-     font-family: 'Cinzel', serif;
-}
+ #searchbyBuildName {
+   text-align: center;
+   border: double #181617;
+   font-family: 'Cinzel', serif;
+ }
 
-#catSearchButton {
-  border-radius: 20px;
+ #catSearchButton {
+   border-radius: 20px;
    cursor: pointer;
    margin: 0% 0% 0% 0%;
    width: 110px;
@@ -97,10 +96,10 @@
 
    text-shadow: 1px 1px 2px #917863;
    font-family: 'Cinzel', serif;
-}
+ }
 
-#nameSearchButton {
-  border-radius: 20px;
+ #nameSearchButton {
+   border-radius: 20px;
    cursor: pointer;
    margin: 0% 0% 0% 0%;
    width: 110px;
@@ -113,44 +112,44 @@
 
    text-shadow: 1px 1px 2px #917863;
    font-family: 'Cinzel', serif;
-}
+ }
 
-/***************************/
-/*    Builds Viewer        */
-/***************************/
+ /***************************/
+ /*    Builds Viewer        */
+ /***************************/
 
-#buildViewer{
-  text-align: center;
-     border: thick double #d0a16d;
-     border-radius: 30px;
-     border-width: 15px;
-     margin: 2% 10% 0% 10%;
-     font-family: 'Cinzel', serif;
-}
+ #buildViewer {
+   text-align: center;
+   border: thick double #d0a16d;
+   border-radius: 30px;
+   border-width: 15px;
+   margin: 2% 10% 0% 10%;
+   font-family: 'Cinzel', serif;
+ }
 
-th{
-  border: 1px solid #d29e6f ;
-  width: 10%;
-  font-size: larger;
-}
+ th {
+   border: 1px solid #d29e6f;
+   width: 10%;
+   font-size: larger;
+ }
 
-td{
-  text-align: left;
-  border: 1px solid #d29e6f ;
-  width: 100%;
-}
+ td {
+   text-align: left;
+   border: 1px solid #d29e6f;
+   width: 100%;
+ }
 
-#buildPhotos {
-  margin: 2% 2% 2% 2%;
-  width:35%;
-}
+ #buildPhotos {
+   margin: 2% 2% 2% 2%;
+   width: 35%;
+ }
 
-#deleteBuild {
-  text-align: center;
-}
+ #deleteBuild {
+   text-align: center;
+ }
 
-#deleteBuildButton {
-  border-radius: 20px;
+ #deleteBuildButton {
+   border-radius: 20px;
    cursor: pointer;
    margin: 5px 0px 0px 0px;
    width: 20%;
@@ -163,54 +162,54 @@ td{
 
    text-shadow: 1px 1px 2px #917863;
    font-family: 'Cinzel', serif;
-}
+ }
 
-/***************************/
-/*    Upload Build        */
-/***************************/
+ /***************************/
+ /*    Upload Build        */
+ /***************************/
 
-.uploadBuildForm {
-  text-align: center;
-     margin: 5% 10% 5% 10%;
-     border: thick double #d0a16d;
-     border-radius: 30px;
-     border-width: 15px;
-}
+ .uploadBuildForm {
+   text-align: center;
+   margin: 5% 10% 5% 10%;
+   border: thick double #d0a16d;
+   border-radius: 30px;
+   border-width: 15px;
+ }
 
-#buildName {
-  width: 25%;
-  margin: 2% 0% 0% 0%;
-  font-family: 'Cinzel', serif;
-  text-align: center;
-  border: double #181617;
-}
+ #buildName {
+   width: 25%;
+   margin: 2% 0% 0% 0%;
+   font-family: 'Cinzel', serif;
+   text-align: center;
+   border: double #181617;
+ }
 
-#category {
-  width: 27%;
-  margin: 1% 0% 1% 0%;
-  font-family: 'Cinzel', serif;
-  text-align: center;
-  border: double #181617;
-}
+ #category {
+   width: 27%;
+   margin: 1% 0% 1% 0%;
+   font-family: 'Cinzel', serif;
+   text-align: center;
+   border: double #181617;
+ }
 
-#ingredients {
-  width: 55%;
-  margin: 1% 0% 1% 0%;
-  font-family: 'Cinzel', serif;
-  text-align: center;
-  border: double #181617;
-}
+ #ingredients {
+   width: 55%;
+   margin: 1% 0% 1% 0%;
+   font-family: 'Cinzel', serif;
+   text-align: center;
+   border: double #181617;
+ }
 
-#instructions {
-  width: 55%;
-  margin: 1% 0% 1% 0%;
-  font-family: 'Cinzel', serif;
-  text-align: center;
-  border: double #181617;
-}
+ #instructions {
+   width: 55%;
+   margin: 1% 0% 1% 0%;
+   font-family: 'Cinzel', serif;
+   text-align: center;
+   border: double #181617;
+ }
 
-#uploadBuildButton {
-  border-radius: 20px;
+ #uploadBuildButton {
+   border-radius: 20px;
    cursor: pointer;
    margin: 4% 0% 4% 0%;
    width: 25%;
@@ -223,39 +222,36 @@ td{
 
    text-shadow: 1px 1px 2px #917863;
    font-family: 'Cinzel', serif;
-}
+ }
 
-.errors {
-  text-align: center;
-  color: #963838;
-  font-weight: bold;
-  border: thick double #963838;
-  width: 40%;
-  margin: 1% 30% 1% 30%;
-}
+ .errors {
+   text-align: center;
+   color: #963838;
+   font-weight: bold;
+   border: thick double #963838;
+   width: 40%;
+   margin: 1% 30% 1% 30%;
+ }
 
  #selectBuildPhotos {
-  text-align: center;
-  font-size: 16px;
-  width:45%;
-  border: double #181617;
-  font-family: 'Cinzel', serif;
-  background-color: white;
-}
+   text-align: center;
+   font-size: 16px;
+   width: 45%;
+   border: double #181617;
+   font-family: 'Cinzel', serif;
+   background-color: white;
+ }
 
-#selectBuildPhotos input {
-  cursor: pointer;
-}
+ #selectBuildPhotos input {
+   cursor: pointer;
+ }
 
-body {
-  margin:0px;
-  border: thick double #181617;
-  background-color: #948470;
-}
+ body {
+   margin: 0px;
+   border: thick double #181617;
+   background-color: #948470;
+ }
 
-a[href] {
-  text-decoration: none;
-}
-
-
-
+ a[href] {
+   text-decoration: none;
+ }

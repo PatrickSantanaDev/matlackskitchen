@@ -37,7 +37,7 @@
   <!-- Navigation Bar -->
   <?php include_once '../navigation_bar.php'; ?>
 
-  
+
   <!-- Dropdown Build Search -->
   <!-- Category Search -->
   <form id="catSearch" action="get_builds_by_category_handler.php" method="get">
