@@ -65,17 +65,14 @@ CREATE TABLE recipes (
 
 CREATE TABLE builds (
     id INT AUTO_INCREMENT,
+    username VARCHAR(20) NOT NULL,
     build_name VARCHAR(50) NOT NULL,
     category VARCHAR(25) NOT NULL,
     ingredients VARCHAR(500) NOT NULL,
     instructions VARCHAR(1000) NOT NULL,
     file_name varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-    image_status enum('1', '0') COLLATE utf8_unicode_ci NOT NULL DEFAULT '1',
-    image_type VARCHAR(10) NOT NULL,
-    user_id INT NOT NULL,
     date_added DATE,
-    PRIMARY KEY (id),
-    FOREIGN KEY (user_id) REFERENCES users(user_id)
+    PRIMARY KEY (id)
 );
 
 CREATE TABLE am_duties (

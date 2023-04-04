@@ -1,14 +1,12 @@
 <?php
-
 require_once '../Dao.php';
 
-// Create a new instance of the Dao class
 $dao = new Dao();
 
-// Get the out of stock items for the current user
+// Get the out of stock items
 $oosItems = $dao->getOutOfStockItems($_SESSION['username']);
 
-// Loop through the out of stock items and display them in a list
+// format display for oos items
 foreach ($oosItems as $item) {
   echo '<li>' . htmlspecialchars($item['item_name'], ENT_QUOTES) . ' ';
   echo '<form action="delete_oos_item_handler.php" method="post">';

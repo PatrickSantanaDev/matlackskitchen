@@ -80,3 +80,48 @@
 1680494128 - DEBUG --> getting a connection 
 1680498067 - INFO  --> Displaying uploaded schedule 
 1680498067 - DEBUG --> getting a connection 
+1680542288 - INFO  --> Displaying uploaded schedule 
+1680542288 - DEBUG --> getting a connection 
+1680542288 - ERROR --> No menu found in the database. 
+1680542338 - INFO  --> Displaying uploaded schedule 
+1680542338 - DEBUG --> getting a connection 
+1680542338 - ERROR --> No menu found in the database. 
+1680543196 - INFO  --> Displaying uploaded schedule 
+1680543196 - DEBUG --> getting a connection 
+1680543196 - ERROR --> No menu found in the database. 
+1680543487 - INFO  --> Displaying uploaded schedule 
+1680543487 - DEBUG --> getting a connection 
+1680543487 - ERROR --> No menu found in the database. 
+1680543530 - INFO  --> Displaying uploaded schedule 
+1680543530 - DEBUG --> getting a connection 
+1680543530 - ERROR --> No menu found in the database. 
+1680543565 - INFO  --> Displaying uploaded schedule 
+1680543565 - DEBUG --> getting a connection 
+1680543565 - ERROR --> No menu found in the database. 
+1680543627 - INFO  --> Displaying uploaded schedule 
+1680543627 - DEBUG --> getting a connection 
+1680543627 - ERROR --> No menu found in the database. 
+1680543709 - INFO  --> Displaying uploaded schedule 
+1680543709 - DEBUG --> getting a connection 
+1680543709 - ERROR --> No menu found in the database. 
+1680543717 - INFO  --> Displaying uploaded schedule 
+1680543717 - DEBUG --> getting a connection 
+1680543717 - ERROR --> No menu found in the database. 
+1680543853 - INFO  --> Displaying uploaded schedule 
+1680543853 - DEBUG --> getting a connection 
+1680543853 - ERROR --> No menu found in the database. 
+1680543862 - INFO  --> Displaying uploaded schedule 
+1680543862 - DEBUG --> getting a connection 
+1680543862 - ERROR --> No menu found in the database. 
+1680543911 - INFO  --> Displaying uploaded schedule 
+1680543911 - DEBUG --> getting a connection 
+1680543911 - ERROR --> No menu found in the database. 
+1680543914 - INFO  --> Displaying uploaded schedule 
+1680543914 - DEBUG --> getting a connection 
+1680543914 - ERROR --> No menu found in the database. 
+1680543924 - INFO  --> Displaying uploaded schedule 
+1680543924 - DEBUG --> getting a connection 
+1680543924 - ERROR --> No menu found in the database. 
+1680561535 - INFO  --> Displaying uploaded schedule 
+1680561535 - DEBUG --> getting a connection 
+1680561535 - ERROR --> No menu found in the database. 

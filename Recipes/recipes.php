@@ -111,7 +111,16 @@
 
   <!-- Upload Recipe -->
   <form class="uploadRecipeForm" action="upload_recipe_handler.php" method="post" enctype="multipart/form-data">
-    <input id="recipeName" type="text" name="name" placeholder="Enter Recipe name..."><br>
+  <?php if (!empty($_SESSION['errors'])): ?>
+  <div class="errors">
+    <?php foreach ($_SESSION['errors'] as $error): ?>
+      <?php echo $error; ?> <br>
+    <?php endforeach; ?>
+<?php endif; ?>
+<?php unset($_SESSION['errors']); ?>
+    </div>
+  
+  <input id="recipeName" type="text" name="name" placeholder="Enter Recipe name..."><br>
     <div><select id="category" name="category">
         <option value="">Select a category</option>
         <option value="Dressings">Dressings</option>

@@ -4,14 +4,14 @@ require_once 'KLogger.php';
 class Dao
 {
 
-  // private $host = "127.0.0.1"; //"localhost:8889";
-  // private $db = "matlacks";
-  // private $user = "root";
-  // private $pass = "";
-  private $host = "us-cdbr-east-06.cleardb.net";
-  private $db = "heroku_0e393ccaa1b4923";
-  private $user = "ba3621c4a28738";
-  private $pass = "12f186c3";
+  private $host = "127.0.0.1"; //"localhost:8889";
+  private $db = "matlacks";
+  private $user = "root";
+  private $pass = "";
+  // private $host = "us-cdbr-east-06.cleardb.net";
+  // private $db = "heroku_0e393ccaa1b4923";
+  // private $user = "ba3621c4a28738";
+  // private $pass = "12f186c3";
 
 
   private $logger;
@@ -256,6 +256,92 @@ class Dao
     } catch (Exception $e) {
       //echo print_r($e,1);
       $this->logger->LogFatal("deleteRecipeByName failed: " . print_r($e, 1));
+      exit;
+    }
+  }
+
+  /***********************/
+  /*    BUILDS METHODS   */
+  /***********************/
+  public function getBuildsByCategory($category)
+  {
+    try {
+      $conn = $this->getConnection();
+      $query = "SELECT build_name FROM builds WHERE category = :category ORDER BY build_name";
+      $stmt = $conn->prepare($query);
+      $stmt->bindParam(':category', $category);
+      $stmt->execute();
+      return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    } catch (Exception $e) {
+      //echo print_r($e,1);
+      $this->logger->LogFatal("getBuildsByCategory failed: " . print_r($e, 1));
+      exit;
+    }
+  }
+
+  public function getBuildByName($build_name)
+  {
+    try {
+      $conn = $this->getConnection();
+      $query = "SELECT * FROM builds WHERE build_name = :build_name";
+      $stmt = $conn->prepare($query);
+      $stmt->bindParam(':build_name', $build_name);
+      $stmt->execute();
+      return $stmt->fetch(PDO::FETCH_ASSOC);
+    } catch (Exception $e) {
+      //echo print_r($e,1);
+      $this->logger->LogFatal("getBuildByName failed: " . print_r($e, 1));
+      exit;
+    }
+  }
+
+  public function getBuildCategories()
+  {
+    try {
+      $conn = $this->getConnection();
+      $query = "SELECT DISTINCT category FROM builds ORDER BY category";
+      $stmt = $conn->prepare($query);
+      $stmt->execute();
+      return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    } catch (Exception $e) {
+      //echo print_r($e,1);
+      $this->logger->LogFatal("getBuildCategories failed: " . print_r($e, 1));
+      exit;
+    }
+  }
+
+  public function deleteBuildByName($build_name)
+  {
+    try {
+      $conn = $this->getConnection();
+      $query = "DELETE FROM builds WHERE build_name = :build_name";
+      $stmt = $conn->prepare($query);
+      $stmt->bindParam(':build_name', $build_name);
+      $stmt->execute();
+      return true;
+    } catch (Exception $e) {
+      //echo print_r($e,1);
+      $this->logger->LogFatal("deleteBuildByName failed: " . print_r($e, 1));
+      exit;
+    }
+  }
+
+  public function postBuildInfo($buildName, $category, $ingredients, $instructions, $username)
+  {
+    try {
+      $category = $_POST['category'];
+      $conn = $this->getConnection();
+      $query = "INSERT INTO builds (username, build_name, category, ingredients, instructions, date_added) VALUES (:username, :buildName, :category, :ingredients, :instructions, NOW())";
+      $stmt = $conn->prepare($query);
+      $stmt->bindParam(':username', $username);
+      $stmt->bindParam(':buildName', $buildName);
+      $stmt->bindParam(':category', $category);
+      $stmt->bindParam(':ingredients', $ingredients);
+      $stmt->bindParam(':instructions', $instructions);
+      $stmt->execute();
+    } catch (Exception $e) {
+      //echo print_r($e,1);
+      $this->logger->LogFatal("postBuildInfo failed: " . print_r($e, 1));
       exit;
     }
   }

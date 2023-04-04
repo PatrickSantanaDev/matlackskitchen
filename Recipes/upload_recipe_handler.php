@@ -4,21 +4,18 @@ require_once '../Dao.php';
 $logger = new KLogger ( "log.txt" , KLogger::DEBUG );
 
 $dao = new Dao();
+$errors = array();
 
+//santize
 function sanitize_input($input) {
-  // Remove any tags
+  //tags
   $input = strip_tags($input);
-
-  // Replace any unwanted characters
+  //unsavory chars
   $input = preg_replace('/[^a-zA-Z0-9\s]/', '', $input);
-
-  // Trim the input
+  //trim
   $input = trim($input);
-
-  // Limit input to 5000 chars
-  $input = substr($input, 0, 5000);
-
-  // Return the sanitized input
+  // Limit input to 2500 chars
+  $input = substr($input, 0, 2500);
   return $input;
 }
 
@@ -29,11 +26,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $instructions = sanitize_input($_POST["instructions"]);
   $username = $_SESSION['username'];
 
-  if (strlen($recipeName) > 20) {
-    $recipeName = substr($recipeName, 0, 20);
+  //validation
+  if (empty($recipeName) || empty($category) || empty($ingredients) || empty($instructions)) {
+    $errors[] = "Please provide input for all fields.";
   }
 
-  $dao->postRecipeInfo($recipeName, $category, $ingredients, $instructions, $username);
+  if (strlen($recipeName) > 20) {
+    $errors[] = "Recipe name should be less than or equal to 20 characters.";
+  }
 
-  header("Location: recipes.php");
+  if (empty($errors)) {
+    $dao->postRecipeInfo($recipeName, $category, $ingredients, $instructions, $username);
+    header("Location: recipes.php");
+  } else {
+    $_SESSION['errors'] = $errors;
+    header("Location: recipes.php");
+  }
 }

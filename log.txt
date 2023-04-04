@@ -1,0 +1,26 @@
+1680583415 - INFO  --> Checking if username and password match to the one present in the database. 
+1680583415 - DEBUG --> getting a connection 
+1680583415 - WARN  --> User [JohnSmith] invalid username or password 
+1680583423 - INFO  --> Checking if username and password match to the one present in the database. 
+1680583423 - DEBUG --> getting a connection 
+1680583423 - WARN  --> User [JohnSmith] invalid username or password 
+1680583434 - INFO  --> Checking if username and password match to the one present in the database. 
+1680583434 - DEBUG --> getting a connection 
+1680583434 - WARN  --> User [JohnSmith] invalid username or password 
+1680583491 - INFO  --> Creating user Account! 
+1680583491 - INFO  --> Checking if user exists 
+1680583491 - DEBUG --> getting a connection 
+1680583491 - DEBUG --> getting a connection 
+1680583499 - INFO  --> Checking if username and password match to the one present in the database. 
+1680583499 - DEBUG --> getting a connection 
+1680583499 - WARN  --> User [JohnSmith] successfully logged in. 
+1680584873 - INFO  --> Creating user Account! 
+1680584873 - INFO  --> Checking if user exists 
+1680584873 - DEBUG --> getting a connection 
+1680584873 - DEBUG --> getting a connection 
+1680584880 - INFO  --> Checking if username and password match to the one present in the database. 
+1680584880 - DEBUG --> getting a connection 
+1680584880 - WARN  --> User [KyleSmith] successfully logged in. 
+1680584928 - INFO  --> Checking if username and password match to the one present in the database. 
+1680584928 - DEBUG --> getting a connection 
+1680584928 - WARN  --> User [JohnSmith] successfully logged in. 

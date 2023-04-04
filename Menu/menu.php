@@ -43,22 +43,38 @@
 
   <!-- Upload Menu -->
   <div id="menuupload">
-    <form id="uploadmenu" method="post" action="menu_handler.php" enctype="multipart/form-data">
-      <label for="uploadmenu">Select Menu File and Upload (.png):</label><br>
-      <input type="file" id="uploadmenu" name="uploadmenu" accept=".png" /><br>
-      <button type="submit" name="submit" value="upload">Upload</button>
-    </form>
+    <?php if (isset($_SESSION['errors'])) : ?>
+      <div class="error">
+        <?php foreach ($_SESSION['errors'] as $error) : ?>
+          <?php echo $error; ?>
+        <?php endforeach; ?>
+      <?php endif;
+    unset($_SESSION['errors']); ?>
+      </div>
+      <form id="uploadmenu" method="post" action="menu_handler.php" enctype="multipart/form-data">
+        <label for="uploadmenu">Select Menu File and Upload (.png):</label><br>
+        <input type="file" id="uploadmenu" name="uploadmenu" accept=".png" /><br>
+        <button type="submit" name="submit" value="upload">Upload</button>
+      </form>
 
-    <form id="deletemenu" method="post" action="delete_menu_handler.php">
-      <button type="submit" name="delete">Delete</button>
-    </form>
+      <form id="deletemenu" method="post" action="delete_menu_handler.php">
+        <button type="submit" name="delete">Delete</button>
+      </form>
   </div>
-
 
   <!-- Items out of Stock -->
   <form id="oositems" action="oos_item_input_handler.php" method="post">
     <h2>Out of Stock Menu Items</h2>
-    <input type="text" id="enteritems" name="item_name" placeholder="Enter Out of Stock Item...">
+    <?php if (!empty($_SESSION['oos_errors'])) : ?>
+      <div class="error">
+        <?php echo $_SESSION['oos_errors']; ?>
+        <?php unset($_SESSION['oos_errors']); ?>
+      </div>
+      <?php $item_name = isset($_SESSION['item_name']) ? $_SESSION['item_name'] : ''; ?>
+    <?php else : ?>
+      <?php $item_name = ''; ?>
+    <?php endif; ?>
+    <input type="text" id="enteritems" name="item_name" placeholder="Enter Out of Stock Item..." value="<?php echo $item_name; ?>">
     <button type="submit" id="oosaddbutton">Add</button>
   </form>
   <ul id="oositemslist">

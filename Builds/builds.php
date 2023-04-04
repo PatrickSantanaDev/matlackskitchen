@@ -37,76 +37,93 @@
   <!-- Navigation Bar -->
   <?php include_once '../navigation_bar.php'; ?>
 
-  <!-- Dropdown Builds Search-->
+  
+  <!-- Dropdown Build Search -->
   <!-- Category Search -->
-  <form id="catSearch" action="" method="get">
-    <label for="searchbyCategory">Search for Builds by Category:</label>
-    <select id="searchByCategory" name="searchbyCategory">
+  <form id="catSearch" action="get_builds_by_category_handler.php" method="get">
+    <label for="searchByCategory">Search for Builds by Category:</label>
+    <select id="searchByCategory" name="searchByCategory">
       <option value="">Select a category</option>
-      <option value="sandwiches">Sandwiches</option>
-      <option value="salads">Salads</option>
-      <option value="apps">Appetizers</option>
+      <?php
+      include('get_categories_handler.php');
+      foreach ($categories as $category) {
+        echo '<option value="' . htmlspecialchars($category['category'], ENT_QUOTES) . '">' . htmlspecialchars($category['category'], ENT_QUOTES) . '</option>';
+      }
+      ?>
     </select>
-    <button id="catSearchButton" type="submit">Search</button>
+    <input id="catSearchButton" type="submit" value="Search">
   </form>
 
-  <!-- Name Search -->
-  <form id="nameSearch" action="" method="get">
-    <label for="searchByName">Search for Build by Name:</label>
-    <select id="searchByName" name="searchByName">
-      <option value="">Select a Build Name</option>
-      <option value="bossHog">Boss Hog</option>
-      <option value="triTip">Tri-Tip</option>
-      <option value="banhMi">Banh Mi</option>
+  <!-- Build Search -->
+  <form id="searchByBuildName" action="builds.php" method="get">
+    <label for="searchbyBuildName">Search for Builds:</label>
+    <select id="searchbyBuildName" name="build_name">
+      <option value="">Select a build</option>
+      <?php
+      include('get_builds_handler.php');
+      //movedforeach to handler!
+      ?>
     </select>
-    <button id="nameSearchButton" type="submit">Search</button>
+    <input id="nameSearchButton" type="submit" value="View Build">
   </form>
 
-  <!-- Builds Viewer -->
-  <table id="recipeViewer">
-    <tr>
-      <th>Build Name:</th>
-      <td>Boss Hog</td>
-    </tr>
-    <tr>
-      <th>Ingredients:</th>
-      <td>Smoked Pork Loin<br>
-        Mama Lils Peppers<br>
-        Thin, Sliced Mozzarella<br>
-        Chive Aioli
-      </td>
-    </tr>
-    <tr>
-      <th>Instructions:</th>
-      <td>Put 2 oz. chive aioli on both sides of bread<br>
-        Add 5 oz. sliced pork to bottom half of toasted ciabatta<br>
-        Add 2 pieces of mozzarella on top of pork<br>
-        Place 2 oz. mama lil's peppers to top half of toasted ciabatta
-      </td>
-      </td>
-    </tr>
-    <tr>
-      <th>Build Photos:</th>
-      <td><img id="buildPhotos" src="../Images/bosshog.jpg"></td>
-    </tr>
-  </table>
+  <!-- Build Viewer -->
+  <div id="buildViewer">
+    <?php if (isset($_GET['build_name'])) :
+      $build_name = $_GET['build_name'];
+      $build = $dao->getBuildByName($build_name);
+      if (!$build) {
+        echo "<p>No build found.</p>";
+      } else {
+    ?>
+        <table>
+          <tr>
+            <th>Build Name:</th>
+            <td><?php echo htmlspecialchars($build['build_name'], ENT_QUOTES); ?></td>
+          </tr>
+          <?php if (isset($build['ingredients'])) : ?>
+            <tr>
+              <th>Ingredients:</th>
+              <td><?php echo nl2br(htmlspecialchars($build['ingredients'], ENT_QUOTES)); ?></td>
+            </tr>
+          <?php endif; ?>
+          <tr>
+            <th>Instructions:</th>
+            <td><?php echo nl2br(htmlspecialchars($build['instructions'], ENT_QUOTES)); ?></td>
+          </tr>
+        </table>
+    <?php
+      }
+    elseif (!$build) :
+      echo "<p>No build selected.</p>";
+    endif; ?>
   </div>
+
 
   <!-- Delete Build -->
-  <div id="deleteRecipe">
-    <form action="" method="POST">
-      <input type="hidden" name="recipe_id" value="">
-      <button id="deleteRecipeButton" type="submit">Delete Build</button>
-    </form>
+  <div id="deleteBuild">
+    <?php if ($build) : ?>
+      <form action="delete_build_handler.php" method="POST">
+        <input type="hidden" name="build_name" value="<?php echo htmlspecialchars($build['build_name'], ENT_QUOTES); ?>">
+        <button id="deleteBuildButton" type="submit">Delete Build</button>
+      </form>
+    <?php endif; ?>
   </div>
 
+
   <!-- Upload Build -->
-  <form class="uploadRecipeForm" action="" method="post" enctype="multipart/form-data">
-    <input id="recipeName" type="text" name="recipeName" placeholder="Enter Build name..."><br>
+  <form class="uploadBuildForm" action="upload_build_handler.php" method="post" enctype="multipart/form-data">
+    <input id="buildName" type="text" name="name" placeholder="Enter Build name..."><br>
+    <div><select id="category" name="category">
+        <option value="">Select a category</option>
+        <option value="Apps">Apps</option>
+        <option value="Salads">Salads</option>
+        <option value="Mains">Mains</option>
+        <option value="Desserts">Desserts</option>
+      </select></div>
     <textarea id="ingredients" name="ingredients" placeholder="Enter Ingredients..."></textarea><br>
     <textarea id="instructions" name="instructions" placeholder="Enter Instructions..."></textarea><br>
-    <input type="file" id="selectBuildPhotos" name="selectBuildPhotos" accept=".jpg" /><br>
-    <button id="uploadRecipeButton" type="submit">Upload Build</button>
+    <button id="uploadBuildButton" type="submit">Upload Build</button>
   </form>
 
   <!--Footer-->
