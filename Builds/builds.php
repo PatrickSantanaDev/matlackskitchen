@@ -41,7 +41,7 @@
   <!-- Dropdown Build Search -->
   <!-- Category Search -->
   <form id="catSearch" action="get_builds_by_category_handler.php" method="get">
-    <label for="searchByCategory">Search for Builds by Category:</label>
+    <label for="searchByCategory">Search by build category:</label>
     <select id="searchByCategory" name="searchByCategory">
       <option value="">Select a category</option>
       <?php
@@ -51,17 +51,17 @@
       }
       ?>
     </select>
-    <input id="catSearchButton" type="submit" value="Search">
+    <input id="catSearchButton" type="submit" name="submit" value="Search">
   </form>
 
   <!-- Build Search -->
-  <form id="searchByBuildName" action="builds.php" method="get">
-    <label for="searchbyBuildName">Search for Builds:</label>
+  <form id="buildSearch" action="builds.php" method="get">
+    <label for="searchbyBuildName">Search by build name:</label>
     <select id="searchbyBuildName" name="build_name">
       <option value="">Select a build</option>
       <?php
       include('get_builds_handler.php');
-      //movedforeach to handler!
+      //movedforeachloop to handler!
       ?>
     </select>
     <input id="nameSearchButton" type="submit" value="View Build">
@@ -69,6 +69,13 @@
 
   <!-- Build Viewer -->
   <div id="buildViewer">
+    <div class="errors" style="<?php echo (!empty($errors) ? '' : 'display:none;'); ?>">
+      <?php if (!empty($errors)) : ?>
+        <?php foreach ($errors as $error) : ?>
+          <?php echo $error; ?>
+        <?php endforeach; ?>
+      <?php endif; ?>
+    </div>
     <?php if (isset($_GET['build_name'])) :
       $build_name = $_GET['build_name'];
       $build = $dao->getBuildByName($build_name);
@@ -113,16 +120,28 @@
 
   <!-- Upload Build -->
   <form class="uploadBuildForm" action="upload_build_handler.php" method="post" enctype="multipart/form-data">
-    <input id="buildName" type="text" name="name" placeholder="Enter Build name..."><br>
-    <div><select id="category" name="category">
+    <?php if (!empty($_SESSION['errors'])) : ?>
+      <div class="errors">
+        <?php foreach ($_SESSION['errors'] as $error) : ?>
+          <?php echo $error; ?> <br>
+        <?php endforeach; ?>
+      </div>
+    <?php endif; ?>
+    <?php unset($_SESSION['errors']); ?>
+
+    <input id="buildName" type="text" name="name" placeholder="Enter Build name..." value="<?php echo (isset($_SESSION['buildName']) && empty($_SESSION['errors'])) ? $_SESSION['buildName'] : '' ?>"><br>
+    <div>
+      <select id="category" name="category">
         <option value="">Select a category</option>
-        <option value="Apps">Apps</option>
-        <option value="Salads">Salads</option>
-        <option value="Mains">Mains</option>
-        <option value="Desserts">Desserts</option>
-      </select></div>
+        <option value="Salads" <?php if (isset($_SESSION['category']) && $_SESSION['category'] == 'Salads') echo 'selected'; ?>>Salads</option>
+        <option value="Apps" <?php if (isset($_SESSION['category']) && $_SESSION['category'] == 'Apps') echo 'selected'; ?>>Apps</option>
+        <option value="Mains" <?php if (isset($_SESSION['category']) && $_SESSION['category'] == 'Mains') echo 'selected'; ?>>Mains</option>
+        <option value="Desserts" <?php if (isset($_SESSION['category']) && $_SESSION['category'] == 'Desserts') echo 'selected'; ?>>Desserts</option>
+      </select>
+    </div>
     <textarea id="ingredients" name="ingredients" placeholder="Enter Ingredients..."></textarea><br>
     <textarea id="instructions" name="instructions" placeholder="Enter Instructions..."></textarea><br>
+
     <button id="uploadBuildButton" type="submit">Upload Build</button>
   </form>
 

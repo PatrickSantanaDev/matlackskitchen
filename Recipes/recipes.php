@@ -39,7 +39,7 @@
   <!-- Dropdown Recipe Search -->
   <!-- Category Search -->
   <form id="catSearch" action="get_recipes_by_category_handler.php" method="get">
-    <label for="searchByCategory">Search for Recipes by Category:</label>
+    <label for="searchByCategory">Search by recipe category:</label>
     <select id="searchByCategory" name="searchByCategory">
       <option value="">Select a category</option>
       <?php
@@ -49,12 +49,12 @@
       }
       ?>
     </select>
-    <input id="catSearchButton" type="submit" value="Search">
+    <input id="catSearchButton" type="submit" name="submit" value="Search">
   </form>
 
   <!-- Recipe Search -->
-  <form id="searchByRecipeName" action="recipes.php" method="get">
-    <label for="searchbyRecipeName">Search for Recipes:</label>
+  <form id="recipeSearch" action="recipes.php" method="get">
+    <label for="searchbyRecipeName">Search by recipe name:</label>
     <select id="searchbyRecipeName" name="recipe_name">
       <option value="">Select a recipe</option>
       <?php
@@ -67,6 +67,13 @@
 
   <!-- Recipe Viewer -->
   <div id="recipeViewer">
+    <div class="errors" style="<?php echo (!empty($errors) ? '' : 'display:none;'); ?>">
+      <?php if (!empty($errors)) : ?>
+        <?php foreach ($errors as $error) : ?>
+          <?php echo $error; ?>
+        <?php endforeach; ?>
+      <?php endif; ?>
+    </div>
     <?php if (isset($_GET['recipe_name'])) :
       $recipe_name = $_GET['recipe_name'];
       $recipe = $dao->getRecipeByName($recipe_name);
@@ -97,7 +104,6 @@
     endif; ?>
   </div>
 
-
   <!-- Delete Recipe -->
   <div id="deleteRecipe">
     <?php if ($recipe) : ?>
@@ -108,33 +114,34 @@
     <?php endif; ?>
   </div>
 
-
   <!-- Upload Recipe -->
   <form class="uploadRecipeForm" action="upload_recipe_handler.php" method="post" enctype="multipart/form-data">
-  <?php if (!empty($_SESSION['errors'])): ?>
-  <div class="errors">
-    <?php foreach ($_SESSION['errors'] as $error): ?>
-      <?php echo $error; ?> <br>
-    <?php endforeach; ?>
-<?php endif; ?>
-<?php unset($_SESSION['errors']); ?>
-    </div>
-  
-  <input id="recipeName" type="text" name="name" placeholder="Enter Recipe name..."><br>
-    <div><select id="category" name="category">
+    <?php if (!empty($_SESSION['errors'])) : ?>
+      <div class="errors">
+        <?php foreach ($_SESSION['errors'] as $error) : ?>
+          <?php echo $error; ?> <br>
+        <?php endforeach; ?>
+      </div>
+    <?php endif; ?>
+    <?php unset($_SESSION['errors']); ?>
+
+    <input id="recipeName" type="text" name="name" placeholder="Enter Recipe name..." value="<?php echo (isset($_SESSION['recipeName']) && empty($_SESSION['errors'])) ? $_SESSION['recipeName'] : '' ?>"><br>
+    <div>
+      <select id="category" name="category">
         <option value="">Select a category</option>
-        <option value="Dressings">Dressings</option>
-        <option value="Sauces">Sauces</option>
-        <option value="Rubs/Brines">Rubs/Brines</option>
-        <option value="Apps">Apps</option>
-        <option value="Mains">Mains</option>
-        <option value="Desserts">Desserts</option>
-      </select></div>
-    <textarea id="ingredients" name="ingredients" placeholder="Enter Ingredients..."></textarea><br>
-    <textarea id="instructions" name="instructions" placeholder="Enter Instructions..."></textarea><br>
+        <option value="Dressings" <?php if (isset($_SESSION['category']) && $_SESSION['category'] == 'Dressings') echo 'selected'; ?>>Dressings</option>
+        <option value="Sauces" <?php if (isset($_SESSION['category']) && $_SESSION['category'] == 'Sauces') echo 'selected'; ?>>Sauces</option>
+        <option value="Rubs/Brines" <?php if (isset($_SESSION['category']) && $_SESSION['category'] == 'Rubs/Brines') echo 'selected'; ?>>Rubs/Brines</option>
+        <option value="Apps" <?php if (isset($_SESSION['category']) && $_SESSION['category'] == 'Apps') echo 'selected'; ?>>Apps</option>
+        <option value="Mains" <?php if (isset($_SESSION['category']) && $_SESSION['category'] == 'Mains') echo 'selected'; ?>>Mains</option>
+        <option value="Desserts" <?php if (isset($_SESSION['category']) && $_SESSION['category'] == 'Desserts') echo 'selected'; ?>>Desserts</option>
+      </select>
+    </div>
+    <textarea id="ingredients" name="ingredients" placeholder="Enter Ingredients..."><?php echo (isset($_SESSION['ingredients']) && empty($_SESSION['errors'])) ? $_SESSION['ingredients'] : '' ?></textarea><br>
+    <textarea id="instructions" name="instructions" placeholder="Enter Instructions..."><?php echo (isset($_SESSION['instructions']) && empty($_SESSION['errors'])) ? $_SESSION['instructions'] : '' ?></textarea><br>
+
     <button id="uploadRecipeButton" type="submit">Upload Recipe</button>
   </form>
-
 
   <!--Footer-->
   <?php include_once '../footer.php'; ?>

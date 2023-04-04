@@ -2,10 +2,15 @@
 require_once('../Dao.php');
 $dao = new Dao();
 
-if(isset($_GET['searchByCategory']) && !empty($_GET['searchByCategory'])) {
+$errors = array();
+
+if (isset($_GET['submit'])) {
   $category = $_GET['searchByCategory'];
-  $recipes = $dao->getRecipesByCategory($category);
+  if (empty($category)) {
+    $errors[] = "Please select a category";
+  } else {
+    $recipes = $dao->getRecipesByCategory($category);
+  }
 }
 
 include('recipes.php');
-?>

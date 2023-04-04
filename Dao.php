@@ -4,14 +4,14 @@ require_once 'KLogger.php';
 class Dao
 {
 
-  // private $host = "127.0.0.1"; //"localhost:8889";
-  // private $db = "matlacks";
-  // private $user = "root";
-  // private $pass = "";
-  private $host = "us-cdbr-east-06.cleardb.net";
-  private $db = "heroku_0e393ccaa1b4923";
-  private $user = "ba3621c4a28738";
-  private $pass = "12f186c3";
+  private $host = "127.0.0.1"; //"localhost:8889";
+  private $db = "matlacks";
+  private $user = "root";
+  private $pass = "";
+  // private $host = "us-cdbr-east-06.cleardb.net";
+  // private $db = "heroku_0e393ccaa1b4923";
+  // private $user = "ba3621c4a28738";
+  // private $pass = "12f186c3";
 
 
   private $logger;
@@ -448,16 +448,17 @@ class Dao
     }
   }
 
-  public function submitIngredientsNeeded($ingredientNames, $addedByUsername) {
+  public function submitIngredientsNeeded($ingredientNames, $addedByUsername)
+  {
     // Connect to the database
     $conn = $this->getConnection();
-  
+
     // Prepare the SQL statement to insert the ingredients
     $stmt = $conn->prepare('INSERT INTO ingredients_needed (ingredient_name, is_needed, added_by_username, date_added) VALUES (:ingredient_name, :is_needed, :added_by_username, :date_added)');
-  
+
     // Set the date_added to the current date
     $dateAdded = date('Y-m-d');
-  
+
     // Loop through each ingredient and insert it into the table
     foreach ($ingredientNames as $ingredientName) {
       // Bind the values to the prepared statement
@@ -465,7 +466,7 @@ class Dao
       $stmt->bindValue(':is_needed', true, PDO::PARAM_BOOL);
       $stmt->bindValue(':added_by_username', $addedByUsername);
       $stmt->bindValue(':date_added', $dateAdded);
-  
+
       // Execute the prepared statement
       $stmt->execute();
     }
@@ -507,7 +508,7 @@ class Dao
       return false;
     }
   }
-  
+
   public function deleteSchedule()
   {
     $this->logger->LogInfo("Deleting uploaded schedule");
@@ -517,7 +518,4 @@ class Dao
     $stmt = $conn->prepare($query);
     $stmt->execute();
   }
-  
-
- 
 }

@@ -65,28 +65,29 @@
   margin: 5% 0% 2% 0%;
 }
 
-#nameSearch {
-  text-align: center;
-  font-family: 'Cinzel', serif;
-  margin: 0% 0% 0% 0%;
-}
-
 #searchByCategory {
   text-align: center;
-  border: double #181617;
+     border: double #181617;
+     font-family: 'Cinzel', serif;
 }
 
-#searchByBuildName {
+#buildSearch {
   text-align: center;
   font-family: 'Cinzel', serif;
   margin: 1% 0% 2% 0%;
+}
+
+#searchbyBuildName {
+  text-align: center;
+     border: double #181617;
+     font-family: 'Cinzel', serif;
 }
 
 #catSearchButton {
   border-radius: 20px;
    cursor: pointer;
    margin: 0% 0% 0% 0%;
-   width: 10%;
+   width: 110px;
 
    border: 1mm outset #d29e6f;
    background-color: #181617;
@@ -120,9 +121,11 @@
 
 #buildViewer{
   text-align: center;
-  border: 4mm ridge #d29e6f;
-  margin: 2% 10% 0% 10%;
-  font-family: 'Cinzel', serif;
+     border: thick double #d0a16d;
+     border-radius: 30px;
+     border-width: 15px;
+     margin: 2% 10% 0% 10%;
+     font-family: 'Cinzel', serif;
 }
 
 th{
@@ -168,21 +171,23 @@ td{
 
 .uploadBuildForm {
   text-align: center;
-  margin: 5% 10% 5% 10%;
-  border: 4mm ridge #d29e6f;
+     margin: 5% 10% 5% 10%;
+     border: thick double #d0a16d;
+     border-radius: 30px;
+     border-width: 15px;
 }
 
 #buildName {
   width: 25%;
-  margin: 5% 0% 0% 0%;
+  margin: 2% 0% 0% 0%;
   font-family: 'Cinzel', serif;
   text-align: center;
   border: double #181617;
 }
 
 #category {
-  width: 25%;
-  margin: 1% 0% 0% 0%;
+  width: 27%;
+  margin: 1% 0% 1% 0%;
   font-family: 'Cinzel', serif;
   text-align: center;
   border: double #181617;
@@ -218,6 +223,15 @@ td{
 
    text-shadow: 1px 1px 2px #917863;
    font-family: 'Cinzel', serif;
+}
+
+.errors {
+  text-align: center;
+  color: #963838;
+  font-weight: bold;
+  border: thick double #963838;
+  width: 40%;
+  margin: 1% 30% 1% 30%;
 }
 
  #selectBuildPhotos {
