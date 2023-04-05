@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $file_name = uniqid() . "." . $extension;
 
   // upload the file to the server
-  $upload_dir = "../uploads/";
+  $upload_dir = "";
   $target_file = $upload_dir . $file_name;
   move_uploaded_file($tmp_name, $target_file);
 

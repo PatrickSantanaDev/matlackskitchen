@@ -2041,3 +2041,36 @@
 1680706255 - DEBUG --> getting a connection 
 1680706255 - INFO  --> Getting out of stock items 
 1680706255 - DEBUG --> getting a connection 
+1680706795 - INFO  --> Displaying uploaded menu 
+1680706795 - DEBUG --> getting a connection 
+1680706795 - ERROR --> File not found: 642d8abb40713_pngtransparenttwocheckedflagsracingflagsautoracingracingflagmiscellaneousgameflagpngfreedownloadpng 
+1680706795 - INFO  --> Getting out of stock items 
+1680706795 - DEBUG --> getting a connection 
+1680706811 - INFO  --> Displaying uploaded menu 
+1680706811 - DEBUG --> getting a connection 
+1680706811 - ERROR --> File not found: 642d8abb40713_pngtransparenttwocheckedflagsracingflagsautoracingracingflagmiscellaneousgameflagpngfreedownloadpng 
+1680706811 - INFO  --> Getting out of stock items 
+1680706811 - DEBUG --> getting a connection 
+1680706816 - INFO  --> Storing uploaded menu file 642d8d00102e2_pngtransparenttwocheckedflagsracingflagsautoracingracingflagmiscellaneousgameflagpngfreedownloadpng 
+1680706816 - DEBUG --> getting a connection 
+1680706816 - INFO  --> Displaying uploaded menu 
+1680706816 - DEBUG --> getting a connection 
+1680706816 - INFO  --> Getting out of stock items 
+1680706816 - DEBUG --> getting a connection 
+1680706829 - INFO  --> Displaying uploaded menu 
+1680706829 - DEBUG --> getting a connection 
+1680706829 - INFO  --> Getting out of stock items 
+1680706829 - DEBUG --> getting a connection 
+1680706914 - INFO  --> Displaying uploaded menu 
+1680706914 - DEBUG --> getting a connection 
+1680706914 - INFO  --> Getting out of stock items 
+1680706914 - DEBUG --> getting a connection 
+1680706920 - INFO  --> Displaying uploaded menu 
+1680706920 - DEBUG --> getting a connection 
+1680706921 - INFO  --> Deleting uploaded menu 
+1680706921 - DEBUG --> getting a connection 
+1680706921 - INFO  --> Displaying uploaded menu 
+1680706921 - DEBUG --> getting a connection 
+1680706921 - ERROR --> File not found: 642d8abb40713_pngtransparenttwocheckedflagsracingflagsautoracingracingflagmiscellaneousgameflagpngfreedownloadpng 
+1680706921 - INFO  --> Getting out of stock items 
+1680706921 - DEBUG --> getting a connection 
