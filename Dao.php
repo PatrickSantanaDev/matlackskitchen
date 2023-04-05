@@ -101,7 +101,7 @@ class Dao
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if ($result) {
-      $file_path = "../uploads/" . $result['file_name'];
+      $file_path = "" . $result['file_name'];
       if (file_exists($file_path)) {
         return $file_path;
       } else {

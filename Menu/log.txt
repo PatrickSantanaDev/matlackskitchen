@@ -1978,3 +1978,66 @@
 1680671316 - ERROR --> No menu found in the database. 
 1680671316 - INFO  --> Getting out of stock items 
 1680671316 - DEBUG --> getting a connection 
+1680700983 - INFO  --> Displaying uploaded menu 
+1680700983 - DEBUG --> getting a connection 
+1680700983 - ERROR --> File not found: ../uploads/642d75eac58cf_pngtransparentspidermanheroesdownloadwithtransparentbackgroundfreethumbnailpng 
+1680700983 - INFO  --> Getting out of stock items 
+1680700983 - DEBUG --> getting a connection 
+1680700988 - INFO  --> Storing uploaded menu file 642d763c326ee_pngtransparentspidermanheroesdownloadwithtransparentbackgroundfreethumbnailpng 
+1680700988 - DEBUG --> getting a connection 
+1680700988 - INFO  --> Displaying uploaded menu 
+1680700988 - DEBUG --> getting a connection 
+1680700989 - INFO  --> Getting out of stock items 
+1680700989 - DEBUG --> getting a connection 
+1680700993 - INFO  --> Displaying uploaded menu 
+1680700993 - DEBUG --> getting a connection 
+1680700994 - INFO  --> Deleting uploaded menu 
+1680700994 - DEBUG --> getting a connection 
+1680700994 - INFO  --> Displaying uploaded menu 
+1680700994 - DEBUG --> getting a connection 
+1680700994 - ERROR --> File not found: ../uploads/642d75eac58cf_pngtransparentspidermanheroesdownloadwithtransparentbackgroundfreethumbnailpng 
+1680700994 - INFO  --> Getting out of stock items 
+1680700994 - DEBUG --> getting a connection 
+1680701000 - INFO  --> Displaying uploaded menu 
+1680701000 - DEBUG --> getting a connection 
+1680701001 - ERROR --> File not found: ../uploads/642d75eac58cf_pngtransparentspidermanheroesdownloadwithtransparentbackgroundfreethumbnailpng 
+1680701001 - INFO  --> Getting out of stock items 
+1680701001 - DEBUG --> getting a connection 
+1680706026 - INFO  --> Displaying uploaded menu 
+1680706026 - DEBUG --> getting a connection 
+1680706028 - ERROR --> File not found: ../uploads/642d76759b75d_pngtransparenttwocheckedflagsracingflagsautoracingracingflagmiscellaneousgameflagpngfreedownloadpng 
+1680706028 - INFO  --> Getting out of stock items 
+1680706028 - DEBUG --> getting a connection 
+1680706034 - INFO  --> Storing uploaded menu file 642d89f2403fc_pngtransparentspidermanheroesdownloadwithtransparentbackgroundfreethumbnailpng 
+1680706034 - DEBUG --> getting a connection 
+1680706034 - INFO  --> Displaying uploaded menu 
+1680706034 - DEBUG --> getting a connection 
+1680706036 - INFO  --> Getting out of stock items 
+1680706036 - DEBUG --> getting a connection 
+1680706041 - INFO  --> Displaying uploaded menu 
+1680706041 - DEBUG --> getting a connection 
+1680706042 - INFO  --> Deleting uploaded menu 
+1680706042 - DEBUG --> getting a connection 
+1680706042 - INFO  --> Displaying uploaded menu 
+1680706042 - DEBUG --> getting a connection 
+1680706043 - ERROR --> File not found: ../uploads/642d76759b75d_pngtransparenttwocheckedflagsracingflagsautoracingracingflagmiscellaneousgameflagpngfreedownloadpng 
+1680706043 - INFO  --> Getting out of stock items 
+1680706043 - DEBUG --> getting a connection 
+1680706126 - INFO  --> Displaying uploaded menu 
+1680706126 - DEBUG --> getting a connection 
+1680706127 - ERROR --> File not found: ../uploads/642d8a0cc9273_pngtransparentspidermanheroesdownloadwithtransparentbackgroundfreethumbnailpng 
+1680706127 - INFO  --> Getting out of stock items 
+1680706127 - DEBUG --> getting a connection 
+1680706235 - INFO  --> Storing uploaded menu file 642d8abb40713_pngtransparenttwocheckedflagsracingflagsautoracingracingflagmiscellaneousgameflagpngfreedownloadpng 
+1680706235 - DEBUG --> getting a connection 
+1680706235 - INFO  --> Displaying uploaded menu 
+1680706235 - DEBUG --> getting a connection 
+1680706236 - ERROR --> File not found: 642d8abb40713_pngtransparenttwocheckedflagsracingflagsautoracingracingflagmiscellaneousgameflagpngfreedownloadpng 
+1680706236 - INFO  --> Getting out of stock items 
+1680706236 - DEBUG --> getting a connection 
+1680706255 - INFO  --> Storing uploaded menu file 642d8acf29d9a_pngtransparentspidermanheroesdownloadwithtransparentbackgroundfreethumbnailpng 
+1680706255 - DEBUG --> getting a connection 
+1680706255 - INFO  --> Displaying uploaded menu 
+1680706255 - DEBUG --> getting a connection 
+1680706255 - INFO  --> Getting out of stock items 
+1680706255 - DEBUG --> getting a connection 
