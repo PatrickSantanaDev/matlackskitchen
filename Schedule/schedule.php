@@ -55,6 +55,7 @@
     </form>
   </div>
 
+  <!-- <embed src="https://witeboard.com/1fb5cae0-d2b3-11ed-9cf0-fdcc78ce19ea"  width="100%" height="100%" /> -->
   <!--Footer-->
   <?php include_once '../footer.php'; ?>
 

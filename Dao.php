@@ -3,7 +3,6 @@ require_once 'KLogger.php';
 
 class Dao
 {
-
   // private $host = "127.0.0.1"; //"localhost:8889";
   // private $db = "matlacks";
   // private $user = "root";
@@ -13,14 +12,12 @@ class Dao
   private $user = "ba3621c4a28738";
   private $pass = "12f186c3";
 
-
   private $logger;
 
   public function __construct()
   {
     $this->logger = new KLogger("log.txt", KLogger::DEBUG);
   }
-
 
   public function getConnection()
   {
@@ -35,8 +32,6 @@ class Dao
     }
   }
 
-
-
   public function checkUsernameAndEmail($userName, $userEmail)
   {
     $this->logger->LogInfo("Checking if user exists");
@@ -48,8 +43,6 @@ class Dao
     $result = $sth->fetch(PDO::FETCH_ASSOC);
     return $result ? $result : false;
   }
-
-
 
   //to confirm data for logging in.
   public function checkUser($userName, $userPass)
@@ -163,7 +156,6 @@ class Dao
 
     return $results;
   }
-
 
   public function deleteOutOfStockItem($username, $itemName)
   {
@@ -346,7 +338,6 @@ class Dao
     }
   }
 
-
   public function submitAmDuties($duties, $username)
   {
     $conn = $this->getConnection();
@@ -364,8 +355,6 @@ class Dao
       ]);
     }
   }
-
-
 
   public function submitPmDuties($duties, $username)
   {
@@ -450,24 +439,18 @@ class Dao
 
   public function submitIngredientsNeeded($ingredientNames, $addedByUsername)
   {
-    // Connect to the database
     $conn = $this->getConnection();
 
-    // Prepare the SQL statement to insert the ingredients
     $stmt = $conn->prepare('INSERT INTO ingredients_needed (ingredient_name, is_needed, added_by_username, date_added) VALUES (:ingredient_name, :is_needed, :added_by_username, :date_added)');
 
-    // Set the date_added to the current date
     $dateAdded = date('Y-m-d');
 
-    // Loop through each ingredient and insert it into the table
     foreach ($ingredientNames as $ingredientName) {
-      // Bind the values to the prepared statement
       $stmt->bindValue(':ingredient_name', $ingredientName);
       $stmt->bindValue(':is_needed', true, PDO::PARAM_BOOL);
       $stmt->bindValue(':added_by_username', $addedByUsername);
       $stmt->bindValue(':date_added', $dateAdded);
 
-      // Execute the prepared statement
       $stmt->execute();
     }
   }
@@ -516,6 +499,53 @@ class Dao
     $conn = $this->getConnection();
     $query = "DELETE FROM uploaded_schedule ORDER BY uploaded_on DESC LIMIT 1";
     $stmt = $conn->prepare($query);
+    $stmt->execute();
+  }
+
+  public function submitPhoto($fileName, $imageType)
+  {
+    $conn = $this->getConnection();
+
+    $stmt = $conn->prepare('INSERT INTO photos (file_name, image_type, date_added) VALUES (:file_name, :image_type, :date_added)');
+    $dateAdded = date('Y-m-d');
+
+    $stmt->bindValue(':file_name', $fileName);
+    $stmt->bindValue(':image_type', $imageType);
+    $stmt->bindValue(':date_added', $dateAdded);
+
+    $stmt->execute();
+
+    $conn = null;
+  }
+
+  public function getAllPhotos()
+  {
+    $conn = $this->getConnection();
+    $stmt = $conn->prepare('SELECT id, file_name, image_type FROM photos WHERE image_status = :image_status ORDER BY date_added DESC');
+    $imageStatus = 1;
+    $stmt->bindValue(':image_status', $imageStatus);
+    $stmt->execute();
+    $photos = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    return $photos;
+  }
+
+  public function deletePhoto($photoId)
+  {
+    $conn = $this->getConnection();
+
+    // Get file name and image type from database using photo id
+    $stmt = $conn->prepare('SELECT file_name, image_type FROM photos WHERE id = :id');
+    $stmt->bindValue(':id', $photoId);
+    $stmt->execute();
+    $photo = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    // Delete file from uploads directory
+    unlink('../uploads/' . $photo['file_name']);
+
+    // Delete photo record from database
+    $stmt = $conn->prepare('DELETE FROM photos WHERE id = :id');
+    $stmt->bindValue(':id', $photoId);
     $stmt->execute();
   }
 }

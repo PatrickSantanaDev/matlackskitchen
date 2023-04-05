@@ -1948,3 +1948,8 @@
 1680646868 - ERROR --> No menu found in the database. 
 1680646868 - INFO  --> Getting out of stock items 
 1680646868 - DEBUG --> getting a connection 
+1680662470 - INFO  --> Displaying uploaded menu 
+1680662470 - DEBUG --> getting a connection 
+1680662470 - ERROR --> No menu found in the database. 
+1680662470 - INFO  --> Getting out of stock items 
+1680662470 - DEBUG --> getting a connection 

@@ -36,7 +36,7 @@
   <?php include_once '../navigation_bar.php'; ?>
 
   <!-- Upload Photo -->
-  <form id="uploadPhotoForm" action="" method="post" enctype="multipart/form-data">
+  <form id="uploadPhotoForm" action="upload_photos_handler.php" method="post" enctype="multipart/form-data">
     <h2 id="uploadPhotoFormHeading">Select Photos to Upload</h2>
     <input type="file" id="selectPhotos" name="selectPhotos" accept=".png,.jpg" /><br>
     <button id="uploadPhotoButton" type="submit">Upload Photo</button>
@@ -44,13 +44,13 @@
 
   <!--Photos Viewer-->
   <div id="photosViewer">
-    <img class="photo" src="../Images/jpeg.jpg" alt="Photo 1">
-    <img class="photo" src="../Images/jpeg.jpg" alt="Photo 2">
-    <img class="photo" src="../Images/jpeg.jpg" alt="Photo 3">
-    <img class="photo" src="../Images/jpeg.jpg" alt="Photo 4">
-    <img class="photo" src="../Images/jpeg.jpg" alt="Photo 5">
-    <img class="photo" src="../Images/jpeg.jpg" alt="Photo 6">
+    <?php include 'display_photos_handler.php'; ?>
   </div>
+
+  <!-- Delete photo form -->
+  <form id="deletePhotoForm" method="post" action="delete_photo_handler.php">
+    <input type="hidden" name="photoId" value="">
+  </form>
 
   <!--Footer-->
   <?php include_once '../footer.php'; ?>
