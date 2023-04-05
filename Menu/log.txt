@@ -1953,3 +1953,28 @@
 1680662470 - ERROR --> No menu found in the database. 
 1680662470 - INFO  --> Getting out of stock items 
 1680662470 - DEBUG --> getting a connection 
+1680671296 - INFO  --> Displaying uploaded menu 
+1680671296 - DEBUG --> getting a connection 
+1680671296 - ERROR --> No menu found in the database. 
+1680671296 - INFO  --> Getting out of stock items 
+1680671296 - DEBUG --> getting a connection 
+1680671302 - INFO  --> Displaying uploaded menu 
+1680671302 - DEBUG --> getting a connection 
+1680671302 - ERROR --> No menu found in the database. 
+1680671302 - INFO  --> Getting out of stock items 
+1680671302 - DEBUG --> getting a connection 
+1680671310 - INFO  --> Storing uploaded menu file 642d024e5c929_klogopng 
+1680671310 - DEBUG --> getting a connection 
+1680671310 - INFO  --> Displaying uploaded menu 
+1680671310 - DEBUG --> getting a connection 
+1680671310 - INFO  --> Getting out of stock items 
+1680671310 - DEBUG --> getting a connection 
+1680671316 - INFO  --> Displaying uploaded menu 
+1680671316 - DEBUG --> getting a connection 
+1680671316 - INFO  --> Deleting uploaded menu 
+1680671316 - DEBUG --> getting a connection 
+1680671316 - INFO  --> Displaying uploaded menu 
+1680671316 - DEBUG --> getting a connection 
+1680671316 - ERROR --> No menu found in the database. 
+1680671316 - INFO  --> Getting out of stock items 
+1680671316 - DEBUG --> getting a connection 

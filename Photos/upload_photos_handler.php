@@ -2,7 +2,7 @@
 require_once '../Dao.php';
 
 $allowedExtensions = array('jpg', 'jpeg', 'png');
-$uploadDirectory = '../uploads/';
+$uploadDirectory = '';
 
 if(isset($_FILES['selectPhotos'])) {
   $file = $_FILES['selectPhotos'];

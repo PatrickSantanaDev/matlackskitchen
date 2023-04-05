@@ -10,7 +10,7 @@ echo '<div id="photosViewer">';
 // display photo tiles
 foreach ($photos as $photo) {
   echo '<div class="photoTile">';
-  echo '<img src="../uploads/' . $photo['file_name'] . '"/>';
+  echo '<img src="' . $photo['file_name'] . '"/>';
   echo '<form class="deleteForm" method="post" action="delete_photo_handler.php">';
   echo '<input type="hidden" name="photoId" value="' . $photo['id'] . '">';
   echo '<button type="submit">Delete</button>';

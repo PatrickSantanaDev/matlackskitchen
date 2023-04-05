@@ -167,3 +167,17 @@
 1680662667 - INFO  --> Displaying uploaded schedule 
 1680662667 - DEBUG --> getting a connection 
 1680662667 - ERROR --> No menu found in the database. 
+1680671374 - INFO  --> Displaying uploaded schedule 
+1680671374 - DEBUG --> getting a connection 
+1680671374 - ERROR --> No menu found in the database. 
+1680671380 - INFO  --> Storing uploaded schedule file 642d029482391.png 
+1680671380 - DEBUG --> getting a connection 
+1680671380 - INFO  --> Displaying uploaded schedule 
+1680671380 - DEBUG --> getting a connection 
+1680671385 - INFO  --> Displaying uploaded schedule 
+1680671385 - DEBUG --> getting a connection 
+1680671385 - INFO  --> Deleting uploaded schedule 
+1680671385 - DEBUG --> getting a connection 
+1680671385 - INFO  --> Displaying uploaded schedule 
+1680671385 - DEBUG --> getting a connection 
+1680671385 - ERROR --> No menu found in the database. 

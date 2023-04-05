@@ -34,3 +34,6 @@
 1680645956 - INFO  --> Checking if username and password match to the one present in the database. 
 1680645956 - DEBUG --> getting a connection 
 1680645956 - WARN  --> User [JohnSmith] successfully logged in. 
+1680670368 - INFO  --> Checking if username and password match to the one present in the database. 
+1680670368 - DEBUG --> getting a connection 
+1680670368 - WARN  --> User [JohnSmith] successfully logged in. 

@@ -541,7 +541,7 @@ class Dao
     $photo = $stmt->fetch(PDO::FETCH_ASSOC);
 
     // Delete file from uploads directory
-    unlink('../uploads/' . $photo['file_name']);
+    unlink( $photo['file_name']);
 
     // Delete photo record from database
     $stmt = $conn->prepare('DELETE FROM photos WHERE id = :id');
