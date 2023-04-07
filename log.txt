@@ -52,3 +52,7 @@
 1680843471 - INFO  --> Checking if username and password match to the one present in the database. 
 1680843471 - DEBUG --> getting a connection 
 1680843471 - WARN  --> User [JohnSmith] successfully logged in. 
+1680845623 - INFO  --> Creating user Account! 
+1680845623 - INFO  --> Checking if user exists 
+1680845623 - DEBUG --> getting a connection 
+1680845623 - DEBUG --> getting a connection 
