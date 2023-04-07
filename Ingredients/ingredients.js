@@ -3,15 +3,14 @@
 window.onload = function () {
     var ingredientsDiv = document.getElementById('ingredientsDiv');
 
-    // AJAX request to get the ingredients from the server
+    //AJAX request for ingredients
     var xhr = new XMLHttpRequest();
     xhr.open('GET', 'get_ingredients_handler.php?refreshIngredients=true', true);
     xhr.onload = function () {
         if (this.status == 200) {
-            // Parse the response as JSON
             var response = JSON.parse(this.responseText);
 
-            // Group the ingredients by category
+            //group the ingredients by category
             var groupedIngredients = {};
             for (var i = 0; i < response.proteinIngredients.length; i++) {
                 var ingredient = response.proteinIngredients[i];
@@ -28,7 +27,7 @@ window.onload = function () {
                 groupedIngredients[ingredient.category].push(ingredient);
             }
 
-            // Create HTML for the ingredients checkboxes grouped by category
+            //create HTML for the ingredients checkboxes grouped by category
             var html = '';
             for (var category in groupedIngredients) {
                 html += '<fieldset class="' + category + '">';
@@ -40,36 +39,30 @@ window.onload = function () {
                 html += '</fieldset>';
             }
 
-            // Set the HTML of the ingredientsDiv to the generated HTML
             ingredientsDiv.innerHTML = html;
         }
     };
     xhr.send();
 };
 
-// When the add ingredient form is submitted, add the ingredient to the database
-// Get a reference to the form and add an event listener to the submit event
+// when the add ingredient form is submitted, add the ingredient to the database
 var form = document.getElementById('ingredientsList');
 window.onsubmit = function () {
 form.addEventListener('submit', function (event) {
-    event.preventDefault(); // prevent the default form submit behavior
+    event.preventDefault();
 
-    // Get an array of all the checked checkboxes
     var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
-
-    // Loop through the checked checkboxes and add their values to an array of selected ingredients
     var selectedIngredients = [];
     for (var i = 0; i < checkboxes.length; i++) {
         selectedIngredients.push(checkboxes[i].value);
     }
 
-    // Use AJAX to submit the array of selected ingredients to the server
+    //AJAX to submit the array
     var xhr = new XMLHttpRequest();
     xhr.open('POST', 'submit_ingredients_handler.php', true);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.onreadystatechange = function () {
         if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-            // Handle the server response here
             console.log(xhr.responseText);
         }
     };

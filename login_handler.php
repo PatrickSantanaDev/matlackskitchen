@@ -41,6 +41,8 @@ if(isset($_POST['username']) && isset($_POST['password'])) {
     // if there are any errors, redirect back to login page with error message
     if (!empty($errors)) {
         $_SESSION['errors'] = $errors;
+        $_SESSION['inputs']['username'] = $username;
+        $_SESSION['inputs']['password'] = $password;
         header("Location: login.php");
         exit();
     }
@@ -59,9 +61,10 @@ if(isset($_POST['username']) && isset($_POST['password'])) {
         $errors[] = 'Invalid Username or password';
     }
 
-    // if there are any errors, redirect back to login page with error message
     if (!empty($errors)) {
         $_SESSION['errors'] = $errors;
+        $_SESSION['inputs']['username'] = $username;
+        $_SESSION['inputs']['password'] = $password;
         header("Location: login.php");
         exit();
     }

@@ -23,12 +23,12 @@ function sanitize_input($input)
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $buildName = sanitize_input($_POST["name"]);
   $category = sanitize_input($_POST["category"]);
-  $ingredients = sanitize_input($_POST["ingredients"]);
-  $instructions = sanitize_input($_POST["instructions"]);
+  $build_ingredients = sanitize_input($_POST["build_ingredients"]);
+  $build_instructions = sanitize_input($_POST["build_instructions"]);
   $username = $_SESSION['username'];
 
   //validation
-  if (empty($buildName) || empty($category) || empty($ingredients) || empty($instructions)) {
+  if (empty($buildName) || empty($category) || empty($build_ingredients) || empty($build_instructions)) {
     $errors[] = "Please provide input for all fields.";
   }
 
@@ -36,17 +36,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $errors[] = "Build name should be less than or equal to 20 characters.";
   }
 
-  // set session variables for user input - not currently using
-  $_SESSION['buildName'] = $buildName;
-  $_SESSION['category'] = $category;
-  $_SESSION['ingredients'] = $ingredients;
-  $_SESSION['instructions'] = $instructions;
 
   if (empty($errors)) {
-    $dao->postBuildInfo($buildName, $category, $ingredients, $instructions, $username);
+    $dao->postBuildInfo($buildName, $category, $build_ingredients, $build_instructions, $username);
     header("Location: builds.php");
   } else {
     $_SESSION['errors'] = $errors;
+    $_SESSION['buildName'] = $buildName;
+    $_SESSION['category'] = $category;
+    $_SESSION['build_ingredients'] = $build_ingredients;
+    $_SESSION['build_instructions'] = $build_instructions;
     header("Location: builds.php");
   }
 }

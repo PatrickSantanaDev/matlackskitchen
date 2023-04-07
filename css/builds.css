@@ -192,7 +192,7 @@
    border: double #181617;
  }
 
- #ingredients {
+ #build_ingredients {
    width: 55%;
    margin: 1% 0% 1% 0%;
    font-family: 'Cinzel', serif;
@@ -200,7 +200,7 @@
    border: double #181617;
  }
 
- #instructions {
+ #build_instructions {
    width: 55%;
    margin: 1% 0% 1% 0%;
    font-family: 'Cinzel', serif;

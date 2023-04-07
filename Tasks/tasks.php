@@ -132,17 +132,15 @@
     <!-- Results Area -->
     <div id="incompleteResults"></div>
     <script>
-      // Add event listener to form submission
       document.getElementById("incompleteDutiesViewer").addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent form from submitting normally
+        event.preventDefault();
 
-        // Send AJAX request to handler
+        //send AJAX request to handler
         var xhr = new XMLHttpRequest();
         xhr.open("POST", "get_incomplete_duties_handler.php");
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xhr.onload = function() {
           if (xhr.status === 200) {
-            // Display results in designated area
             document.getElementById("incompleteResults").innerHTML = xhr.responseText;
           } else {
             alert('Request failed.  Returned status of ' + xhr.status);
@@ -155,17 +153,15 @@
     <!-- Results Area -->
     <div id="incompleteResults"></div>
     <script>
-      // Add event listener to form submission
       document.getElementById("incompleteWeeklyViewer").addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent form from submitting normally
+        event.preventDefault();
 
-        // Send AJAX request to handler
+        //send AJAX request to handler
         var xhr = new XMLHttpRequest();
         xhr.open("POST", "get_incomplete_weekly_handler.php");
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xhr.onload = function() {
           if (xhr.status === 200) {
-            // Display results in designated area
             document.getElementById("incompleteResults").innerHTML = xhr.responseText;
           } else {
             alert('Request failed.  Returned status of ' + xhr.status);

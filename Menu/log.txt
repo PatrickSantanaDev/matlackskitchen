@@ -2074,3 +2074,63 @@
 1680706921 - ERROR --> File not found: 642d8abb40713_pngtransparenttwocheckedflagsracingflagsautoracingracingflagmiscellaneousgameflagpngfreedownloadpng 
 1680706921 - INFO  --> Getting out of stock items 
 1680706921 - DEBUG --> getting a connection 
+1680842143 - INFO  --> Displaying uploaded menu 
+1680842143 - DEBUG --> getting a connection 
+1680842143 - ERROR --> No menu found in the database. 
+1680842143 - INFO  --> Getting out of stock items 
+1680842143 - DEBUG --> getting a connection 
+1680842146 - INFO  --> Displaying uploaded menu 
+1680842146 - DEBUG --> getting a connection 
+1680842146 - ERROR --> No menu found in the database. 
+1680842146 - INFO  --> Getting out of stock items 
+1680842146 - DEBUG --> getting a connection 
+1680842149 - INFO  --> Displaying uploaded menu 
+1680842149 - DEBUG --> getting a connection 
+1680842149 - ERROR --> No menu found in the database. 
+1680842149 - INFO  --> Getting out of stock items 
+1680842149 - DEBUG --> getting a connection 
+1680843474 - INFO  --> Displaying uploaded menu 
+1680843474 - DEBUG --> getting a connection 
+1680843474 - ERROR --> No menu found in the database. 
+1680843474 - INFO  --> Getting out of stock items 
+1680843474 - DEBUG --> getting a connection 
+1680843493 - INFO  --> Displaying uploaded menu 
+1680843493 - DEBUG --> getting a connection 
+1680843493 - ERROR --> No menu found in the database. 
+1680843493 - INFO  --> Getting out of stock items 
+1680843493 - DEBUG --> getting a connection 
+1680843502 - INFO  --> Storing uploaded menu file 642fa2ee6d470_pngtransparentspidermanheroesdownloadwithtransparentbackgroundfreethumbnailpng 
+1680843502 - DEBUG --> getting a connection 
+1680843502 - INFO  --> Displaying uploaded menu 
+1680843502 - DEBUG --> getting a connection 
+1680843502 - INFO  --> Getting out of stock items 
+1680843502 - DEBUG --> getting a connection 
+1680843506 - INFO  --> Adding out of stock item candy for user JohnSmith 
+1680843506 - DEBUG --> getting a connection 
+1680843506 - INFO  --> Displaying uploaded menu 
+1680843506 - DEBUG --> getting a connection 
+1680843506 - INFO  --> Getting out of stock items 
+1680843506 - DEBUG --> getting a connection 
+1680843510 - INFO  --> Deleting out of stock item candy for user JohnSmith 
+1680843510 - DEBUG --> getting a connection 
+1680843510 - INFO  --> Displaying uploaded menu 
+1680843510 - DEBUG --> getting a connection 
+1680843510 - INFO  --> Getting out of stock items 
+1680843510 - DEBUG --> getting a connection 
+1680844966 - INFO  --> Displaying uploaded menu 
+1680844966 - DEBUG --> getting a connection 
+1680844966 - INFO  --> Getting out of stock items 
+1680844966 - DEBUG --> getting a connection 
+1680845194 - INFO  --> Displaying uploaded menu 
+1680845194 - DEBUG --> getting a connection 
+1680845194 - INFO  --> Getting out of stock items 
+1680845194 - DEBUG --> getting a connection 
+1680845196 - INFO  --> Displaying uploaded menu 
+1680845196 - DEBUG --> getting a connection 
+1680845196 - INFO  --> Deleting uploaded menu 
+1680845196 - DEBUG --> getting a connection 
+1680845196 - INFO  --> Displaying uploaded menu 
+1680845196 - DEBUG --> getting a connection 
+1680845196 - ERROR --> No menu found in the database. 
+1680845196 - INFO  --> Getting out of stock items 
+1680845196 - DEBUG --> getting a connection 

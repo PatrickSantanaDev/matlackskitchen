@@ -203,3 +203,29 @@
 1680706924 - INFO  --> Displaying uploaded schedule 
 1680706924 - DEBUG --> getting a connection 
 1680706924 - ERROR --> File not found: 642d00edd57e9.png 
+1680842115 - INFO  --> Displaying uploaded schedule 
+1680842115 - DEBUG --> getting a connection 
+1680842115 - ERROR --> No menu found in the database. 
+1680842122 - INFO  --> Storing uploaded schedule file 642f9d8ab6acc.png 
+1680842122 - DEBUG --> getting a connection 
+1680842122 - INFO  --> Displaying uploaded schedule 
+1680842122 - DEBUG --> getting a connection 
+1680842138 - INFO  --> Displaying uploaded schedule 
+1680842138 - DEBUG --> getting a connection 
+1680842578 - INFO  --> Displaying uploaded schedule 
+1680842578 - DEBUG --> getting a connection 
+1680842580 - INFO  --> Displaying uploaded schedule 
+1680842580 - DEBUG --> getting a connection 
+1680842592 - INFO  --> Displaying uploaded schedule 
+1680842592 - DEBUG --> getting a connection 
+1680845093 - INFO  --> Displaying uploaded schedule 
+1680845093 - DEBUG --> getting a connection 
+1680845198 - INFO  --> Displaying uploaded schedule 
+1680845198 - DEBUG --> getting a connection 
+1680845200 - INFO  --> Displaying uploaded schedule 
+1680845200 - DEBUG --> getting a connection 
+1680845200 - INFO  --> Deleting uploaded schedule 
+1680845200 - DEBUG --> getting a connection 
+1680845200 - INFO  --> Displaying uploaded schedule 
+1680845200 - DEBUG --> getting a connection 
+1680845200 - ERROR --> No menu found in the database. 

@@ -266,3 +266,11 @@
 1680706927 - DEBUG --> getting a connection 
 1680706930 - DEBUG --> getting a connection 
 1680706930 - DEBUG --> getting a connection 
+1680761524 - DEBUG --> getting a connection 
+1680841997 - DEBUG --> getting a connection 
+1680841998 - DEBUG --> getting a connection 
+1680842000 - DEBUG --> getting a connection 
+1680842109 - DEBUG --> getting a connection 
+1680842582 - DEBUG --> getting a connection 
+1680845094 - DEBUG --> getting a connection 
+1680845193 - DEBUG --> getting a connection 

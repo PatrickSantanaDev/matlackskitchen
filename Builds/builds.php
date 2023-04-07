@@ -139,8 +139,8 @@
         <option value="Desserts" <?php if (isset($_SESSION['category']) && $_SESSION['category'] == 'Desserts') echo 'selected'; ?>>Desserts</option>
       </select>
     </div>
-    <textarea id="ingredients" name="ingredients" placeholder="Enter Ingredients..."></textarea><br>
-    <textarea id="instructions" name="instructions" placeholder="Enter Instructions..."></textarea><br>
+    <textarea id="build_ingredients" name="build_ingredients" placeholder="Enter Ingredients..."><?php echo (isset($_SESSION['build_ingredients']) && empty($_SESSION['errors'])) ? $_SESSION['build_ingredients'] : '' ?></textarea><br>
+    <textarea id="build_instructions" name="build_instructions" placeholder="Enter Instructions..."><?php echo (isset($_SESSION['build_instructions']) && empty($_SESSION['errors'])) ? $_SESSION['build_instructions'] : '' ?></textarea><br>
 
     <button id="uploadBuildButton" type="submit">Upload Build</button>
   </form>

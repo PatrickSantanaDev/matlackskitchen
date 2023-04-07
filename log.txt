@@ -37,3 +37,18 @@
 1680670368 - INFO  --> Checking if username and password match to the one present in the database. 
 1680670368 - DEBUG --> getting a connection 
 1680670368 - WARN  --> User [JohnSmith] successfully logged in. 
+1680842267 - INFO  --> Checking if username and password match to the one present in the database. 
+1680842267 - DEBUG --> getting a connection 
+1680842267 - WARN  --> User [rrtrtrtr] invalid username or password 
+1680842545 - INFO  --> Checking if username and password match to the one present in the database. 
+1680842545 - DEBUG --> getting a connection 
+1680842545 - WARN  --> User [JohnSmith] successfully logged in. 
+1680843443 - INFO  --> Checking if username and password match to the one present in the database. 
+1680843443 - DEBUG --> getting a connection 
+1680843443 - WARN  --> User [JohnSmith] successfully logged in. 
+1680843461 - INFO  --> Checking if username and password match to the one present in the database. 
+1680843461 - DEBUG --> getting a connection 
+1680843461 - WARN  --> User [dfdsf] invalid username or password 
+1680843471 - INFO  --> Checking if username and password match to the one present in the database. 
+1680843471 - DEBUG --> getting a connection 
+1680843471 - WARN  --> User [JohnSmith] successfully logged in. 
