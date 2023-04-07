@@ -36,17 +36,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $errors[] = "Recipe name should be less than or equal to 20 characters.";
   }
 
-  // set session variables for user input
-  $_SESSION['recipeName'] = $recipeName;
-  $_SESSION['category'] = $category;
-  $_SESSION['ingredients'] = $ingredients;
-  $_SESSION['instructions'] = $instructions;
-
   if (empty($errors)) {
     $dao->postRecipeInfo($recipeName, $category, $ingredients, $instructions, $username);
     header("Location: recipes.php");
   } else {
     $_SESSION['errors'] = $errors;
+    $_SESSION['recipeName'] = $recipeName;
+    $_SESSION['category'] = $category;
+    $_SESSION['ingredients'] = $ingredients;
+    $_SESSION['instructions'] = $instructions;
     header("Location: recipes.php");
   }
 }
