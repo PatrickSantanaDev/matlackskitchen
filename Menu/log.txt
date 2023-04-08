@@ -2134,3 +2134,18 @@
 1680845196 - ERROR --> No menu found in the database. 
 1680845196 - INFO  --> Getting out of stock items 
 1680845196 - DEBUG --> getting a connection 
+1680982863 - INFO  --> Displaying uploaded menu 
+1680982863 - DEBUG --> getting a connection 
+1680982863 - ERROR --> No menu found in the database. 
+1680982863 - INFO  --> Getting out of stock items 
+1680982863 - DEBUG --> getting a connection 
+1680984078 - INFO  --> Displaying uploaded menu 
+1680984078 - DEBUG --> getting a connection 
+1680984078 - ERROR --> No menu found in the database. 
+1680984078 - INFO  --> Getting out of stock items 
+1680984078 - DEBUG --> getting a connection 
+1680993800 - INFO  --> Displaying uploaded menu 
+1680993800 - DEBUG --> getting a connection 
+1680993800 - ERROR --> No menu found in the database. 
+1680993800 - INFO  --> Getting out of stock items 
+1680993800 - DEBUG --> getting a connection 

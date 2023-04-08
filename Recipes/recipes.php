@@ -38,6 +38,7 @@
 
   <!-- Dropdown Recipe Search -->
   <!-- Category Search -->
+  <h2 id="header">Search for a recipe:</h2>
   <form id="catSearch" action="get_recipes_by_category_handler.php" method="get">
     <label for="searchByCategory">Search by recipe category:</label>
     <select id="searchByCategory" name="searchByCategory">
@@ -115,6 +116,7 @@
   </div>
 
   <!-- Upload Recipe -->
+  <h2 id="header">Add a recipe:</h2>
   <form class="uploadRecipeForm" action="upload_recipe_handler.php" method="post" enctype="multipart/form-data">
     <?php if (!empty($_SESSION['errors'])) : ?>
       <div class="errors">

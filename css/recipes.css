@@ -58,9 +58,15 @@
  /*    Upload Recipe        */
  /***************************/
 
+ #header {
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    margin: 5% 0% 1% 0%;
+ }
+ 
  .uploadRecipeForm {
      text-align: center;
-     margin: 5% 10% 5% 10%;
+     margin: 0% 10% 5% 10%;
      border: thick double #d0a16d;
      border-radius: 30px;
      border-width: 15px;
@@ -130,7 +136,7 @@
  #catSearch {
      text-align: center;
      font-family: 'Cinzel', serif;
-     margin: 5% 0% 2% 0%;
+     margin: 0% 0% 2% 0%;
  }
 
  #searchByCategory {

@@ -1,183 +1,230 @@
- 
-/****************/   
-/*    Logo      */
-/****************/
-#logo {
-    width: 15%;
-    margin:1% 80% 1% 1%;
-    position:absolute;
-} 
+ /****************/
+ /*    Logo      */
+ /****************/
+ #logo {
+     width: 15%;
+     margin: 1% 80% 1% 1%;
+     position: absolute;
+ }
 
-#logo img {
-    width: 100%;
-}   
+ #logo img {
+     width: 100%;
+ }
 
-/****************/   
-/*  Page Title  */
-/****************/
- 
-#title{
-    text-align: center;
-    margin:6% 25% 2% 25%;
-    padding:1% 1% 1% 1%;
-    width: 50%;
-}   
- 
-/***************************/
-/*    Navigation Menu      */
-/***************************/
+ /****************/
+ /*  Page Title  */
+ /****************/
 
-.menu {
-    width: 100%;
-    display:flex;
-    justify-content: center;
-    overflow: hidden;
-    background-color: #181617;
-}
+ #title {
+     text-align: center;
+     margin: 6% 25% 2% 25%;
+     padding: 1% 1% 1% 1%;
+     width: 50%;
+ }
 
-.menu a {
+ /***************************/
+ /*    Navigation Menu      */
+ /***************************/
 
-    color:#948470;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 13px;
-    font-family: 'Cinzel', serif;
-}
+ .menu {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     overflow: hidden;
+     background-color: #181617;
+ }
 
-.menu a:hover {
-    background-color:#2b2b2b;
-    transition: 0.5s;
-    color:#948470;
-}
+ .menu a {
 
-.menu a:active {
-    background-color: #181617;
-  }
+     color: #948470;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size: 13px;
+     font-family: 'Cinzel', serif;
+ }
 
-/*****************************/
-/*      Add Ingredient       */
-/*****************************/
+ .menu a:hover {
+     background-color: #2b2b2b;
+     transition: 0.5s;
+     color: #948470;
+ }
 
-#addIngredientViewer {
-    text-align: center;
-}
+ .menu a:active {
+     background-color: #181617;
+ }
 
-#addIngredient {
-    color: #181617;
-    font-family: 'Cinzel', serif;
-    margin: 2% 10% 0% 10%;
-    color: #181617;
-    border: thick double #d0a16d;
-    border-radius: 30px;
-}
+ /*****************************/
+ /*      Add Ingredient       */
+ /*****************************/
 
-#addIngredientButton {
-    border-radius: 20px;
-
-    margin: 5px 0px 20px 0px;
-    width: 100px;
-
-    border: 1mm outset #d29e6f;
-    background-color: #181617;
-    box-shadow: 0 7px #2b2b2b;
-
-    color: #d29e6f;
-
-    text-shadow: 1px 1px 2px #917863;
-    font-family: 'Cinzel', serif;
-}
-
-/*****************************/
-/*   Ingredients Selection   */
-/*****************************/
-
-#ingredientsList{
-    color: #181617;
-    font-family: 'Cinzel', serif;
-    font-size: 18px;
-    text-align: left;
-    margin: 2% 10% 0% 10%;
-    border-radius: 30px;
-    color: #181617;
-}
-
-
-
-.ingredientsList {
-    border: thick double #d0a16d;
-    border-radius: 30px;
-}
-
-
-
-.legend {
-    font-size: 25px;
-    border: thick double #d0a16d;
-    border-radius: 30px;
-}
-
-/* Protein */
-.protein {
-    margin: 2% 0% 2% 0%;
-    border: thick double #d0a16d;
-    border-radius: 30px;
-}
-
-/* Dairy */
-.dairy {
-    margin: 2% 0% 2% 0%;
-    border: thick double #d0a16d;
-    border-radius: 30px;
-}
-
-
-input[type=checkbox] {
-    background-color: #d0a16d;
-    accent-color: #d0a16d;
-    width: 30px;
-    height: 30px;
-}
-
-#submitIngredientsButton {
-    border-radius: 20px;
-     cursor: pointer;
-     margin: 3% 30% 3% 30%;
+ .errors {
+     text-align: center;
+     color: #963838;
+     font-weight: bold;
+     border: thick double #963838;
      width: 40%;
-  
+     margin: 1% 30% 1% 30%;
+ }
+
+ h2 {
+     text-align: center;
+     font-family: 'Cinzel', serif;
+ }
+
+ #addIngredientViewer {
+     text-align: center;
+ }
+
+ #addIngredient {
+     color: #181617;
+     font-family: 'Cinzel', serif;
+     margin: 2% 10% 0% 10%;
+     color: #181617;
+     border: thick double #d0a16d;
+     border-radius: 30px;
+     border-width: 15px;
+ }
+
+ #addIngredientButton {
+     border-radius: 20px;
+
+     margin: 5px 0px 20px 0px;
+     width: 100px;
+
      border: 1mm outset #d29e6f;
      background-color: #181617;
      box-shadow: 0 7px #2b2b2b;
-  
+
      color: #d29e6f;
-  
+
      text-shadow: 1px 1px 2px #917863;
      font-family: 'Cinzel', serif;
-  }
+ }
 
-.submit button:hover {
-    background-color:#948470;
-    transition: 0.5s;
-    color:#181617;
-}
+ /*****************************/
+ /*   Ingredients Selection   */
+ /*****************************/
 
-.submit button:active {
-    background-color: #2b2b2b;
-    box-shadow: 0 5px #181617;
-    transform: translateY(3px);
-  }
+ #ingredientsList {
+     color: #181617;
+     font-family: 'Cinzel', serif;
+     text-align: left;
+     margin: 2% 10% 0% 10%;
+     border-radius: 30px;
+     color: #181617;
+ }
 
-/***************************/
-/*          Misc.          */
-/***************************/
 
-  body {
-    margin:0px;
-    border: thick double #181617;
-    background-color: #948470;
-    
-}
+ .ingredientsList {
+     border: thick double #d0a16d;
+     border-radius: 30px;
+     border-width: 15px;
+ }
 
-a[href] {
-    text-decoration: none;
-}
+ .legend {
+     border: thick double #d0a16d;
+     border-radius: 10px;
+ }
+
+ /* Protein */
+ .protein {
+     margin: 2% 0% 2% 0%;
+     border: thick double #d0a16d;
+     border-radius: 10px;
+ }
+
+ /* Dairy */
+ .dairy {
+     margin: 2% 0% 2% 0%;
+     border: thick double #d0a16d;
+     border-radius: 10px;
+ }
+
+
+ input[type=checkbox] {
+     background-color: #d0a16d;
+     accent-color: #d0a16d;
+     width: 30px;
+     height: 30px;
+ }
+
+ #submitIngredientsButton {
+     border-radius: 20px;
+     cursor: pointer;
+     margin: 3% 30% 3% 30%;
+     width: 40%;
+
+     border: 1mm outset #d29e6f;
+     background-color: #181617;
+     box-shadow: 0 7px #2b2b2b;
+
+     color: #d29e6f;
+
+     text-shadow: 1px 1px 2px #917863;
+     font-family: 'Cinzel', serif;
+ }
+
+ .submit button:hover {
+     background-color: #948470;
+     transition: 0.5s;
+     color: #181617;
+ }
+
+ .submit button:active {
+     background-color: #2b2b2b;
+     box-shadow: 0 5px #181617;
+     transform: translateY(3px);
+ }
+
+
+ #ingredients_needed_display {
+     height: 300px;
+     overflow: auto;
+     border: thick double #d0a16d;
+     border-width: 15px;
+     border-radius: 30px;
+     text-align: center;
+     margin: 3% 25% 1% 25%;
+     font-family: 'Cinzel', serif;
+ }
+
+ th {
+     border: thick double #d0a16d;
+     border-radius: 10px;
+ }
+
+ #ingredientsTable {
+     margin: auto;
+ }
+
+ #clear_ingredients_needed {
+     border-radius: 20px;
+     cursor: pointer;
+     margin: 0% 40% 3% 40%;
+     width: 20%;
+
+     border: 1mm outset #d29e6f;
+     background-color: #181617;
+     box-shadow: 0 7px #2b2b2b;
+
+     color: #d29e6f;
+
+     text-shadow: 1px 1px 2px #917863;
+     font-family: 'Cinzel', serif;
+ }
+
+ /***************************/
+ /*          Misc.          */
+ /***************************/
+
+ body {
+     margin: 0px;
+     border: thick double #181617;
+     background-color: #948470;
+
+ }
+
+ a[href] {
+     text-decoration: none;
+ }

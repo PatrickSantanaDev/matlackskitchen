@@ -455,6 +455,33 @@ class Dao
     }
   }
 
+  public function getIngredientsNeeded()
+{
+	try {
+		$conn = $this->getConnection();
+		$query = "SELECT * FROM ingredients_needed";
+		$stmt = $conn->prepare($query);
+		$stmt->execute();
+		return $stmt->fetchAll(PDO::FETCH_ASSOC);
+	} catch (Exception $e) {
+		$this->logger->LogFatal("getIngredientsNeeded failed: " . print_r($e, 1));
+		exit;
+	}
+}
+
+public function clearIngredientsNeeded()
+{
+	try {
+		$conn = $this->getConnection();
+		$query = "DELETE FROM ingredients_needed";
+		$stmt = $conn->prepare($query);
+		$stmt->execute();
+	} catch (Exception $e) {
+		$this->logger->LogFatal("clearIngredientsNeeded failed: " . print_r($e, 1));
+		exit;
+	}
+}
+
   public function storeUploadedSchedule($fileName)
   {
     $this->logger->LogInfo("Storing uploaded schedule file $fileName");

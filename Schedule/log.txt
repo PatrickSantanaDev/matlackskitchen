@@ -229,3 +229,9 @@
 1680845200 - INFO  --> Displaying uploaded schedule 
 1680845200 - DEBUG --> getting a connection 
 1680845200 - ERROR --> No menu found in the database. 
+1680984071 - INFO  --> Displaying uploaded schedule 
+1680984071 - DEBUG --> getting a connection 
+1680984071 - ERROR --> No menu found in the database. 
+1680993796 - INFO  --> Displaying uploaded schedule 
+1680993796 - DEBUG --> getting a connection 
+1680993796 - ERROR --> No menu found in the database. 

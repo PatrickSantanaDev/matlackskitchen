@@ -56,3 +56,13 @@
 1680845623 - INFO  --> Checking if user exists 
 1680845623 - DEBUG --> getting a connection 
 1680845623 - DEBUG --> getting a connection 
+1680982829 - INFO  --> Checking if username and password match to the one present in the database. 
+1680982829 - DEBUG --> getting a connection 
+1680982829 - WARN  --> User [JohnSmith] invalid username or password 
+1680982847 - INFO  --> Creating user Account! 
+1680982847 - INFO  --> Checking if user exists 
+1680982847 - DEBUG --> getting a connection 
+1680982848 - DEBUG --> getting a connection 
+1680982858 - INFO  --> Checking if username and password match to the one present in the database. 
+1680982858 - DEBUG --> getting a connection 
+1680982858 - WARN  --> User [JohnSmith] successfully logged in. 

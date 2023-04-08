@@ -48,24 +48,44 @@ window.onload = function () {
 // when the add ingredient form is submitted, add the ingredient to the database
 var form = document.getElementById('ingredientsList');
 window.onsubmit = function () {
-form.addEventListener('submit', function (event) {
-    event.preventDefault();
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
 
-    var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
-    var selectedIngredients = [];
-    for (var i = 0; i < checkboxes.length; i++) {
-        selectedIngredients.push(checkboxes[i].value);
-    }
-
-    //AJAX to submit the array
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'submit_ingredients_handler.php', true);
-    xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-            console.log(xhr.responseText);
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+        var selectedIngredients = [];
+        for (var i = 0; i < checkboxes.length; i++) {
+            selectedIngredients.push(checkboxes[i].value);
         }
-    };
-    xhr.send(JSON.stringify(selectedIngredients));
+
+        //AJAX to submit the array
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'submit_ingredients_handler.php', true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                console.log(xhr.responseText);
+            }
+        };
+        xhr.send(JSON.stringify(selectedIngredients));
+    });
+}
+
+//display ingredients needed
+$(document).ready(function () {
+    refreshIngredients();
+    setInterval(refreshIngredients, 5000);
 });
+
+function refreshIngredients() {
+    $.getJSON('get_ingredients_needed_handler.php', { refreshIngredients: true }, function (data) {
+        $('#ingredientsTable tbody').empty();
+        $.each(data, function (index, row) {
+            var tr = $('<tr>');
+            tr.append('<td>' + row.ingredient_name + '</td>');
+            tr.append('<td>' + (row.is_needed ? 'Yes' : 'No') + '</td>');
+            tr.append('<td>' + row.added_by_username + '</td>');
+            tr.append('<td>' + row.date_added + '</td>');
+            $('#ingredientsTable tbody').append(tr);
+        });
+    });
 }
