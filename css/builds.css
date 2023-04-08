@@ -167,12 +167,12 @@
  /***************************/
  /*    Upload Build        */
  /***************************/
- 
- #header {
-  font-family: 'Cinzel', serif;
-  text-align: center;
-  margin: 5% 0% 1% 0%;
-}
+
+ .header {
+   font-family: 'Cinzel', serif;
+   text-align: center;
+   margin: 5% 0% 1% 0%;
+ }
 
  .uploadBuildForm {
    text-align: center;

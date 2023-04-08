@@ -40,7 +40,9 @@
 
   <!-- Dropdown Build Search -->
   <!-- Category Search -->
-  <h2 id="header">Search for a build:</h2>
+  <div class="header">
+    <h2>Search for a build:</h2>
+  </div>
   <form id="catSearch" action="get_builds_by_category_handler.php" method="get">
     <label for="searchByCategory">Search by build category:</label>
     <select id="searchByCategory" name="searchByCategory">
@@ -120,7 +122,9 @@
 
 
   <!-- Upload Build -->
-  <h2 id="header">Add a build:</h2>
+  <div class="header">
+    <h2>Add a build:</h2>
+  </div>
   <form class="uploadBuildForm" action="upload_build_handler.php" method="post" enctype="multipart/form-data">
     <?php if (!empty($_SESSION['errors'])) : ?>
       <div class="errors">

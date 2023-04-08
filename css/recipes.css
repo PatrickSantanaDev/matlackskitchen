@@ -58,12 +58,12 @@
  /*    Upload Recipe        */
  /***************************/
 
- #header {
-    font-family: 'Cinzel', serif;
-    text-align: center;
-    margin: 5% 0% 1% 0%;
+ .header {
+     font-family: 'Cinzel', serif;
+     text-align: center;
+     margin: 5% 0% 1% 0%;
  }
- 
+
  .uploadRecipeForm {
      text-align: center;
      margin: 0% 10% 5% 10%;
