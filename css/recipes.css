@@ -199,7 +199,7 @@
  /***************************/
 
  #recipeViewer {
-     text-align: center;
+     text-align: left;
      border: thick double #d0a16d;
      border-radius: 30px;
      border-width: 15px;

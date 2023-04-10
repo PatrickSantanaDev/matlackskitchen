@@ -36,90 +36,91 @@
   <!-- Navigation Bar -->
   <?php include_once '../navigation_bar.php'; ?>
 
-
-  <!-- AM Duties Viewer -->
-  <form id="amDutiesViewer" action="submit_am_duties_handler.php" method="post">
-    <h2>A.M. Duties</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Duty</th>
-          <th>Completed?</th>
-        </tr>
-      </thead>
-      <tbody>
-        <?php
-        $tasks = array_map('str_getcsv', file('am_duties.csv'));
-
-        foreach ($tasks as $index => $task) {
-          $taskName = $task[0];
-          $taskId = 'duty' . ($index + 1);
-        ?>
+  <div class="duty-wrapper">
+    <!-- AM Duties Viewer -->
+    <form id="amDutiesViewer" action="submit_am_duties_handler.php" method="post">
+      <h2>A.M. Duties</h2>
+      <table>
+        <thead>
           <tr>
-            <td><?= $taskName ?></td>
-            <td><input type="checkbox" name="<?= $taskId ?>" value="1" id="<?= $taskId ?>"></td>
+            <th>Duty</th>
+            <th>Completed?</th>
           </tr>
-        <?php } ?>
-      </tbody>
-    </table>
-    <button id="submitAMDutiesButton" type="submit">Submit</button>
-  </form>
+        </thead>
+        <tbody>
+          <?php
+          $tasks = array_map('str_getcsv', file('am_duties.csv'));
 
-  <!-- PM Duties Viewer -->
-  <form id="pmDutiesViewer" action="submit_pm_duties_handler.php" method="post">
-    <h2>P.M. Duties</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Duty</th>
-          <th>Completed?</th>
-        </tr>
-      </thead>
-      <tbody>
-        <?php
-        $tasks = array_map('str_getcsv', file('pm_duties.csv'));
+          foreach ($tasks as $index => $task) {
+            $taskName = $task[0];
+            $taskId = 'duty' . ($index + 1);
+          ?>
+            <tr>
+              <td><?= $taskName ?></td>
+              <td><input type="checkbox" name="<?= $taskId ?>" value="1" id="<?= $taskId ?>"></td>
+            </tr>
+          <?php } ?>
+        </tbody>
+      </table>
+      <button id="submitAMDutiesButton" type="submit">Submit</button>
+    </form>
 
-        foreach ($tasks as $index => $task) {
-          $taskName = $task[0];
-          $taskId = 'duty' . ($index + 1);
-        ?>
+    <!-- PM Duties Viewer -->
+    <form id="pmDutiesViewer" action="submit_pm_duties_handler.php" method="post">
+      <h2>P.M. Duties</h2>
+      <table>
+        <thead>
           <tr>
-            <td><?= $taskName ?></td>
-            <td><input type="checkbox" name="<?= $taskId ?>" value="1" id="<?= $taskId ?>"></td>
+            <th>Duty</th>
+            <th>Completed?</th>
           </tr>
-        <?php } ?>
-      </tbody>
-    </table>
-    <button id="submitPMDutiesButton" type="submit">Submit</button>
-  </form>
+        </thead>
+        <tbody>
+          <?php
+          $tasks = array_map('str_getcsv', file('pm_duties.csv'));
 
-  <!-- Weekly Duties Viewer -->
-  <form id="weeklyDutiesViewer" action="submit_weekly_duties_handler.php" method="post">
-    <h2>Weekly Duties</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Duty</th>
-          <th>Completed?</th>
-        </tr>
-      </thead>
-      <tbody>
-        <?php
-        $tasks = array_map('str_getcsv', file('weekly_duties.csv'));
+          foreach ($tasks as $index => $task) {
+            $taskName = $task[0];
+            $taskId = 'duty' . ($index + 1);
+          ?>
+            <tr>
+              <td><?= $taskName ?></td>
+              <td><input type="checkbox" name="<?= $taskId ?>" value="1" id="<?= $taskId ?>"></td>
+            </tr>
+          <?php } ?>
+        </tbody>
+      </table>
+      <button id="submitPMDutiesButton" type="submit">Submit</button>
+    </form>
 
-        foreach ($tasks as $index => $task) {
-          $taskName = $task[0];
-          $taskId = 'duty' . ($index + 1);
-        ?>
+    <!-- Weekly Duties Viewer -->
+    <form id="weeklyDutiesViewer" action="submit_weekly_duties_handler.php" method="post">
+      <h2>Weekly Duties</h2>
+      <table>
+        <thead>
           <tr>
-            <td><?= $taskName ?></td>
-            <td><input type="checkbox" name="<?= $taskId ?>" value="1" id="<?= $taskId ?>"></td>
+            <th>Duty</th>
+            <th>Completed?</th>
           </tr>
-        <?php } ?>
-      </tbody>
-    </table>
-    <button id="submitWeeklyDutiesButton" type="submit">Submit</button>
-  </form>
+        </thead>
+        <tbody>
+          <?php
+          $tasks = array_map('str_getcsv', file('weekly_duties.csv'));
+
+          foreach ($tasks as $index => $task) {
+            $taskName = $task[0];
+            $taskId = 'duty' . ($index + 1);
+          ?>
+            <tr>
+              <td><?= $taskName ?></td>
+              <td><input type="checkbox" name="<?= $taskId ?>" value="1" id="<?= $taskId ?>"></td>
+            </tr>
+          <?php } ?>
+        </tbody>
+      </table>
+      <button id="submitWeeklyDutiesButton" type="submit">Submit</button>
+    </form>
+  </div>
 
   <!-- Incomplete Duties Viewer - using AJAX-->
   <div id="incomplete_daily_viewer">
