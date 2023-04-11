@@ -6,29 +6,25 @@ session_start();
 if (isset($_SESSION['username'])) {
   $dao = new Dao();
 
-  $tasks = array();
+  $tasks = array_map('str_getcsv', file('weekly_duties.csv'));
 
-  if (($handle = fopen("weekly_duties.csv", "r")) !== false) {
-    while (($data = fgetcsv($handle, 1000, ",")) !== false) {
-      array_push($tasks, $data[0]);
-    }
-    fclose($handle);
-  }
-
-  $username = $_SESSION['username'];
+  $dayOfWeek = date('D');
   $duties = array();
 
   foreach ($tasks as $index => $task) {
-    $taskId = 'duty' . ($index + 1);
-    $completed = isset($_POST[$taskId]) ? 1 : 0;
-    $duties[] = array(
-      'duty_name' => $task,
-      'completed' => $completed,
-    );
+    $taskDays = explode(',', strtoupper($task[1]));
+    if (in_array(strtoupper($dayOfWeek), $taskDays)) {
+      $taskId = 'task' . ($index + 1);
+      $completed = isset($_POST['tasks']) && in_array($task[0], $_POST['tasks']) ? 1 : 0;
+      $duties[] = array(
+        'duty_name' => $task[0],
+        'completed' => $completed,
+      );
+    }
   }
 
+  $username = $_SESSION['username'];
   $dao->submitWeeklyDuties($duties, $username);
-
 
   header("Location: tasks.php");
 } else {

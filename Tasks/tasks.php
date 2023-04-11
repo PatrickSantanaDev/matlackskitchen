@@ -105,17 +105,22 @@
         </thead>
         <tbody>
           <?php
+          $dayOfWeek = date('D');
           $tasks = array_map('str_getcsv', file('weekly_duties.csv'));
 
           foreach ($tasks as $index => $task) {
-            $taskName = $task[0];
-            $taskId = 'duty' . ($index + 1);
+            if (isset($task[0]) && isset($task[1])) {
+              $taskDays = explode(',', strtoupper($task[1]));
+              if (in_array(strtoupper($dayOfWeek), $taskDays)) {
+                $taskName = $task[0];
+                echo '<tr>';
+                echo '<td>' . $taskName . '</td>';
+                echo '<td><input type="checkbox" name="tasks[]" value="' . $taskName . '"></td>';
+                echo '</tr>';
+              }
+            }
+          }
           ?>
-            <tr>
-              <td><?= $taskName ?></td>
-              <td><input type="checkbox" name="<?= $taskId ?>" value="1" id="<?= $taskId ?>"></td>
-            </tr>
-          <?php } ?>
         </tbody>
       </table>
       <button id="submitWeeklyDutiesButton" type="submit">Submit</button>
