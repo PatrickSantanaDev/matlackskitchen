@@ -28,6 +28,5 @@
  
   .menu a.active {
     background-color: #2b2b2b;
-    transition: 0.5s;
     color: #948470;
   }
