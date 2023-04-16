@@ -39,6 +39,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   if (empty($errors)) {
     $dao->postBuildInfo($buildName, $category, $build_ingredients, $build_instructions, $username);
+    unset($_SESSION['buildName']);
+    unset($_SESSION['category']);
+    unset($_SESSION['build_ingredients']);
+    unset($_SESSION['build_instructions']);
     header("Location: builds.php");
   } else {
     $_SESSION['errors'] = $errors;

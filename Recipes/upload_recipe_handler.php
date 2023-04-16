@@ -38,6 +38,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   if (empty($errors)) {
     $dao->postRecipeInfo($recipeName, $category, $ingredients, $instructions, $username);
+    unset($_SESSION['recipeName']);
+    unset($_SESSION['category']);
+    unset($_SESSION['ingredients']);
+    unset($_SESSION['instructions']);
     header("Location: recipes.php");
   } else {
     $_SESSION['errors'] = $errors;

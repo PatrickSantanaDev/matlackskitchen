@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="../css/photos.css">
   <link rel="stylesheet" type="text/css" href="../css/footer.css">
   <link rel="stylesheet" type="text/css" href="../css/logout_button.css">
+  <link rel="stylesheet" type="text/css" href="../css/navigation.css">
   <link rel="shortcut icon" type="image/png" href="../Images/knife.png?">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
@@ -33,7 +34,10 @@
   </div>
 
   <!-- Navigation Bar -->
-  <?php include_once '../navigation_bar.php'; ?>
+  <?php
+  $currentPage = "photos";
+  include_once '../navigation_bar.php';
+  ?>
 
   <!-- Upload Photo -->
   <form id="uploadPhotoForm" action="upload_photos_handler.php" method="post" enctype="multipart/form-data">

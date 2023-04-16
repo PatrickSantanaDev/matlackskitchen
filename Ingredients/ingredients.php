@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="../css/ingredients.css">
   <link rel="stylesheet" type="text/css" href="../css/footer.css">
   <link rel="stylesheet" type="text/css" href="../css/logout_button.css">
+  <link rel="stylesheet" type="text/css" href="../css/navigation.css">
   <link rel="shortcut icon" type="image/png" href="../Images/knife.png?">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <style>
@@ -38,7 +39,10 @@
   </div>
 
   <!-- Navigation Bar -->
-  <?php include_once '../navigation_bar.php'; ?>
+  <?php
+  $currentPage = "ingredients";
+  include_once '../navigation_bar.php';
+  ?>
 
   <!-- Add Ingredient Form -->
   <div id="addIngredientViewer">
