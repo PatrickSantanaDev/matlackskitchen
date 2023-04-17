@@ -13,6 +13,7 @@ $dao = new Dao();
 $username = $_POST['username'];
 $email = $_POST['email'];
 $password = $_POST['password'];
+$hashed_password = password_hash($password, PASSWORD_DEFAULT);
 $confirm_password = $_POST['confirm_password'];
 $_SESSION['signup_inputs'] = $_POST;
 
@@ -54,7 +55,7 @@ else
 {
   // add user to database
   $logger->LogDebug("User [{$username}] attempting to create account");
-  $result = $dao->addSignupUser($username, $email, $password);
+  $result = $dao->addSignupUser($username, $email, $hashed_password);
 
   if ($result) 
   {

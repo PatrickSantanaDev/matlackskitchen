@@ -29,7 +29,7 @@ DROP TABLE IF EXISTS photos;
 CREATE TABLE users (
     user_id INT AUTO_INCREMENT,
     username VARCHAR(25) NOT NULL,
-    pass VARCHAR(50) NOT NULL,
+    pass VARCHAR(250) NOT NULL,
     email VARCHAR(25) NOT NULL UNIQUE,
     PRIMARY KEY(user_id)
 );

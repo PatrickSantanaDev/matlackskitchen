@@ -5,7 +5,7 @@ $dao = new Dao();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $incompleteDuties = $dao->getIncompleteDuties();
     if (count($incompleteDuties) == 0) {
-        echo "No incomplete duties.";
+        echo "No incomplete daily duties.";
     } else {
         echo "<h2>Incomplete A.M./P.M. Tasks</h2>";
         echo "<table>";

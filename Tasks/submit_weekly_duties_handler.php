@@ -28,5 +28,5 @@ if (isset($_SESSION['username'])) {
 
   header("Location: tasks.php");
 } else {
-  header("Location: login.php");
+  header("Location: tasks.php");
 }

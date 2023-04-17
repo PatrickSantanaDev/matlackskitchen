@@ -50,7 +50,7 @@ if(isset($_POST['username']) && isset($_POST['password'])) {
     // check the database
     $result = $dao->checkUser($username, $password);
 
-    if (count($result) > 0) {
+    if ($result) {
         $_SESSION['auth'] = true;
         $_SESSION['username'] = $username;
         $logger->LogWarn("User [{$username}] successfully logged in.");

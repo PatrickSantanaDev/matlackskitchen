@@ -49,13 +49,21 @@ class Dao
   {
     $this->logger->LogInfo("Checking if username and password match to the one present in the database.");
     $conn = $this->getConnection();
-    $sth = $conn->prepare("SELECT * from users where users.username  like :username and users.pass like :pass");
+    $sth = $conn->prepare("SELECT * from users where users.username like :username");
     $sth->bindParam(":username", $userName);
-    $sth->bindParam(":pass", $userPass);
     $sth->execute();
-    $result = $sth->fetchAll();
-    return $result;
+    $result = $sth->fetch(PDO::FETCH_ASSOC);
+    if (!$result) {
+      return false;
+    }
+    $hash = $result['pass'];
+    if (password_verify($userPass, $hash)) {
+      return $result;
+    } else {
+      return false;
+    }
   }
+
   // to add data of the user to the database.
   public function addSignupUser($userName, $userEmail, $userPass)
   {
@@ -456,31 +464,31 @@ class Dao
   }
 
   public function getIngredientsNeeded()
-{
-	try {
-		$conn = $this->getConnection();
-		$query = "SELECT * FROM ingredients_needed";
-		$stmt = $conn->prepare($query);
-		$stmt->execute();
-		return $stmt->fetchAll(PDO::FETCH_ASSOC);
-	} catch (Exception $e) {
-		$this->logger->LogFatal("getIngredientsNeeded failed: " . print_r($e, 1));
-		exit;
-	}
-}
+  {
+    try {
+      $conn = $this->getConnection();
+      $query = "SELECT * FROM ingredients_needed";
+      $stmt = $conn->prepare($query);
+      $stmt->execute();
+      return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    } catch (Exception $e) {
+      $this->logger->LogFatal("getIngredientsNeeded failed: " . print_r($e, 1));
+      exit;
+    }
+  }
 
-public function clearIngredientsNeeded()
-{
-	try {
-		$conn = $this->getConnection();
-		$query = "DELETE FROM ingredients_needed";
-		$stmt = $conn->prepare($query);
-		$stmt->execute();
-	} catch (Exception $e) {
-		$this->logger->LogFatal("clearIngredientsNeeded failed: " . print_r($e, 1));
-		exit;
-	}
-}
+  public function clearIngredientsNeeded()
+  {
+    try {
+      $conn = $this->getConnection();
+      $query = "DELETE FROM ingredients_needed";
+      $stmt = $conn->prepare($query);
+      $stmt->execute();
+    } catch (Exception $e) {
+      $this->logger->LogFatal("clearIngredientsNeeded failed: " . print_r($e, 1));
+      exit;
+    }
+  }
 
   public function storeUploadedSchedule($fileName)
   {
@@ -568,7 +576,7 @@ public function clearIngredientsNeeded()
     $photo = $stmt->fetch(PDO::FETCH_ASSOC);
 
     // Delete file from uploads directory
-    unlink( $photo['file_name']);
+    unlink($photo['file_name']);
 
     // Delete photo record from database
     $stmt = $conn->prepare('DELETE FROM photos WHERE id = :id');
