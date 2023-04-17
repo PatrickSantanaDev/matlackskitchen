@@ -176,13 +176,20 @@
  th {
    border: 1px solid #d29e6f;
    font-size: larger;
+   background-color: #d29e6f;
  }
 
  td {
-   border: 1px solid #d29e6f;
+   border: 1px solid #cfad8f;
    text-align: center;
 
  }
+
+ td:nth-child(odd) {
+  text-align: center;
+  background-color: #cfad8f;
+
+}
 
  body {
    margin: 0px;

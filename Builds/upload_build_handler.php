@@ -15,8 +15,8 @@ function sanitize_input($input)
   $input = preg_replace('/[^a-zA-Z0-9\s.]/', '', $input);
   //trim
   $input = trim($input);
-  // Limit input to 2500 chars
-  $input = substr($input, 0, 2500);
+  // Limit input to 1000 chars
+  $input = substr($input, 0, 1000);
   return $input;
 }
 

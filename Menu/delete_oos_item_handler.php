@@ -8,7 +8,7 @@ $itemName = $_POST['item_name'];
 
 error_log("Deleting out of stock item $itemName");
 
-$success = $dao->deleteOutOfStockItem($_SESSION['username'], $itemName);
+$success = $dao->deleteOutOfStockItem($itemName);
 
 if ($success) {
   error_log("Deleted out of stock item $itemName");

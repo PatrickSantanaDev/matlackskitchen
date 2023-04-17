@@ -40,11 +40,22 @@
   ?>
 
   <!-- Upload Photo -->
+  <div id="wholePhotoForm">
   <form id="uploadPhotoForm" action="upload_photos_handler.php" method="post" enctype="multipart/form-data">
-    <h2 id="uploadPhotoFormHeading">Select Photos to Upload</h2>
+    <h2 id="uploadPhotoFormHeading">Upload Photos</h2>
+    <?php
+    if (isset($_SESSION['errors'])) {
+      foreach ($_SESSION['errors'] as $error) {
+        echo '<p class="error">' . $error . '</p>';
+      }
+      unset($_SESSION['errors']);
+    }
+    ?>
+    <label for="selectPhotos">Select photo file and upload (.png):</label><br>
     <input type="file" id="selectPhotos" name="selectPhotos" accept=".png,.jpg" /><br>
     <button id="uploadPhotoButton" type="submit">Upload Photo</button>
   </form>
+  </div>
 
   <!--Photos Viewer-->
   <div id="photosViewer">

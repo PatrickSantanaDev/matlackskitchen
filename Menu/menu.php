@@ -40,35 +40,37 @@
   ?>
 
   <!-- Menu Viewer -->
-  <h2 id="menu_viewer_header">Menu Viewer</h2>
-  <div id="menuviewer">
-    <?php include 'menu_display_handler.php'; ?>
-  </div>
+  <div id="wholemenuviewer">
+    <h2 id="menu_viewer_header">Menu Viewer</h2>
+    <div id="menuviewer">
+      <?php include 'menu_display_handler.php'; ?>
+    </div>
 
-  <!-- Upload Menu -->
-  <div id="menuupload">
-    <?php if (isset($_SESSION['errors'])) : ?>
-      <div class="error">
-        <?php foreach ($_SESSION['errors'] as $error) : ?>
-          <?php echo $error; ?>
-        <?php endforeach; ?>
-      <?php endif;
-    unset($_SESSION['errors']); ?>
-      </div>
-      <form id="uploadmenu" method="post" action="menu_handler.php" enctype="multipart/form-data">
-        <label for="uploadmenu">Select Menu File and Upload (.png):</label><br>
-        <input type="file" id="uploadmenu" name="uploadmenu" accept=".png" /><br>
-        <button type="submit" name="submit" value="upload">Upload</button>
-      </form>
+    <!-- Upload Menu -->
+    <div id="menuupload">
+      <?php if (isset($_SESSION['errors'])) : ?>
+        <div class="error">
+          <?php foreach ($_SESSION['errors'] as $error) : ?>
+            <?php echo $error; ?>
+          <?php endforeach; ?>
+        <?php endif;
+      unset($_SESSION['errors']); ?>
+        </div>
+        <form id="uploadmenu" method="post" action="menu_handler.php" enctype="multipart/form-data">
+          <label for="uploadmenu">Select Menu File and Upload (.png):</label><br>
+          <input type="file" id="uploadmenu" name="uploadmenu" accept=".png" /><br>
+          <button type="submit" name="submit" value="upload">Upload</button>
+        </form>
 
-      <form id="deletemenu" method="post" action="delete_menu_handler.php">
-        <button type="submit" name="delete">Delete</button>
-      </form>
+        <form id="deletemenu" method="post" action="delete_menu_handler.php">
+          <button type="submit" name="delete">Delete</button>
+        </form>
+    </div>
   </div>
 
   <!-- Items out of Stock -->
   <form id="oositems" action="oos_item_input_handler.php" method="post">
-    <h2>Out of Stock Menu Items</h2>
+    <h2 id="oos_viewer_header">Out of Stock Menu Items</h2>
     <?php if (!empty($_SESSION['oos_errors'])) : ?>
       <div class="error">
         <?php echo $_SESSION['oos_errors']; ?>
@@ -78,6 +80,7 @@
     <?php else : ?>
       <?php $item_name = ''; ?>
     <?php endif; ?>
+    <label for="enteritems">OOS item:</label>
     <input type="text" id="enteritems" name="item_name" placeholder="Enter Out of Stock Item..." value="<?php echo $item_name; ?>">
     <button type="submit" id="oosaddbutton">Add</button>
   </form>

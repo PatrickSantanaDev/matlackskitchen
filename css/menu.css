@@ -25,9 +25,17 @@
  /*********************/
  /*  Menu Viewer  */
  /*********************/
+
+ #wholemenuviewer {
+    border: thick double #d0a16d;
+    border-radius: 30px;
+    border-width: 15px;
+    margin: 3% 5% 0% 5%;
+ }
+
  #menu_viewer_header {
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Cinzel', serif;
   }
 
@@ -116,6 +124,12 @@
  /*********************/
  /*  OOS Menu Items   */
  /*********************/
+
+ #oos_viewer_header {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Cinzel', serif;
+  }
 
  #enteritems {
     border: thick double #d0a16d;

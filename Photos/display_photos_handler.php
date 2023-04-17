@@ -13,7 +13,7 @@ foreach ($photos as $photo) {
   echo '<img src="' . $photo['file_name'] . '"/>';
   echo '<form class="deleteForm" method="post" action="delete_photo_handler.php">';
   echo '<input type="hidden" name="photoId" value="' . $photo['id'] . '">';
-  echo '<button type="submit">Delete</button>';
+  echo '<button id="deletePhoto" type="submit">Delete</button>';
   echo '</form>';
   echo '</div>';
 }

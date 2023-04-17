@@ -42,11 +42,12 @@
 
   <!-- Dropdown Recipe Search -->
   <!-- Category Search -->
+  <div id="wholerecipesearch">
   <div class="header">
     <h2>Search for a recipe:</h2>
   </div>
   <form id="catSearch" action="get_recipes_by_category_handler.php" method="get">
-    <label for="searchByCategory">Search by recipe category:</label>
+    <label for="searchByCategory">Select category of recipe:</label>
     <select id="searchByCategory" name="searchByCategory">
       <option value="">Select a category</option>
       <?php
@@ -61,7 +62,7 @@
 
   <!-- Recipe Search -->
   <form id="recipeSearch" action="recipes.php" method="get">
-    <label for="searchbyRecipeName">Search by recipe name:</label>
+    <label for="searchbyRecipeName">Select recipe:</label>
     <select id="searchbyRecipeName" name="recipe_name">
       <option value="">Select a recipe</option>
       <?php
@@ -120,8 +121,10 @@
       </form>
     <?php endif; ?>
   </div>
+  </div>
 
   <!-- Upload Recipe -->
+  <div id="wholeuploadrecipe">
   <div class="header">
     <h2>Add a recipe:</h2>
   </div>
@@ -134,9 +137,11 @@
       </div>
     <?php endif; ?>
     <?php unset($_SESSION['errors']); ?>
-
+    
+    <label for="recipeName">Recipe Name:</label><br>
     <input id="recipeName" type="text" name="name" placeholder="Enter Recipe name..." value="<?php echo (isset($_SESSION['recipeName']) && empty($_SESSION['errors'])) ? $_SESSION['recipeName'] : '' ?>"><br>
     <div>
+      <label for="category">Category:</label><br>
       <select id="category" name="category">
         <option value="">Select a category</option>
         <option value="Dressings" <?php if (isset($_SESSION['category']) && $_SESSION['category'] == 'Dressings') echo 'selected'; ?>>Dressings</option>
@@ -147,11 +152,14 @@
         <option value="Desserts" <?php if (isset($_SESSION['category']) && $_SESSION['category'] == 'Desserts') echo 'selected'; ?>>Desserts</option>
       </select>
     </div>
+    <label for="ingredients">Ingredients:</label><br>
     <textarea id="ingredients" name="ingredients" placeholder="Enter Ingredients..."><?php echo (isset($_SESSION['ingredients']) && empty($_SESSION['errors'])) ? $_SESSION['ingredients'] : '' ?></textarea><br>
+    <label for="instructions">Instructions:</label><br>
     <textarea id="instructions" name="instructions" placeholder="Enter Instructions..."><?php echo (isset($_SESSION['instructions']) && empty($_SESSION['errors'])) ? $_SESSION['instructions'] : '' ?></textarea><br>
 
     <button id="uploadRecipeButton" type="submit">Upload Recipe</button>
   </form>
+  </div>
 
   <!--Footer-->
   <?php include_once '../footer.php'; ?>

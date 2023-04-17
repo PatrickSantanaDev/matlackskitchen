@@ -39,12 +39,14 @@
  .photoTile {
    width: 23%;
    /* 4 tiles at 23% each plus some margin */
-   border: 4mm ridge #d29e6f;
+   border: thick double #d0a16d;
+   border-width: 15px;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    margin: 1%;
+   text-align: center;
  }
 
  .photoTile img {
@@ -53,21 +55,50 @@
    object-fit: cover;
  }
 
+ #deletePhoto{
+  border-radius: 20px;
+   cursor: pointer;
+   width:100%;
+   margin-top: 10px;
+   margin-bottom: 20px;
+
+   border: 1mm outset #d29e6f;
+   background-color: #181617;
+   box-shadow: 0 7px #2b2b2b;
+
+   color: #d29e6f;
+
+   text-shadow: 1px 1px 2px #917863;
+   font-family: 'Cinzel', serif;
+ }
+
 
  /***************************/
  /*      Upload Photos       */
  /****************************/
+ #wholePhotoForm{
+  font-family: 'Cinzel', serif;
+ }
 
  #uploadPhotoForm {
    text-align: center;
-   margin: 5% 30% 1% 30%;
-   width: 40%;
-   border: 4mm ridge #d29e6f;
+   margin: 5% 15% 1% 15%;
+   border: thick double #d0a16d;
+    border-radius: 30px;
+    border-width: 15px;
  }
 
  #uploadPhotoFormHeading {
    font-family: 'Cinzel', serif;
  }
+
+ .error {
+  text-align: center;
+  color: #963838;
+  font-weight: bold;
+  border: thick double #963838;
+  margin: 0% 15% 2% 15%;
+}
 
  #selectPhotos {
    text-align: center;

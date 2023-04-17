@@ -44,11 +44,12 @@
 
   <!-- Dropdown Build Search -->
   <!-- Category Search -->
+  <div id="wholebuildssearch">
   <div class="header">
     <h2>Search for a build:</h2>
   </div>
   <form id="catSearch" action="get_builds_by_category_handler.php" method="get">
-    <label for="searchByCategory">Search by build category:</label>
+    <label for="searchByCategory">Select category of build:</label>
     <select id="searchByCategory" name="searchByCategory">
       <option value="">Select a category</option>
       <?php
@@ -63,7 +64,7 @@
 
   <!-- Build Search -->
   <form id="buildSearch" action="builds.php" method="get">
-    <label for="searchbyBuildName">Search by build name:</label>
+    <label for="searchbyBuildName">Select build:</label>
     <select id="searchbyBuildName" name="build_name">
       <option value="">Select a build</option>
       <?php
@@ -123,9 +124,11 @@
       </form>
     <?php endif; ?>
   </div>
+  </div>
 
 
   <!-- Upload Build -->
+  <div id="wholeuploadbuild">
   <div class="header">
     <h2>Add a build:</h2>
   </div>
@@ -138,9 +141,10 @@
       </div>
     <?php endif; ?>
     <?php unset($_SESSION['errors']); ?>
-
+    <label for="buildName">Build Name:</label><br>
     <input id="buildName" type="text" name="name" placeholder="Enter Build name..." value="<?php echo (isset($_SESSION['buildName']) && empty($_SESSION['errors'])) ? $_SESSION['buildName'] : '' ?>"><br>
     <div>
+      <label for="category">Category:</label><br>
       <select id="category" name="category">
         <option value="">Select a category</option>
         <option value="Salads" <?php if (isset($_SESSION['category']) && $_SESSION['category'] == 'Salads') echo 'selected'; ?>>Salads</option>
@@ -149,11 +153,14 @@
         <option value="Desserts" <?php if (isset($_SESSION['category']) && $_SESSION['category'] == 'Desserts') echo 'selected'; ?>>Desserts</option>
       </select>
     </div>
+    <label for="build_ingredients">Ingredients:</label><br>
     <textarea id="build_ingredients" name="build_ingredients" placeholder="Enter Ingredients..."><?php echo (isset($_SESSION['build_ingredients']) && empty($_SESSION['errors'])) ? $_SESSION['build_ingredients'] : '' ?></textarea><br>
+    <label for="build_instructions">Instructions:</label><br>
     <textarea id="build_instructions" name="build_instructions" placeholder="Enter Instructions..."><?php echo (isset($_SESSION['build_instructions']) && empty($_SESSION['errors'])) ? $_SESSION['build_instructions'] : '' ?></textarea><br>
 
     <button id="uploadBuildButton" type="submit">Upload Build</button>
   </form>
+  </div>
 
   <!--Footer-->
   <?php include_once '../footer.php'; ?>

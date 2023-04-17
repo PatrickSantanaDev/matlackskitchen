@@ -165,14 +165,13 @@ class Dao
     return $results;
   }
 
-  public function deleteOutOfStockItem($username, $itemName)
+  public function deleteOutOfStockItem($itemName)
   {
-    $this->logger->LogInfo("Deleting out of stock item $itemName for user $username");
+    $this->logger->LogInfo("Deleting out of stock item $itemName");
 
     $conn = $this->getConnection();
-    $deleteQuery = "DELETE FROM out_of_stock_items WHERE username = :username AND item_name = :item_name";
+    $deleteQuery = "DELETE FROM out_of_stock_items WHERE item_name = :item_name";
     $q = $conn->prepare($deleteQuery);
-    $q->bindParam(":username", $username);
     $q->bindParam(":item_name", $itemName);
     return $q->execute();
   }
