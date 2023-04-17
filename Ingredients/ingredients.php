@@ -63,6 +63,9 @@
       <select id="category" name="category">
         <option value="dairy">Dairy</option>
         <option value="protein">Protein</option>
+        <option value="produce">Produce</option>
+        <option value="drygoods">Dry Goods</option>
+        <option value="misc">Misc.</option>
       </select><br><br>
 
       <input id="addIngredientButton" type="submit" value="Submit">
@@ -96,11 +99,12 @@
       <tbody>
       </tbody>
     </table>
-  </div>
 
-  <form method="post" action="clear_ingredients_needed_handler.php">
-    <button id="clear_ingredients_needed" type="submit">Clear Ingredients Needed</button>
-  </form>
+
+    <form method="post" action="clear_ingredients_needed_handler.php">
+      <button id="clear_ingredients_needed" type="submit">Clear Ingredients Needed</button>
+    </form>
+  </div>
 
   <!--Footer-->
   <?php include_once '../footer.php'; ?>

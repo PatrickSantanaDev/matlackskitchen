@@ -22,9 +22,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $errors[] = "File extension not allowed. Allowed extensions are .png, .jpg, .jpeg";
   }
 
-  // check if the file size is greater than 1MB
-  if ($size > 1048576) {
-    $errors[] = "File size cannot be greater than 1MB";
+  // 3MB
+  if ($size > 3145728) {
+    $errors[] = "File size cannot be greater than 3MB";
   }
 
   // if there are any errors, redirect back to upload page with error message

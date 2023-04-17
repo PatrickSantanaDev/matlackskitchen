@@ -31,8 +31,9 @@
      color: #963838;
      font-weight: bold;
      border: thick double #963838;
-     width: 40%;
-     margin: 1% 30% 1% 30%;
+     width: 60%;
+     margin: 0% 20% 3% 20%;
+     font-size: smaller;
  }
 
  h2 {
@@ -93,21 +94,55 @@
  .legend {
      border: thick double #d0a16d;
      border-radius: 10px;
+     background-color:#d29e6f; 
  }
 
- /* Protein */
+
  .protein {
      margin: 2% 0% 2% 0%;
      border: thick double #d0a16d;
      border-radius: 10px;
+     background-color:#cfad8f;
  }
 
- /* Dairy */
  .dairy {
      margin: 2% 0% 2% 0%;
      border: thick double #d0a16d;
      border-radius: 10px;
+     background-color:#cfad8f;
  }
+
+ .produce {
+    margin: 2% 0% 2% 0%;
+    border: thick double #d0a16d;
+    border-radius: 10px;
+    background-color:#cfad8f;
+}
+
+.drygoods {
+    margin: 2% 0% 2% 0%;
+    border: thick double #d0a16d;
+    border-radius: 10px;
+    background-color:#cfad8f;
+}
+
+.misc {
+    margin: 2% 0% 2% 0%;
+    border: thick double #d0a16d;
+    border-radius: 10px;
+    background-color:#cfad8f;
+}
+
+.deleteButton {
+    cursor: pointer;
+     border: 1mm outset #d29e6f;
+     background-color: #181617;
+     color: #d29e6f;
+     text-shadow: 1px 1px 2px #917863;
+     font-family: 'Cinzel', serif;
+     float: right;
+     margin-top: 13px;
+}
 
 
  input[type=checkbox] {
@@ -147,30 +182,56 @@
 
 
  #ingredients_needed_display {
-     height: 300px;
+
      overflow: auto;
      border: thick double #d0a16d;
      border-width: 15px;
      border-radius: 30px;
      text-align: center;
-     margin: 3% 25% 1% 25%;
+     margin: 3% 20% 1% 20%;
      font-family: 'Cinzel', serif;
  }
 
  th {
-     border: thick double #d0a16d;
-     border-radius: 10px;
+     border: 1px solid #d29e6f;
+
+     background-color: #d29e6f;
+
  }
+
+ td {
+     border: 1px solid #cfad8f;
+     text-align: center;
+     background-color: #cfad8f;
+ }
+
+
 
  #ingredientsTable {
      margin: auto;
  }
 
+ .delete {
+
+     cursor: pointer;
+
+
+     border: 1mm outset #d29e6f;
+     background-color: #181617;
+
+
+     color: #d29e6f;
+
+     text-shadow: 1px 1px 2px #917863;
+     font-family: 'Cinzel', serif;
+ }
+
  #clear_ingredients_needed {
      border-radius: 20px;
      cursor: pointer;
-     margin: 0% 40% 3% 40%;
-     width: 20%;
+     width: 40%;
+     margin-top: 20%;
+     margin-bottom: 5%;
 
      border: 1mm outset #d29e6f;
      background-color: #181617;

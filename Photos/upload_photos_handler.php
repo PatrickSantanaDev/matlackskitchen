@@ -22,8 +22,8 @@ if(isset($_FILES['selectPhotos'])) {
     $errors[] = 'Only JPG, JPEG, and PNG files allowed.';
   }
 
-  if($file['size'] > 1048576) {
-    $errors[] = 'File size cannot be greater than 1MB';
+  if($file['size'] > 3145728 ) {
+    $errors[] = 'File size cannot be greater than 3MB';
   }
 
   // check for errors

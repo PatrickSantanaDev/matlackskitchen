@@ -444,6 +444,18 @@ class Dao
     }
   }
 
+  public function deleteIngredient($ingredientId)
+  {
+    $this->logger->LogInfo("Deleting ingredient with id $ingredientId");
+
+    $conn = $this->getConnection();
+    $deleteQuery = "DELETE FROM ingredients WHERE id = :id";
+    $q = $conn->prepare($deleteQuery);
+    $q->bindParam(":id", $ingredientId);
+    return $q->execute();
+  }
+
+
   public function submitIngredientsNeeded($ingredientNames, $addedByUsername)
   {
     $conn = $this->getConnection();
@@ -475,6 +487,20 @@ class Dao
       exit;
     }
   }
+
+  public function deleteNeededIngredient($ingredientId)
+  {
+    $this->logger->LogInfo("Deleting needed ingredient with id $ingredientId");
+
+    $conn = $this->getConnection();
+    $deleteQuery = "DELETE FROM ingredients_needed WHERE id = :id";
+    $q = $conn->prepare($deleteQuery);
+    $q->bindParam(":id", $ingredientId);
+    return $q->execute();
+  }
+
+
+
 
   public function clearIngredientsNeeded()
   {

@@ -23,10 +23,10 @@
  }
 
  .duty-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 10px;
-}
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   grid-gap: 10px;
+ }
 
  /***************************/
  /*    AM Duties Viewer     */
@@ -170,8 +170,8 @@
  }
 
  table {
-  margin: 0 auto;
-}
+   margin: 0 auto;
+ }
 
  th {
    border: 1px solid #d29e6f;
@@ -186,10 +186,10 @@
  }
 
  td:nth-child(odd) {
-  text-align: center;
-  background-color: #cfad8f;
+   text-align: center;
+   background-color: #cfad8f;
 
-}
+ }
 
  body {
    margin: 0px;

@@ -26,9 +26,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   }
   finfo_close($finfo);
 
-  // >1MB?
-  if ($size > 1048576) {
-    $errors[] = "File size cannot be greater than 1MB";
+  // >3MB
+  if ($size > 3145728) {
+    $errors[] = "File size cannot be greater than 3MB";
   }
 
   // errors and redirect

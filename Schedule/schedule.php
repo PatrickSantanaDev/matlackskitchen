@@ -41,22 +41,24 @@
   ?>
 
   <!-- Schedule Viewer -->
+  <div id="wholescheduleviewer">
     <h2 id="schedule_viewer_header">Schedule Viewer</h2>
-  <div id="scheduleviewer">
-    <?php include 'schedule_display_handler.php'; ?>
-  </div>
+    <div id="scheduleviewer">
+      <?php include 'schedule_display_handler.php'; ?>
+    </div>
 
-  <!-- Upload Schedule -->
-  <div id="scheduleupload">
-    <form id="uploadschedule" method="post" action="schedule_handler.php" enctype="multipart/form-data">
-      <label for="uploadschedule">Select Schedule File and Upload (.png):</label><br>
-      <input type="file" id="uploadschedule" name="uploadschedule" accept=".png" /><br>
-      <button type="submit" name="submit" value="upload">Upload</button>
-    </form>
+    <!-- Upload Schedule -->
+    <div id="scheduleupload">
+      <form id="uploadschedule" method="post" action="schedule_handler.php" enctype="multipart/form-data">
+        <label for="uploadschedule">Select Schedule File and Upload (.png):</label><br>
+        <input type="file" id="uploadschedule" name="uploadschedule" accept=".png" /><br>
+        <button type="submit" name="submit" value="upload">Upload</button>
+      </form>
 
-    <form id="deleteschedule" method="post" action="delete_schedule_handler.php">
-      <button type="submit" name="delete">Delete</button>
-    </form>
+      <form id="deleteschedule" method="post" action="delete_schedule_handler.php">
+        <button type="submit" name="delete">Delete</button>
+      </form>
+    </div>
   </div>
 
   <!-- <embed src="https://witeboard.com/1fb5cae0-d2b3-11ed-9cf0-fdcc78ce19ea"  width="100%" height="100%" /> -->
