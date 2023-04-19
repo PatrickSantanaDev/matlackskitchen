@@ -1,5 +1,7 @@
 <?php
+session_start();
 require_once '../Dao.php';
+
 
 if (isset($_POST['delete'])) {
     $dao = new Dao();
@@ -16,7 +18,8 @@ if (isset($_POST['delete'])) {
         header('Location: schedule.php');
         exit;
     } else {
-        echo 'No menu available.';
+        $_SESSION['errors'][] = "No uploaded schedule available to delete.";
+        header('Location: schedule.php');
     }
 }
 ?>

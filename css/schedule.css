@@ -67,6 +67,15 @@
    font-family: 'Cinzel', serif;
 }
 
+.error {
+  text-align: center;
+  color: #963838;
+  font-weight: bold;
+  border: thick double #963838;
+  width: 80%;
+  margin: 1% 10% 1% 10%;
+}
+
 #uploadschedule input {
    margin: 0 auto;
    cursor: pointer;

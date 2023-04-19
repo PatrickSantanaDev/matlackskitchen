@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once '../Dao.php';
 
 if (isset($_POST['delete'])) {
@@ -12,6 +13,7 @@ if (isset($_POST['delete'])) {
         header('Location: menu.php');
         exit;
     } else {
+        $_SESSION['errors'][] = "No uploaded menu available to delete.";
         header('Location: menu.php');
     }
 }

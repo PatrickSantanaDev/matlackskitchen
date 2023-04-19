@@ -49,6 +49,14 @@
 
     <!-- Upload Schedule -->
     <div id="scheduleupload">
+    <?php if (isset($_SESSION['errors'])) : ?>
+        <div class="error">
+          <?php foreach ($_SESSION['errors'] as $error) : ?>
+            <?php echo $error; ?>
+          <?php endforeach; ?>
+        <?php endif;
+      unset($_SESSION['errors']); ?>
+      </div>
       <form id="uploadschedule" method="post" action="schedule_handler.php" enctype="multipart/form-data">
         <label for="uploadschedule">Select Schedule File and Upload (.png):</label><br>
         <input type="file" id="uploadschedule" name="uploadschedule" accept=".png" /><br>

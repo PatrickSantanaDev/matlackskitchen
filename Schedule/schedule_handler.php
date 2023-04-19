@@ -9,6 +9,13 @@ $dao = new Dao();
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+  if (!isset($_FILES['uploadschedule']) || $_FILES['uploadschedule']['error'] == UPLOAD_ERR_NO_FILE) {
+    $_SESSION['errors'][] = "No file selected. Please select a file to upload.";
+    header("Location: schedule.php");
+    exit();
+  }
+
   $name = $_FILES['uploadschedule']['name'];
   $tmp_name = $_FILES['uploadschedule']['tmp_name'];
   $error = $_FILES['uploadschedule']['error'];
