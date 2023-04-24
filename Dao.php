@@ -358,7 +358,7 @@ class Dao
         'duty_name' => $duty['duty_name'],
         'username' => $username,
         'completed' => $duty['completed'],
-        'date_completed' => $duty['completed'] ? $date_completed : null,
+        'date_completed' => $date_completed,
       ]);
     }
   }
@@ -376,7 +376,7 @@ class Dao
         'duty_name' => $duty['duty_name'],
         'username' => $username,
         'completed' => $duty['completed'],
-        'date_completed' => $duty['completed'] ? $date_completed : null,
+        'date_completed' => $date_completed,
       ]);
     }
   }
@@ -400,12 +400,13 @@ class Dao
   }
 
   public function getIncompleteDuties()
-  {
-    $conn = $this->getConnection();
-    $stmt = $conn->prepare("SELECT username, duty_name FROM am_duties WHERE completed = 0 UNION ALL SELECT username, duty_name FROM pm_duties WHERE completed = 0");
-    $stmt->execute();
-    return $stmt->fetchAll(PDO::FETCH_ASSOC);
-  }
+{
+  $conn = $this->getConnection();
+  $stmt = $conn->prepare("SELECT username, duty_name, date_completed FROM am_duties WHERE completed = 0 UNION ALL SELECT username, duty_name, date_completed FROM pm_duties WHERE completed = 0");
+  $stmt->execute();
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
 
   public function getIncompleteWeeklyDuties()
   {

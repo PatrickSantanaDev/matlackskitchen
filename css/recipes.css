@@ -27,11 +27,11 @@
  /***************************/
 
  #wholeuploadrecipe {
-    border: thick double #d0a16d;
-    border-radius: 30px;
-    border-width: 15px;
-    margin: 3% 5% 0% 5%;
-    font-family: 'Cinzel', serif;
+     border: thick double #d0a16d;
+     border-radius: 30px;
+     border-width: 15px;
+     margin: 3% 5% 0% 5%;
+     font-family: 'Cinzel', serif;
  }
 
  .header {
@@ -104,11 +104,11 @@
  /***************************/
  /*    Recipe Search        */
  /***************************/
- #wholerecipesearch{
-    border: thick double #d0a16d;
-    border-radius: 30px;
-    border-width: 15px;
-    margin: 3% 5% 0% 5%;
+ #wholerecipesearch {
+     border: thick double #d0a16d;
+     border-radius: 30px;
+     border-width: 15px;
+     margin: 3% 5% 0% 5%;
  }
 
  #catSearch {
@@ -192,7 +192,8 @@
 
  td {
      background-color: #cfad8f;
-     width: 90%;
+     max-width: 200px;
+     word-wrap: break-word;
  }
 
  #deleteRecipe {

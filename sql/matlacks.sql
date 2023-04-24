@@ -56,7 +56,7 @@ CREATE TABLE recipes (
     username VARCHAR(20) NOT NULL,
     recipe_name VARCHAR(50) NOT NULL,
     category VARCHAR(25) NOT NULL,
-    ingredients VARCHAR(500) NOT NULL,
+    ingredients VARCHAR(1000) NOT NULL,
     instructions VARCHAR(1000) NOT NULL,
     date_added DATE,
     PRIMARY KEY (id),
@@ -68,7 +68,7 @@ CREATE TABLE builds (
     username VARCHAR(20) NOT NULL,
     build_name VARCHAR(50) NOT NULL,
     category VARCHAR(25) NOT NULL,
-    ingredients VARCHAR(500) NOT NULL,
+    ingredients VARCHAR(1000) NOT NULL,
     instructions VARCHAR(1000) NOT NULL,
     file_name varchar(255) COLLATE utf8_unicode_ci NOT NULL,
     date_added DATE,
@@ -77,7 +77,7 @@ CREATE TABLE builds (
 
 CREATE TABLE am_duties (
     id INT AUTO_INCREMENT,
-    duty_name VARCHAR(50) NOT NULL,
+    duty_name VARCHAR(100) NOT NULL,
     username VARCHAR(20) NOT NULL,
     completed INT NOT NULL DEFAULT 0,
     date_completed DATE,
@@ -87,7 +87,7 @@ CREATE TABLE am_duties (
 
 CREATE TABLE pm_duties (
     id INT AUTO_INCREMENT,
-    duty_name VARCHAR(50) NOT NULL,
+    duty_name VARCHAR(100) NOT NULL,
     username VARCHAR(20) NOT NULL,
     completed INT NOT NULL DEFAULT 0,
     date_completed DATE,
@@ -97,7 +97,7 @@ CREATE TABLE pm_duties (
 
 CREATE TABLE weekly_duties (
     id INT AUTO_INCREMENT,
-    duty_name VARCHAR(50) NOT NULL,
+    duty_name VARCHAR(100) NOT NULL,
     -- am_pm?
     -- weekday?
     username VARCHAR(20) NOT NULL,

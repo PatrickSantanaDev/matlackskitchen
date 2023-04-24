@@ -111,12 +111,12 @@
    border-radius: 30px;
    border-width: 15px;
    text-align: center;
-   margin: 2% 20% 2% 20%;
+   margin: 2% 10% 2% 10%;
  }
 
  #incompleteResults {
    text-align: center;
-   margin: 2% 20% 2% 20%;
+   margin: 2% 10% 2% 10%;
    font-family: 'Cinzel', serif;
  }
 
