@@ -24,21 +24,21 @@ if (empty($username) || empty($email) || empty($password) || empty($confirm_pass
 {
   $errors[] = 'Please fill out all fields';
 } 
-elseif (!preg_match($email_pattern, $email)) {
+if (!preg_match($email_pattern, $email)) {
   $errors[] = 'Invalid email address';
 }
-elseif (!preg_match($password_pattern, $password)) {
+if (!preg_match($password_pattern, $password)) {
   $errors[] = 'Invalid password. Password must contain at least one number and one special character';
 }
-elseif ($password !== $confirm_password) 
+if ($password !== $confirm_password) 
 {
   $errors[] = 'Passwords do not match';
 } 
-elseif (5 > strlen($username) || strlen($username) > 20) 
+if (5 > strlen($username) || strlen($username) > 20) 
 {
   $errors[] = 'Username must be between 5 and 20 characters';
 }
-elseif (8 > strlen($password) || strlen($password) > 20) 
+if (8 > strlen($password) || strlen($password) > 20) 
 {
   $errors[] = 'Password must be between 8 and 20 characters';
 }
